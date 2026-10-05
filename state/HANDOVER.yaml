@@ -6,6 +6,8 @@ handover:
   state: PRE_CONCEPT_LOCK
 
 completed:
+  - "Codespace checkout of feat/technical-reality-spike-01 succeeded."
+  - "Observed environment blocker: Rive CLI is not installed in the Codespace ('rive: command not found')."
   - "Challenge qualification and rules review."
   - "Winning Intelligence v2 pre-lock research."
   - "Five-model canonical review: Perplexity, Kimi, Claude, Gemini, Grok."
@@ -47,5 +49,5 @@ do_not_do_yet:
 
 exact_next_gate: TECHNICAL_REALITY_SPIKE_01
 exact_next_owner: project_implementation
-exact_next_action: "Initialize the Rive spike in rive/spike-01, follow Rive-generated agent guidance, and obtain reproducible verification evidence for SYNC -> DELAY -> SHADOW_HOLD -> RESET."
+exact_next_action: "Install the official Rive CLI in the Codespace; verify rive --version and rive doctor; then initialize rive/spike-01 and obtain reproducible evidence for SYNC -> DELAY -> SHADOW_HOLD -> RESET."
 promotion_condition: "Only after the behavioral spike works in the target runtime may the project move to CONCEPT_LOCK review."
