@@ -1,0 +1,187 @@
+registry:
+  project_classification:
+    status: PROVEN
+    note: JUDGED_CHALLENGE
+  baseline_reconciliation:
+    status: PROVEN
+    note: "Pinned to central 0.1.57 at a881e0c882e9b2c65e5b4172536fbbe900fa8491."
+  external_rules_refresh:
+    status: PROVEN
+  qualify:
+    status: PROVEN
+  decide:
+    status: PROVEN
+  design:
+    status: ACTIVE
+  deliver:
+    status: BLOCKED
+    reason: TECHNICAL_REALITY_NOT_PROVEN
+  audit:
+    status: BLOCKED
+  expand:
+    status: BLOCKED
+
+  rubric:
+    status: PROVEN
+  pain:
+    status: PROVEN
+  problem:
+    status: PROVEN
+  negative_event:
+    status: PROVEN
+  differentiator:
+    status: PROVEN_CANDIDATE
+  execution:
+    status: BLOCKED
+    reason: TECHNICAL_REALITY_SPIKE_01
+  live_depth:
+    status: BLOCKED
+  evidence:
+    status: ACTIVE
+  story:
+    status: BLOCKED
+  demo:
+    status: BLOCKED
+  q_and_a:
+    status: BLOCKED
+
+  winning_intelligence_v2:
+    status: PROVEN
+  contrastive_signal:
+    status: PROVEN
+  ai_commodity_test:
+    status: PROVEN
+  demand_reality:
+    status: ACTIVE
+    note: "Non-decisive for this creative challenge."
+  founder_problem_fit:
+    status: N/A
+    reason: "Creative judged challenge; no founder thesis required."
+  creative_divergence:
+    status: PROVEN
+  multi_llm:
+    status: PROVEN
+    note: "Canonical 5/5 complete; DeepSeek auxiliary complete."
+  competitive_novelty_kill:
+    status: PROVEN
+    note: "Public Contra + F12 feed scan; continuous watch remains active."
+  naming_collision:
+    status: ACTIVE
+    note: "ONE FRAME LATE is a working title, not final clearance."
+  concept_direction:
+    status: PROVEN
+  concept_lock:
+    status: BLOCKED
+    reason: TECHNICAL_REALITY_SPIKE_01
+
+  technical_reality:
+    status: ACTIVE
+  rive_cli:
+    status: BLOCKED
+    reason: "Project-local CLI proof not yet committed."
+  state_machine:
+    status: BLOCKED
+  data_binding:
+    status: BLOCKED
+  shadow_rig:
+    status: BLOCKED
+  gpu_canvas:
+    status: BLOCKED
+    note: "Intentionally downstream of behavioral proof."
+  literal_frame_latch:
+    status: UNKNOWN
+    note: "Enhancement only; fallback dual-rig architecture must preserve concept."
+  real_reset_recovery:
+    status: BLOCKED
+  target_web_runtime:
+    status: BLOCKED
+
+  truth_boundary:
+    status: PROVEN
+  negative_path:
+    status: ACTIVE
+  evidence_integrity:
+    status: ACTIVE
+  runtime_commit_binding:
+    status: BLOCKED
+  deterministic_demo:
+    status: ACTIVE
+  judge_performance_assurance:
+    status: ACTIVE
+  first_five_second_comprehension:
+    status: ACTIVE
+  submission_integrity:
+    status: ACTIVE
+  submission_execution_assurance:
+    status: ACTIVE
+    note: "Inherited from central 0.1.57; protected final submission remains human."
+  engineering_quality:
+    status: BLOCKED
+
+  product_reality_v1_5:
+    status: ACTIVE
+  first_live_slice:
+    status: BLOCKED
+  live_core_loop:
+    status: BLOCKED
+  load_bearing_integration:
+    status: BLOCKED
+  real_consequence:
+    status: BLOCKED
+  failure_recovery:
+    status: BLOCKED
+  real_user_surface:
+    status: BLOCKED
+  external_user_operator_evidence:
+    status: BLOCKED
+  time_to_first_value:
+    status: BLOCKED
+  operational_economics:
+    status: N/A
+    reason: "No material paid core loop."
+  shared_product_core:
+    status: ACTIVE
+  reality_ledger:
+    status: ACTIVE
+  observability_receipts:
+    status: ACTIVE
+  judge_self_serve:
+    status: BLOCKED
+  setup_reproducibility:
+    status: ACTIVE
+  clean_room_dependency_failure:
+    status: BLOCKED
+  post_vertical_slice_depth_gap_review:
+    status: BLOCKED
+
+  ossium:
+    status: ACTIVE
+    note: "Use only when implementation references materially reduce technical risk."
+  reference_intelligence:
+    status: ACTIVE
+
+  x402:
+    status: N/A
+    reason: "No transactional mechanism."
+  nanopayments:
+    status: N/A
+    reason: "No transactional mechanism."
+  wallets:
+    status: N/A
+    reason: "No wallet flow."
+  contracts:
+    status: N/A
+    reason: "No on-chain contract."
+  app_kit:
+    status: N/A
+    reason: "No required app-kit integration identified."
+  live_gateway:
+    status: N/A
+    reason: "No external transactional gateway is central to value."
+
+  final_canonical_assurance:
+    status: BLOCKED
+  current_handover:
+    status: PROVEN
+  post_mortem:
+    status: BLOCKED
