@@ -57,3 +57,41 @@ Ubuntu package mapping verified:
 - `libxkbcommon.so.0` -> `libxkbcommon0`
 
 The environment blocker remains active until both are resolved and the CLI actually starts.
+
+
+## Environment blocker cleared
+
+Observed after installing the remaining dependencies:
+
+```
+ldd "$(command -v rive)" | grep "not found" || true
+# no output
+
+rive --version
+rive 1.3.0
+```
+
+`rive doctor` passes version, update, live-link, and local project diagnostics. The only warning is expected unauthenticated state for publish/rev operations.
+
+The official scaffold command succeeded:
+
+```
+rive create spike-01
+```
+
+and created:
+
+- `rive.yaml`
+- `scene.rml`
+- `AGENTS.md`
+- `CLAUDE.md`
+- `.gitignore`
+
+## Current truth
+
+- Rive CLI installed: PROVEN
+- Shared library resolution: PROVEN
+- CLI executable runtime: PROVEN
+- Project scaffold: PROVEN
+- Auth for publish/rev: NOT CONFIGURED / NOT REQUIRED FOR CURRENT LOCAL SPIKE
+- Behavioral Technical Reality: ACTIVE / NOT YET PROVEN
