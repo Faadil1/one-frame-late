@@ -110,7 +110,19 @@ technical_environment:
         - id: 1882812
           name: "Faadil / Shared Project"
           selected_candidate: false
-      first_external_write: NOT_EXECUTED
+      first_external_write: PROVEN
+      external_rive_file:
+        project_id: 1882813
+        file_id: 2632594
+        revision_id: 48006216
+        name: "spike-01"
+        push_label: "spike-01 cb20844"
+        created_objects: 247
+        updated_objects: 0
+        deleted_objects: 0
+        unchanged_objects: 0
+        status: CREATED_AND_PUSHED
+        public: UNKNOWN_NOT_CLAIMED
     scaffold:
       status: PROVEN
       path: rive/spike-01
@@ -121,7 +133,7 @@ technical_environment:
         - CLAUDE.md
         - .gitignore
 
-exact_next_action: "Use writable project 1882813 (Faadil / Personal Files) as the preferred first external target. On approval, execute one controlled rive push for the frozen LOCAL candidate, then open the resulting file in the Rive Editor and verify State Machine + View Model behavior before any web publication."
+exact_next_action: "Validate the post-push artifact before committing Rive-generated IDs: run local verify/inspect on the mutated scene.rml, inspect the scene.rml diff, then open Rive file 2632594 in the Editor and verify State Machine + View Model structure/behavior. Do not publish to web yet."
 last_updated: "2026-10-05"
 
 spike_01_result:
