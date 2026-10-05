@@ -100,3 +100,12 @@ technical_environment:
 
 exact_next_action: "In the authenticated Claude Code session already launched at /workspaces/one-frame-late, paste the Technical Reality Spike 01 implementation brief. Claude must use Rive docs/schema and then implement/verify SYNC -> DELAY -> SHADOW_HOLD -> RESET before any GPU or polish work."
 last_updated: "2026-10-05"
+
+spike_01_result:
+  recorded: "2026-10-05"
+  local_verdict: LOCAL_PASS_CANDIDATE
+  evidence_class: LOCAL
+  web_runtime: NOT_PROVEN
+  human_comprehension: NOT_TESTED
+  concept_lock: BLOCKED
+  note: "SYNC->DELAY->SHADOW_HOLD->RESET observed in Rive CLI 1.3.0 headless frames (evidence/technical-spike/spike-01-local). Target web runtime and viewer perception remain UNKNOWN; Concept Lock not claimed."
