@@ -8,7 +8,8 @@ handover:
 completed:
   - "Codespace checkout of feat/technical-reality-spike-01 succeeded."
   - "Installed Rive CLI 1.3.0 successfully in the Codespace."
-  - "Observed environment blocker: CLI cannot start because libEGL.so.1 is missing; likely Linux graphics runtime dependencies must be installed."
+  - "Installed first Linux graphics dependencies; libEGL, libGLESv2 and libX11 now resolve."
+  - "Remaining observed blockers from ldd: libwayland-egl.so.1 and libxkbcommon.so.0."
   - "Challenge qualification and rules review."
   - "Winning Intelligence v2 pre-lock research."
   - "Five-model canonical review: Perplexity, Kimi, Claude, Gemini, Grok."
@@ -50,5 +51,5 @@ do_not_do_yet:
 
 exact_next_gate: TECHNICAL_REALITY_SPIKE_01
 exact_next_owner: project_implementation
-exact_next_action: "Install missing Linux runtime libraries for Rive CLI, verify shared-library resolution plus rive --version and rive doctor, then initialize rive/spike-01 and obtain reproducible evidence for SYNC -> DELAY -> SHADOW_HOLD -> RESET."
+exact_next_action: "Install libwayland-egl1 and libxkbcommon0; verify ldd is clean plus rive --version and rive doctor; then initialize rive/spike-01 and obtain reproducible evidence for SYNC -> DELAY -> SHADOW_HOLD -> RESET."
 promotion_condition: "Only after the behavioral spike works in the target runtime may the project move to CONCEPT_LOCK review."
