@@ -16,7 +16,10 @@ completed:
   - "Scaffolded rive/spike-01 with official Rive CLI 1.3.0 project files and project-local AGENTS guidance."
   - "Authenticated Rive CLI successfully as faadilb using a forwarded Codespace OAuth callback."
   - "Confirmed current personal workspace 1544935 and writable projects 1882813 (Faadil / Personal Files) and 1882812 (Faadil / Shared Project)."
-  - "No rive push or web publication has been executed yet."
+  - "Controlled rive push executed to Faadil / Personal Files project 1882813."
+  - "Created Rive file 2632594 (spike-01), revision 48006216, with 247 objects pushed."
+  - "rive push wrote persistent IDs into scene.rml and added push.projectId/fileId to rive.yaml; these local changes are not committed yet."
+  - "No web publication has been executed."
   - "Challenge qualification and rules review."
   - "Winning Intelligence v2 pre-lock research."
   - "Five-model canonical review: Perplexity, Kimi, Claude, Gemini, Grok."
@@ -60,5 +63,5 @@ do_not_do_yet:
 
 exact_next_gate: TECHNICAL_REALITY_RUNTIME_AND_COMPREHENSION
 exact_next_owner: project_implementation
-exact_next_action: "Preferred target is project 1882813 (Faadil / Personal Files). On approval, run one controlled rive push of the frozen candidate, then rive open the resulting file and validate State Machine + View Model behavior. Do not run --publish=web yet."
+exact_next_action: "Before committing the Rive-generated post-push changes, run rive . --verify and rive inspect . --summary on the mutated local project, inspect git diff for scene.rml, then rive open 2632594 and validate the Editor state machine/view model. Do not run --publish=web."
 promotion_condition: "Only after the LOCAL-proven behavior is confirmed in the supported target runtime and an uninstructed viewer recognizes the shadow disobedience may the project move to CONCEPT_LOCK review."
