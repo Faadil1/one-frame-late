@@ -32,8 +32,8 @@ registry:
   differentiator:
     status: PROVEN_CANDIDATE
   execution:
-    status: BLOCKED
-    reason: TECHNICAL_REALITY_SPIKE_01
+    status: ACTIVE
+    note: "LOCAL Rive-native behavioral implementation exists at cb208442d4d282b1dace5e504ba5a9b350a736a0; runtime/comprehension remain pending."
   live_depth:
     status: BLOCKED
   evidence:
@@ -72,19 +72,22 @@ registry:
     status: PROVEN
   concept_lock:
     status: BLOCKED
-    reason: TECHNICAL_REALITY_SPIKE_01
+    reason: TARGET_RUNTIME_AND_HUMAN_COMPREHENSION_NOT_PROVEN
 
   technical_reality:
     status: ACTIVE
   rive_cli:
-    status: BLOCKED
-    reason: "Project-local CLI proof not yet committed."
+    status: PROVEN
+    note: "Rive CLI 1.3.0 verified in Codespace; candidate committed and reproducible locally."
   state_machine:
-    status: BLOCKED
+    status: PROVEN
+    note: "Evidence scope LOCAL at cb208442d4d282b1dace5e504ba5a9b350a736a0; two load-bearing layers implement puppet pose and shadow relationship."
   data_binding:
-    status: BLOCKED
+    status: PROVEN
+    note: "Evidence scope LOCAL; ViewModel puppetArmUp + moves drive behavior without external JavaScript."
   shadow_rig:
-    status: BLOCKED
+    status: ACTIVE
+    note: "Spike proves articulated shadow-arm behavior with primitive shapes, not the final skeletal/mesh rig."
   gpu_canvas:
     status: BLOCKED
     note: "Intentionally downstream of behavioral proof."
@@ -92,9 +95,11 @@ registry:
     status: UNKNOWN
     note: "Enhancement only; fallback dual-rig architecture must preserve concept."
   real_reset_recovery:
-    status: BLOCKED
+    status: PROVEN
+    note: "Evidence scope LOCAL; reset restores puppetArmUp=false, moves=0, shadow-down, and next interaction returns to SYNC."
   target_web_runtime:
     status: BLOCKED
+    reason: "LOCAL CLI artifact not yet proven through supported target runtime/publication path."
 
   truth_boundary:
     status: PROVEN
