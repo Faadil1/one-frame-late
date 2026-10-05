@@ -52,5 +52,5 @@ do_not_do_yet:
 
 exact_next_gate: TECHNICAL_REALITY_SPIKE_01
 exact_next_owner: project_implementation
-exact_next_action: "Use rive docs/schema from inside rive/spike-01 to discover exact documented types, then implement and verify the minimal SYNC -> DELAY -> SHADOW_HOLD -> RESET behavior with Rive-native State Machine + View Model/Data Binding."
+exact_next_action: "Run Claude Code inside the Codespace at /workspaces/one-frame-late, where Rive CLI 1.3.0 is already proven working. Have Claude use rive docs/schema from rive/spike-01, then implement and verify SYNC -> DELAY -> SHADOW_HOLD -> RESET with Rive-native State Machine + View Model/Data Binding. Do not use the isolated Claude cloud environment for this spike unless its Rive network/runtime restrictions are explicitly lifted."
 promotion_condition: "Only after the behavioral spike works in the target runtime may the project move to CONCEPT_LOCK review."
