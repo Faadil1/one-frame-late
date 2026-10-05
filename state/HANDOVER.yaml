@@ -8,8 +8,9 @@ handover:
 completed:
   - "Codespace checkout of feat/technical-reality-spike-01 succeeded."
   - "Installed Rive CLI 1.3.0 successfully in the Codespace."
-  - "Installed first Linux graphics dependencies; libEGL, libGLESv2 and libX11 now resolve."
-  - "Remaining observed blockers from ldd: libwayland-egl.so.1 and libxkbcommon.so.0."
+  - "Resolved all Rive CLI Linux shared-library dependencies; ldd reports no missing libraries."
+  - "Verified Rive CLI 1.3.0 and successful rive doctor with only expected auth warning."
+  - "Scaffolded rive/spike-01 with official Rive CLI 1.3.0 project files and project-local AGENTS guidance."
   - "Challenge qualification and rules review."
   - "Winning Intelligence v2 pre-lock research."
   - "Five-model canonical review: Perplexity, Kimi, Claude, Gemini, Grok."
@@ -51,5 +52,5 @@ do_not_do_yet:
 
 exact_next_gate: TECHNICAL_REALITY_SPIKE_01
 exact_next_owner: project_implementation
-exact_next_action: "Install libwayland-egl1 and libxkbcommon0; verify ldd is clean plus rive --version and rive doctor; then initialize rive/spike-01 and obtain reproducible evidence for SYNC -> DELAY -> SHADOW_HOLD -> RESET."
+exact_next_action: "Use rive docs/schema from inside rive/spike-01 to discover exact documented types, then implement and verify the minimal SYNC -> DELAY -> SHADOW_HOLD -> RESET behavior with Rive-native State Machine + View Model/Data Binding."
 promotion_condition: "Only after the behavioral spike works in the target runtime may the project move to CONCEPT_LOCK review."
