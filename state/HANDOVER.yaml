@@ -19,6 +19,8 @@ completed:
   - "Controlled rive push executed to Faadil / Personal Files project 1882813."
   - "Created Rive file 2632594 (spike-01), revision 48006216, with 247 objects pushed."
   - "rive push wrote persistent IDs into scene.rml and added push.projectId/fileId to rive.yaml; these local changes are not committed yet."
+  - "Opened external Rive file 2632594 successfully in the Rive Editor; expected puppet/shadow/reset hierarchy is visually present."
+  - "State Machine and View Model panels are not yet visually verified in Editor."
   - "No web publication has been executed."
   - "Challenge qualification and rules review."
   - "Winning Intelligence v2 pre-lock research."
