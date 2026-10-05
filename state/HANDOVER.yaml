@@ -1,0 +1,51 @@
+handover:
+  project: ONE_FRAME_LATE
+  date: "2026-10-05"
+  repository: Faadil1/one-frame-late
+  branch: feat/technical-reality-spike-01
+  state: PRE_CONCEPT_LOCK
+
+completed:
+  - "Challenge qualification and rules review."
+  - "Winning Intelligence v2 pre-lock research."
+  - "Five-model canonical review: Perplexity, Kimi, Claude, Gemini, Grok."
+  - "DeepSeek auxiliary review."
+  - "Creative divergence and winner-to-winner collision."
+  - "Contra public-feed watch."
+  - "F12 DOM/network discovery."
+  - "Contra SocialPosts_socialPostsPaginationQuery extraction."
+  - "Raw-string collision scan for shadow/puppet/afterimage/frame-lag concepts."
+  - "Direction selection: ONE FRAME LATE."
+
+decision:
+  killed:
+    - "NO SUCH STATE as abstract haunted-interface product concept."
+    - "Generic possessed UI / CRT / glitch / fog framing."
+    - "RIGOR MORTIS as primary direction due to deadline/rig complexity risk."
+  retained:
+    - "Visible rule violation."
+    - "State Machine + Data Binding consequences."
+    - "Paper puppet / shadow contract."
+    - "Temporal desynchronization as the core progression."
+  leading_direction: ONE_FRAME_LATE
+
+material_unknowns:
+  - "Can the Rive-native behavioral core implement clean SYNC -> DELAY -> SHADOW_HOLD?"
+  - "Can it run reliably in the actual web runtime?"
+  - "Can reset/recovery be real and deterministic?"
+  - "Can GPU Canvas later add load-bearing light/paper/persistence without becoming generic post-processing?"
+
+do_not_do_yet:
+  - final_art
+  - final_sound
+  - submission_video
+  - submission_copy
+  - second_character
+  - generic_horror_shader_stack
+  - concept_lock_claim
+  - live_claim
+
+exact_next_gate: TECHNICAL_REALITY_SPIKE_01
+exact_next_owner: project_implementation
+exact_next_action: "Initialize the Rive spike in rive/spike-01, follow Rive-generated agent guidance, and obtain reproducible verification evidence for SYNC -> DELAY -> SHADOW_HOLD -> RESET."
+promotion_condition: "Only after the behavioral spike works in the target runtime may the project move to CONCEPT_LOCK review."
