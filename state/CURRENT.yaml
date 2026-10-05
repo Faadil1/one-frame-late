@@ -1,0 +1,70 @@
+project:
+  name: ONE_FRAME_LATE
+  repository: Faadil1/one-frame-late
+  project_type: CHALLENGE
+  judged: true
+  source_of_truth: GITHUB
+  default_branch: main
+  work_branch: feat/technical-reality-spike-01
+  external_deadline: "2026-10-12T23:59:00-07:00"
+
+canonical_pin:
+  central_repository: Faadil1/faadil-agent-system
+  version: 0.1.57-submission-execution-assurance-promoted
+  exact_main_sha: a881e0c882e9b2c65e5b4172536fbbe900fa8491
+  product_reality_policy: "1.5.0"
+  previous_project_assumption: 0.1.56-canonical-baseline-drift-tripwire-promoted
+  reconciliation: ADOPT_CURRENT_BASELINE_AT_BOOTSTRAP
+  material_delta:
+    submission_execution_assurance_v1: ACTIVE_AND_MATERIAL
+    reason: "Deadline-bound judged challenge requires protected final submission and public-post truth."
+
+status:
+  current_project_state: PRE_CONCEPT_LOCK
+  direction: ONE_FRAME_LATE
+  direction_lock: PROVEN_CANDIDATE
+  concept_lock: BLOCKED
+  build_candidate_ready: false
+  live: false
+  submission_ready: false
+  submission_state: NOT_STARTED
+
+lifecycle:
+  macro: DESIGN
+  judged_cycle: DIFFERENTIATOR_COMPLETE__EXECUTION_BLOCKED_BY_TECHNICAL_REALITY
+  current_owner: project_implementation
+  current_primary_workstream: TECHNICAL_REALITY_SPIKE_01
+  workstream_drift_status: NO_DRIFT
+
+winning_intelligence:
+  multi_llm_review: PROVEN_5_OF_5
+  auxiliary_review_deepseek: PROVEN_AUXILIARY
+  competitive_novelty: PROVEN_INITIAL
+  contra_public_feed: PROVEN_INITIAL
+  contra_f12_pagination_discovery: PROVEN
+  contra_raw_collision_scan: PROVEN
+  direct_collision_one_frame_late: NOT_OBSERVED
+  continuous_watch: ACTIVE
+  abstract_no_such_state: KILLED
+  retained_primitive: RULE_VIOLATION_THROUGH_VISIBLE_BEHAVIOR
+
+truth_boundary:
+  observed:
+    - "Contra public feed pagination endpoint was discovered and inspected in-browser."
+    - "No direct public-feed collision was observed for puppet/shadow temporal desynchronization in the captured corpus."
+  inferred:
+    - "The shadow-puppet framing can maximize visible Human Touch."
+    - "ONE FRAME LATE has podium potential if technical reality and authored motion quality are proven."
+  unknown:
+    - "Exact Rive implementation quality of SYNC -> DELAY -> SHADOW_HOLD."
+    - "Whether a literal previous-frame GPU latch is available/robust in the target web runtime."
+    - "Final future competitor field before deadline."
+
+protected_actions:
+  - final_challenge_submission
+  - required_public_social_post
+  - final_external_publication_under_user_identity
+
+exact_next_gate: TECHNICAL_REALITY_SPIKE_01
+exact_next_action: "Create the minimal Rive spike under rive/spike-01 and prove SYNC -> DELAY -> SHADOW_HOLD -> RESET in the actual toolchain and target web runtime. Do not start GPU polish until this passes."
+last_updated: "2026-10-05"
