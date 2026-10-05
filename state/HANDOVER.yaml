@@ -57,5 +57,5 @@ do_not_do_yet:
 
 exact_next_gate: TECHNICAL_REALITY_RUNTIME_AND_COMPREHENSION
 exact_next_owner: project_implementation
-exact_next_action: "Keep cb208442d4d282b1dace5e504ba5a9b350a736a0 frozen as the LOCAL candidate. Prove it through the supported Rive target runtime/publication path and conduct an uninstructed comprehension check. Do not start GPU/final-art work until both results are recorded."
+exact_next_action: "Authenticate Rive CLI in the Codespace, then run rive whoami, rive workspace, and rive push --list to discover the writable target. Stop before any rive push or --publish=web. Record the selected workspace/project before the first external write."
 promotion_condition: "Only after the LOCAL-proven behavior is confirmed in the supported target runtime and an uninstructed viewer recognizes the shadow disobedience may the project move to CONCEPT_LOCK review."
