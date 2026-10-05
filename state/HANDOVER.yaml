@@ -14,6 +14,9 @@ completed:
   - "Resolved all Rive CLI Linux shared-library dependencies; ldd reports no missing libraries."
   - "Verified Rive CLI 1.3.0 and successful rive doctor with only expected auth warning."
   - "Scaffolded rive/spike-01 with official Rive CLI 1.3.0 project files and project-local AGENTS guidance."
+  - "Authenticated Rive CLI successfully as faadilb using a forwarded Codespace OAuth callback."
+  - "Confirmed current personal workspace 1544935 and writable projects 1882813 (Faadil / Personal Files) and 1882812 (Faadil / Shared Project)."
+  - "No rive push or web publication has been executed yet."
   - "Challenge qualification and rules review."
   - "Winning Intelligence v2 pre-lock research."
   - "Five-model canonical review: Perplexity, Kimi, Claude, Gemini, Grok."
@@ -57,5 +60,5 @@ do_not_do_yet:
 
 exact_next_gate: TECHNICAL_REALITY_RUNTIME_AND_COMPREHENSION
 exact_next_owner: project_implementation
-exact_next_action: "Authenticate Rive CLI in the Codespace, then run rive whoami, rive workspace, and rive push --list to discover the writable target. Stop before any rive push or --publish=web. Record the selected workspace/project before the first external write."
+exact_next_action: "Preferred target is project 1882813 (Faadil / Personal Files). On approval, run one controlled rive push of the frozen candidate, then rive open the resulting file and validate State Machine + View Model behavior. Do not run --publish=web yet."
 promotion_condition: "Only after the LOCAL-proven behavior is confirmed in the supported target runtime and an uninstructed viewer recognizes the shadow disobedience may the project move to CONCEPT_LOCK review."
