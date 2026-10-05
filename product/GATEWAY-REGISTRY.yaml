@@ -88,6 +88,9 @@ registry:
   rive_editor_structure:
     status: PROVEN
     note: "Observed in Editor: State Machine 1 with Puppet Pose and Shadow Relationship; View Model Spike with puppetArmUp and moves; expected converters visible."
+  rive_post_push_integrity:
+    status: PROVEN
+    note: "Post-push verify clean, inspect problems=[], scene.rml semantic diff is ID-only."
   rive_editor_behavior:
     status: BLOCKED
     reason: "Behavioral sequence has not yet been manually observed in Editor preview."
