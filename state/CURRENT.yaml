@@ -88,7 +88,29 @@ technical_environment:
     install_path: "/home/codespace/.rive/bin/rive"
     shared_library_resolution: PROVEN
     doctor_status: PASS_WITH_AUTH_WARNING
-    auth_note: "Not logged in; publish/rev unavailable. Local authoring/verify/inspect remain available."
+    auth_note: "Logged in successfully as faadilb via forwarded Codespace OAuth callback; account operations are available."
+    rive_account:
+      status: PROVEN
+      username: faadilb
+      email: bfaadil@gmail.com
+      current_workspace:
+        id: 1544935
+        name: faadilb
+        type: personal
+      available_workspaces:
+        - id: 1544935
+          name: faadilb
+          type: personal
+        - id: 1544936
+          name: Faadil
+      writable_projects:
+        - id: 1882813
+          name: "Faadil / Personal Files"
+          selected_candidate: true
+        - id: 1882812
+          name: "Faadil / Shared Project"
+          selected_candidate: false
+      first_external_write: NOT_EXECUTED
     scaffold:
       status: PROVEN
       path: rive/spike-01
@@ -99,7 +121,7 @@ technical_environment:
         - CLAUDE.md
         - .gitignore
 
-exact_next_action: "Authenticate Rive CLI, discover the writable workspace/project with rive whoami, rive workspace, and rive push --list, then stop. Do not execute rive push or --publish=web until the target is confirmed and the external-write/publication boundary is explicitly approved."
+exact_next_action: "Use writable project 1882813 (Faadil / Personal Files) as the preferred first external target. On approval, execute one controlled rive push for the frozen LOCAL candidate, then open the resulting file in the Rive Editor and verify State Machine + View Model behavior before any web publication."
 last_updated: "2026-10-05"
 
 spike_01_result:
