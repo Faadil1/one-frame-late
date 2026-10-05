@@ -20,7 +20,8 @@ completed:
   - "Created Rive file 2632594 (spike-01), revision 48006216, with 247 objects pushed."
   - "rive push wrote persistent IDs into scene.rml and added push.projectId/fileId to rive.yaml; these local changes are not committed yet."
   - "Opened external Rive file 2632594 successfully in the Rive Editor; expected puppet/shadow/reset hierarchy is visually present."
-  - "State Machine and View Model panels are not yet visually verified in Editor."
+  - "Rive Editor structure validation PROVEN: State Machine 1 contains Puppet Pose and Shadow Relationship; View Model Spike contains puppetArmUp:Boolean and moves:Number; Not and Plus one converters are visible."
+  - "Editor behavior itself is not yet observed; target runtime remains unproven."
   - "No web publication has been executed."
   - "Challenge qualification and rules review."
   - "Winning Intelligence v2 pre-lock research."
@@ -65,5 +66,5 @@ do_not_do_yet:
 
 exact_next_gate: TECHNICAL_REALITY_RUNTIME_AND_COMPREHENSION
 exact_next_owner: project_implementation
-exact_next_action: "Before committing the Rive-generated post-push changes, run rive . --verify and rive inspect . --summary on the mutated local project, inspect git diff for scene.rml, then rive open 2632594 and validate the Editor state machine/view model. Do not run --publish=web."
+exact_next_action: "Run post-push rive . --verify, rive inspect . --summary, and the ID-only diff check. If clean, run the Editor preview and manually observe SYNC -> DELAY -> SHADOW_HOLD -> RESET without editing. Do not run --publish=web."
 promotion_condition: "Only after the LOCAL-proven behavior is confirmed in the supported target runtime and an uninstructed viewer recognizes the shadow disobedience may the project move to CONCEPT_LOCK review."
