@@ -24,6 +24,9 @@ completed:
   - "Contra SocialPosts_socialPostsPaginationQuery extraction."
   - "Raw-string collision scan for shadow/puppet/afterimage/frame-lag concepts."
   - "Direction selection: ONE FRAME LATE."
+  - "Technical Reality Spike 01 implemented and pushed at cb208442d4d282b1dace5e504ba5a9b350a736a0."
+  - "LOCAL evidence proves Rive-native SYNC -> DELAY -> SHADOW_HOLD -> RESET with clean verify/inspect."
+  - "State Machine, View Model/Data Binding, and deterministic reset are PROVEN at LOCAL scope."
 
 decision:
   killed:
@@ -38,9 +41,8 @@ decision:
   leading_direction: ONE_FRAME_LATE
 
 material_unknowns:
-  - "Can the Rive-native behavioral core implement clean SYNC -> DELAY -> SHADOW_HOLD?"
-  - "Can it run reliably in the actual web runtime?"
-  - "Can reset/recovery be real and deterministic?"
+  - "Does the LOCAL-proven behavior preserve correctly through the supported Rive target runtime/publication path?"
+  - "Does an uninstructed viewer perceive DELAY/HOLD as intentional shadow disobedience rather than lag or a bug?"
   - "Can GPU Canvas later add load-bearing light/paper/persistence without becoming generic post-processing?"
 
 do_not_do_yet:
@@ -53,7 +55,7 @@ do_not_do_yet:
   - concept_lock_claim
   - live_claim
 
-exact_next_gate: TECHNICAL_REALITY_SPIKE_01
+exact_next_gate: TECHNICAL_REALITY_RUNTIME_AND_COMPREHENSION
 exact_next_owner: project_implementation
-exact_next_action: "Use the already-open authenticated Claude Code Sonnet session in /workspaces/one-frame-late and paste the Technical Reality Spike 01 brief. Require documented Rive-native implementation plus verify/inspect evidence for SYNC -> DELAY -> SHADOW_HOLD -> RESET."
-promotion_condition: "Only after the behavioral spike works in the target runtime may the project move to CONCEPT_LOCK review."
+exact_next_action: "Keep cb208442d4d282b1dace5e504ba5a9b350a736a0 frozen as the LOCAL candidate. Prove it through the supported Rive target runtime/publication path and conduct an uninstructed comprehension check. Do not start GPU/final-art work until both results are recorded."
+promotion_condition: "Only after the LOCAL-proven behavior is confirmed in the supported target runtime and an uninstructed viewer recognizes the shadow disobedience may the project move to CONCEPT_LOCK review."
