@@ -126,8 +126,9 @@ technical_environment:
         editor_open:
           status: PROVEN
           observed: "Rive Editor opened file 2632594 and displayed the expected puppet, shadow, reset button, and hierarchy objects."
-        editor_state_machine_validation: NOT_YET_PROVEN
-        editor_view_model_validation: NOT_YET_PROVEN
+        editor_state_machine_validation: PROVEN
+        editor_view_model_validation: PROVEN
+        editor_behavior_validation: NOT_YET_PROVEN
     scaffold:
       status: PROVEN
       path: rive/spike-01
@@ -138,7 +139,7 @@ technical_environment:
         - CLAUDE.md
         - .gitignore
 
-exact_next_action: "In Rive Editor file 2632594, verify the State Machine layers Puppet Pose and Shadow Relationship plus View Model Spike with puppetArmUp and moves. Do not edit or publish. In parallel, complete post-push local verify/inspect and ID-only diff check before committing generated IDs."
+exact_next_action: "Complete post-push local verify/inspect plus the ID-only scene.rml diff check. Then run the Editor preview without editing the file and observe SYNC -> DELAY -> SHADOW_HOLD -> RESET. Do not publish to web yet."
 last_updated: "2026-10-05"
 
 spike_01_result:
