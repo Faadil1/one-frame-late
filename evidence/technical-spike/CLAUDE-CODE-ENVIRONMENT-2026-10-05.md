@@ -46,3 +46,34 @@ During `claude auth login`, the browser redirected to a URL on `localhost:41127`
 This is consistent with the browser running on the Windows host while Claude Code's callback listener runs inside the Codespace. It is an authentication transport issue, not a Claude Code installation failure and not a product Technical Reality failure.
 
 Current routing: use Claude Code's manual OAuth code paste fallback in the same login session when the browser callback cannot reach container localhost.
+
+
+## Authentication blocker cleared
+
+Observed:
+
+```
+claude auth status
+{
+  "loggedIn": true,
+  "authMethod": "claude.ai",
+  "apiProvider": "firstParty",
+  "subscriptionType": "pro"
+}
+```
+
+`claude doctor` reports no installation issues. Managed settings are not fetched because this is a Pro account rather than Enterprise/Team; this is non-blocking.
+
+An interactive session launched successfully with:
+
+```
+claude --model sonnet
+```
+
+## Current truth
+
+- Claude Code installed: PROVEN
+- Claude Code authenticated: PROVEN
+- Claude interactive session: PROVEN
+- Rive CLI 1.3.0: PROVEN
+- Technical Reality behavior: ACTIVE / NOT YET PROVEN
