@@ -54,7 +54,10 @@ truth_boundary:
     - "No direct public-feed collision was observed for puppet/shadow temporal desynchronization in the captured corpus."
     - "Codespace checkout of feat/technical-reality-spike-01 succeeded."
     - "Rive CLI 1.3.0 installed successfully to /home/codespace/.rive/bin/rive."
-    - "CLI launch is blocked by missing dynamic library libEGL.so.1; rive --version and rive doctor both fail before execution."
+    - "ldd reports no unresolved shared libraries."
+    - "rive --version returns 1.3.0."
+    - "rive doctor passes version/update/live-link checks with only expected auth warning."
+    - "rive create spike-01 successfully scaffolded rive.yaml, scene.rml, AGENTS.md, CLAUDE.md and .gitignore."
   inferred:
     - "The shadow-puppet framing can maximize visible Human Touch."
     - "ONE FRAME LATE has podium potential if technical reality and authored motion quality are proven."
@@ -69,20 +72,23 @@ protected_actions:
   - final_external_publication_under_user_identity
 
 exact_next_gate: TECHNICAL_REALITY_SPIKE_01
-environment_blocker:
+technical_environment:
   rive_cli:
-    status: BLOCKED
+    status: PROVEN
     installed_version: "1.3.0"
     install_path: "/home/codespace/.rive/bin/rive"
-    reason: MISSING_LINUX_RUNTIME_LIBRARY
-    evidence: "rive: error while loading shared libraries: libEGL.so.1: cannot open shared object file"
-    resolved_runtime_dependencies:
-      - libEGL
-      - libGLESv2
-      - libX11
-    remaining_missing_shared_libraries:
-      - libwayland-egl.so.1
-      - libxkbcommon.so.0
+    shared_library_resolution: PROVEN
+    doctor_status: PASS_WITH_AUTH_WARNING
+    auth_note: "Not logged in; publish/rev unavailable. Local authoring/verify/inspect remain available."
+    scaffold:
+      status: PROVEN
+      path: rive/spike-01
+      files:
+        - rive.yaml
+        - scene.rml
+        - AGENTS.md
+        - CLAUDE.md
+        - .gitignore
 
-exact_next_action: "Install Ubuntu packages libwayland-egl1 and libxkbcommon0, verify ldd reports no unresolved shared libraries, then run rive --version and rive doctor. Only after that create rive/spike-01 and continue SYNC -> DELAY -> SHADOW_HOLD -> RESET."
+exact_next_action: "Run Rive schema/docs discovery from rive/spike-01, then implement the minimal SYNC -> DELAY -> SHADOW_HOLD -> RESET behavior using documented Rive-native State Machine + View Model/Data Binding types only. Verify and inspect after each edit."
 last_updated: "2026-10-05"
