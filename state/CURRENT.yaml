@@ -76,10 +76,13 @@ environment_blocker:
     install_path: "/home/codespace/.rive/bin/rive"
     reason: MISSING_LINUX_RUNTIME_LIBRARY
     evidence: "rive: error while loading shared libraries: libEGL.so.1: cannot open shared object file"
-    expected_runtime_dependencies:
+    resolved_runtime_dependencies:
       - libEGL
       - libGLESv2
       - libX11
+    remaining_missing_shared_libraries:
+      - libwayland-egl.so.1
+      - libxkbcommon.so.0
 
-exact_next_action: "Install the missing Linux graphics runtime libraries, verify no unresolved shared libraries remain, then run rive --version and rive doctor. Only after that create rive/spike-01 and continue SYNC -> DELAY -> SHADOW_HOLD -> RESET."
+exact_next_action: "Install Ubuntu packages libwayland-egl1 and libxkbcommon0, verify ldd reports no unresolved shared libraries, then run rive --version and rive doctor. Only after that create rive/spike-01 and continue SYNC -> DELAY -> SHADOW_HOLD -> RESET."
 last_updated: "2026-10-05"
