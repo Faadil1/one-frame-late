@@ -73,6 +73,14 @@ protected_actions:
 
 exact_next_gate: TECHNICAL_REALITY_SPIKE_01
 technical_environment:
+  claude_code:
+    status: PROVEN_INSTALLED
+    version: "2.1.289"
+    node_version: "v24.21.0"
+    npm_version: "11.19.0"
+    doctor_status: PASS
+    auth_status: BLOCKED_NOT_SIGNED_IN
+    note: "Claude Code installation is healthy; authentication is required before interactive use."
   rive_cli:
     status: PROVEN
     installed_version: "1.3.0"
@@ -90,5 +98,5 @@ technical_environment:
         - CLAUDE.md
         - .gitignore
 
-exact_next_action: "Run Rive schema/docs discovery from rive/spike-01, then implement the minimal SYNC -> DELAY -> SHADOW_HOLD -> RESET behavior using documented Rive-native State Machine + View Model/Data Binding types only. Verify and inspect after each edit."
+exact_next_action: "Authenticate Claude Code in the Codespace, launch Claude from /workspaces/one-frame-late on feat/technical-reality-spike-01, then have it use Rive docs/schema to implement and verify SYNC -> DELAY -> SHADOW_HOLD -> RESET. Do not use the isolated Claude cloud environment."
 last_updated: "2026-10-05"
