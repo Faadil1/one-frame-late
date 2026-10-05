@@ -7,6 +7,7 @@ handover:
 
 completed:
   - "Claude Code 2.1.289 installed successfully in the Codespace; claude doctor reports no installation issues."
+  - "Claude Code authentication proven via claude.ai Pro account; interactive Claude session launched successfully with Sonnet."
   - "Observed expected remote-auth limitation: browser callback to localhost resolves on the Windows host, not inside the Codespace, producing ERR_CONNECTION_REFUSED."
   - "Codespace checkout of feat/technical-reality-spike-01 succeeded."
   - "Installed Rive CLI 1.3.0 successfully in the Codespace."
@@ -54,5 +55,5 @@ do_not_do_yet:
 
 exact_next_gate: TECHNICAL_REALITY_SPIKE_01
 exact_next_owner: project_implementation
-exact_next_action: "Complete Claude Code authentication using the remote/container manual OAuth-code paste flow in the same claude auth login session; then run Claude inside /workspaces/one-frame-late on feat/technical-reality-spike-01 and implement/verify SYNC -> DELAY -> SHADOW_HOLD -> RESET."
+exact_next_action: "Use the already-open authenticated Claude Code Sonnet session in /workspaces/one-frame-late and paste the Technical Reality Spike 01 brief. Require documented Rive-native implementation plus verify/inspect evidence for SYNC -> DELAY -> SHADOW_HOLD -> RESET."
 promotion_condition: "Only after the behavioral spike works in the target runtime may the project move to CONCEPT_LOCK review."
