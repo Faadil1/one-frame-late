@@ -81,7 +81,10 @@ registry:
     note: "Authenticated as faadilb; workspace/project discovery succeeded."
   rive_external_target:
     status: PROVEN
-    note: "Preferred controlled target: project 1882813 (Faadil / Personal Files). Shared Project 1882812 intentionally not selected."
+    note: "Controlled target: project 1882813 (Faadil / Personal Files). Shared Project 1882812 intentionally not selected."
+  rive_external_file:
+    status: PROVEN
+    note: "Created file 2632594, revision 48006216. External write is proven; public accessibility is not claimed."
   rive_cli:
     status: PROVEN
     note: "Rive CLI 1.3.0 verified in Codespace; candidate committed and reproducible locally."
@@ -105,7 +108,7 @@ registry:
     note: "Evidence scope LOCAL; reset restores puppetArmUp=false, moves=0, shadow-down, and next interaction returns to SYNC."
   target_web_runtime:
     status: BLOCKED
-    reason: "Rive account auth and writable target discovery are PROVEN, but no external Rive file or hosted runtime has been created yet."
+    reason: "External Rive file 2632594 is created, but Editor/runtime behavior and hosted runtime are not yet proven."
 
   truth_boundary:
     status: PROVEN
