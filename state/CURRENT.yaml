@@ -99,7 +99,7 @@ technical_environment:
         - CLAUDE.md
         - .gitignore
 
-exact_next_action: "Preserve cb208442d4d282b1dace5e504ba5a9b350a736a0 as the LOCAL-proven behavioral candidate. Next, prove the artifact through the supported Rive publication/runtime path and run an uninstructed human comprehension check focused on whether DELAY/HOLD reads as intentional. Do not begin GPU or final art until both are reconciled."
+exact_next_action: "Authenticate Rive CLI, discover the writable workspace/project with rive whoami, rive workspace, and rive push --list, then stop. Do not execute rive push or --publish=web until the target is confirmed and the external-write/publication boundary is explicitly approved."
 last_updated: "2026-10-05"
 
 spike_01_result:
