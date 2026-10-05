@@ -129,6 +129,12 @@ technical_environment:
         editor_state_machine_validation: PROVEN
         editor_view_model_validation: PROVEN
         editor_behavior_validation: NOT_YET_PROVEN
+        post_push_integrity:
+          status: PROVEN
+          verify: "0 errors, 0 warnings"
+          inspect_problems: []
+          scene_rml_diff: ID_ONLY
+          note: "Rive push added persistent IDs without semantic scene changes."
     scaffold:
       status: PROVEN
       path: rive/spike-01
@@ -139,7 +145,7 @@ technical_environment:
         - CLAUDE.md
         - .gitignore
 
-exact_next_action: "Complete post-push local verify/inspect plus the ID-only scene.rml diff check. Then run the Editor preview without editing the file and observe SYNC -> DELAY -> SHADOW_HOLD -> RESET. Do not publish to web yet."
+exact_next_action: "Commit and push only rive/spike-01/scene.rml and rive/spike-01/rive.yaml as the normalized external binding. Then run the Rive Editor preview without editing and observe SYNC -> DELAY -> SHADOW_HOLD -> RESET. Do not publish to web yet."
 last_updated: "2026-10-05"
 
 spike_01_result:
