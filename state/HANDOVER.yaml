@@ -6,6 +6,7 @@ handover:
   state: PRE_CONCEPT_LOCK
 
 completed:
+  - "Claude Code 2.1.289 installed successfully in the Codespace; claude doctor reports no installation issues."
   - "Codespace checkout of feat/technical-reality-spike-01 succeeded."
   - "Installed Rive CLI 1.3.0 successfully in the Codespace."
   - "Resolved all Rive CLI Linux shared-library dependencies; ldd reports no missing libraries."
@@ -52,5 +53,5 @@ do_not_do_yet:
 
 exact_next_gate: TECHNICAL_REALITY_SPIKE_01
 exact_next_owner: project_implementation
-exact_next_action: "Run Claude Code inside the Codespace at /workspaces/one-frame-late, where Rive CLI 1.3.0 is already proven working. Have Claude use rive docs/schema from rive/spike-01, then implement and verify SYNC -> DELAY -> SHADOW_HOLD -> RESET with Rive-native State Machine + View Model/Data Binding. Do not use the isolated Claude cloud environment for this spike unless its Rive network/runtime restrictions are explicitly lifted."
+exact_next_action: "Authenticate Claude Code with claude auth login, then run Claude inside /workspaces/one-frame-late on feat/technical-reality-spike-01. Have it use rive docs/schema from rive/spike-01 and implement/verify SYNC -> DELAY -> SHADOW_HOLD -> RESET. Do not use the isolated Claude cloud environment."
 promotion_condition: "Only after the behavioral spike works in the target runtime may the project move to CONCEPT_LOCK review."
