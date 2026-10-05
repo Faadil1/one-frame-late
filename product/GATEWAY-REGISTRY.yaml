@@ -85,6 +85,12 @@ registry:
   rive_external_file:
     status: PROVEN
     note: "Created file 2632594, revision 48006216. External write is proven; public accessibility is not claimed."
+  rive_editor_structure:
+    status: PROVEN
+    note: "Observed in Editor: State Machine 1 with Puppet Pose and Shadow Relationship; View Model Spike with puppetArmUp and moves; expected converters visible."
+  rive_editor_behavior:
+    status: BLOCKED
+    reason: "Behavioral sequence has not yet been manually observed in Editor preview."
   rive_cli:
     status: PROVEN
     note: "Rive CLI 1.3.0 verified in Codespace; candidate committed and reproducible locally."
@@ -108,7 +114,7 @@ registry:
     note: "Evidence scope LOCAL; reset restores puppetArmUp=false, moves=0, shadow-down, and next interaction returns to SYNC."
   target_web_runtime:
     status: BLOCKED
-    reason: "External Rive file 2632594 is created, but Editor/runtime behavior and hosted runtime are not yet proven."
+    reason: "External Rive file 2632594 and Editor structure are proven, but Editor behavior and hosted runtime are not yet proven."
 
   truth_boundary:
     status: PROVEN
