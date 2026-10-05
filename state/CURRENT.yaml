@@ -52,6 +52,8 @@ truth_boundary:
   observed:
     - "Contra public feed pagination endpoint was discovered and inspected in-browser."
     - "No direct public-feed collision was observed for puppet/shadow temporal desynchronization in the captured corpus."
+    - "Codespace checkout of feat/technical-reality-spike-01 succeeded."
+    - "Rive CLI is not installed in the Codespace: 'rive: command not found' observed for both rive --version and rive doctor."
   inferred:
     - "The shadow-puppet framing can maximize visible Human Touch."
     - "ONE FRAME LATE has podium potential if technical reality and authored motion quality are proven."
@@ -66,5 +68,11 @@ protected_actions:
   - final_external_publication_under_user_identity
 
 exact_next_gate: TECHNICAL_REALITY_SPIKE_01
-exact_next_action: "Create the minimal Rive spike under rive/spike-01 and prove SYNC -> DELAY -> SHADOW_HOLD -> RESET in the actual toolchain and target web runtime. Do not start GPU polish until this passes."
+environment_blocker:
+  rive_cli:
+    status: BLOCKED
+    reason: NOT_INSTALLED_IN_CODESPACE
+    evidence: "bash: rive: command not found"
+
+exact_next_action: "Install the official Rive CLI in the Codespace, verify rive --version and rive doctor, then create rive/spike-01 and prove SYNC -> DELAY -> SHADOW_HOLD -> RESET. Do not start GPU polish until this passes."
 last_updated: "2026-10-05"
