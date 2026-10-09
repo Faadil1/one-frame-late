@@ -8,6 +8,7 @@ OUT="$ROOT/evidence/technical-spike/spike-01-gate-2026-10-09"
 RIVE="$(command -v rive || true)"
 if [[ -z "$RIVE" && -x "$HOME/.rive/bin/rive" ]]; then
   RIVE="$HOME/.rive/bin/rive"
+  export PATH="$HOME/.rive/bin:$PATH" # capture.sh invokes rive by bare name
 fi
 if [[ -z "$RIVE" || ! -x "$RIVE" ]]; then
   echo "BLOCKED: Rive CLI unavailable. Expected PATH or ~/.rive/bin/rive." >&2
