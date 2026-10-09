@@ -66,3 +66,20 @@ The Editor preview is NOT a judge-playable web runtime. The authenticated Editor
 If the supported route cannot run the required scripted or GPU Canvas features, verify with an appropriate signed target Web export instead; do not claim browser proof from a non-working embed. The Codespace Rive CLI 1.5.1 `rive doctor` previously showed **Not logged in (prod)**; reauthentication is needed before future authenticated CLI publish/push. Test the exact hosted artifact, pointer and touch where relevant, reset, device/browser and revision, with recording and a few unfamiliar viewers. Do not treat the crude primitive as final art or as a submitted challenge entry.
 
 Protected public Rive publication, required social posting and Contra submission remain human checkpoints. Once web is proven, pursue the intended 2–3 meaningful interaction progression, real shadow-to-puppet causality, human-authored paper theatre and purposeful GPU visuals, rerunning behavior tests after changes.
+
+## 9. Rive Hosted Link creation: current official platform constraints (2026-10-09)
+
+Rive documentation https://rive.app/docs/editor/embed-urls/overview currently says **Generate Embed URL / Hosted Link requires Voyager or Enterprise**; Cadet and Free accounts should not be assumed able to create such links. The user's current subscription tier is **UNKNOWN**; do not purchase/upgrade without explicit user decision.
+
+Editor UI (for eligible plans):
+1. Open existing `spike-01` file 2632594.
+2. Main menu top-left -> **Generate Embed URL**.
+3. Select `Artboard` and **`State Machine 1`** (not an individual animation).
+4. Generate Link, select **Hosted link**, Rive Renderer recommended.
+5. A Hosted Link is an **external public-access snapshot** of the current animation. Later changes require generating a **new link**; it does not automatically update with future Editor revisions. Links can be disabled in the account's **Embed URLs** settings.
+6. Validate independently via fresh incognito Chrome/Edge session: eight correct interactions + RESET + fresh SYNC, any warnings, browser/device and link. This tests *the snapshot*, not source Editor and not yet GPU Canvas final product.
+
+Current human consent: user said yes to **guided creation of a public test link**, not general permission to purchase a plan, post social, publish final product, or submit to Contra. User is responsible for UI confirmation and can share a generated link for analysis.
+
+If the menu is missing/paywalled, mark `HOSTED_LINK_PLAN_BLOCKED` and investigate an officially supported **Cadet .riv export + self-hosted runtime** alternative (exports require paid Cadet or higher: https://rive.app/docs/editor/exporting/exporting-for-runtime), or an authorized non-public hosted preview. Do not fake Web proof using the local CLI screenshot/replay or treat non-public Codespaces CLI preview as judge-accessible Web.
+
