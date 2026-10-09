@@ -41,6 +41,7 @@ completed:
   - "Current Rive CLI 1.5.1 prod session has NO auth; earlier authenticated Rive 1.3.0 session does not carry over automatically."
   - "Nonpublishing gate runner and Rive Editor/Web validation protocol are committed on feature branch; result recorded in evidence/technical-spike/SPIKE-01-RIVE-1-5-1-LOCAL-RERUN-2026-10-09.md."
   - "2026-10-09 review of 39.98s user Rive Editor screen recording: State Machine 1 preview starts, shadow UP/DOWN animation assets display, but a clickable Puppet Body driven SYNC/DELAY/HOLD/RESET sequence and RESET are NOT observed. Editor behavioral gate remains BLOCKED. See evidence/technical-spike/SPIKE-01-EDITOR-VIDEO-REVIEW-2026-10-09.md."
+  - "2026-10-09 second Editor clip (33.633s): blue Playing State Machine 1 confirmed, both stage arms remain down and no distinct mouse click on orange Puppet Body is evidenced; do not classify listener as broken yet. See evidence/technical-spike/SPIKE-01-EDITOR-VIDEO-REVIEW-02-2026-10-09.md."
 
 decision:
   killed:
