@@ -130,7 +130,7 @@ technical_environment:
           observed: "Rive Editor opened file 2632594 and displayed the expected puppet, shadow, reset button, and hierarchy objects."
         editor_state_machine_validation: PROVEN
         editor_view_model_validation: PROVEN
-        editor_behavior_validation: NOT_YET_PROVEN
+        editor_behavior_validation: PARTIAL_PREVIEW_STARTED_NOT_INTERACTIVE_SEQUENCE_PROVEN
         post_push_integrity:
           status: PROVEN
           verify: "0 errors, 0 warnings"
@@ -147,7 +147,7 @@ technical_environment:
         - CLAUDE.md
         - .gitignore
 
-exact_next_action: "Open existing Rive Editor spike-01 file 2632594; manually observe SYNC -> DELAY -> SHADOW_HOLD -> RESET in State Machine interactive preview and capture evidence; then verify supported target web runtime with protected publication checkpoint. Do not publish to web yet."
+exact_next_action: "Rive Editor preview start is observed, but interaction sequence is not: with Playing State Machine 1 banner, click ochre Puppet Body once and observe both arms; if first click fails, diagnose listener/ViewModel before further clicks. Only after success test clicks 1-8 and RESET. Do not publish."
 last_updated: "2026-10-09"
 
 spike_01_result:
@@ -179,3 +179,12 @@ spike_01_result:
     current_rive_auth: NOT_LOGGED_IN
     editor_behavior: NOT_YET_PROVEN
     target_web_runtime: NOT_PROVEN
+  editor_video_review:
+    date: "2026-10-09"
+    evidence_path: evidence/technical-spike/SPIKE-01-EDITOR-VIDEO-REVIEW-2026-10-09.md
+    footage_length_seconds: 39.98
+    state_machine_play_started: PROVEN_FROM_USER_VIDEO
+    animated_shadow_arm_assets: OBSERVED
+    puppet_body_click_end_to_end: NOT_YET_OBSERVED
+    sync_delay_hold_reset_in_editor: NOT_YET_OBSERVED
+    verdict: EDITOR_INTERACTIVE_GATE_BLOCKED
