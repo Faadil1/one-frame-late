@@ -58,6 +58,7 @@ truth_boundary:
     - "rive --version returns 1.3.0."
     - "rive doctor passes version/update/live-link checks with only expected auth warning."
     - "rive create spike-01 successfully scaffolded rive.yaml, scene.rml, AGENTS.md, CLAUDE.md and .gitignore."
+    - "2026-10-09 user-provided Codespace logs: Rive CLI 1.5.1 and Linux dependencies operational; verify 0 errors/0 warnings; inspect problems=[] with 237 artboard objects; local replay script exited successfully; captures not independently reviewed."
   inferred:
     - "The shadow-puppet framing can maximize visible Human Touch."
     - "ONE FRAME LATE has podium potential if technical reality and authored motion quality are proven."
@@ -84,11 +85,12 @@ technical_environment:
     note: "Claude Code installation and claude.ai Pro authentication are both proven in the Codespace."
   rive_cli:
     status: PROVEN
-    installed_version: "1.3.0"
+    installed_version: "1.5.1"
+    prior_verified_version: "1.3.0"
     install_path: "/home/codespace/.rive/bin/rive"
     shared_library_resolution: PROVEN
     doctor_status: PASS_WITH_AUTH_WARNING
-    auth_note: "Logged in successfully as faadilb via forwarded Codespace OAuth callback; account operations are available."
+    auth_note: "Earlier 1.3.0 Codespace session authenticated as faadilb; fresh 1.5.1 doctor on 2026-10-09 reports NOT LOGGED IN (prod). Do not assume current push/publish authorization."
     rive_account:
       status: PROVEN
       username: faadilb
@@ -145,8 +147,8 @@ technical_environment:
         - CLAUDE.md
         - .gitignore
 
-exact_next_action: "Commit and push only rive/spike-01/scene.rml and rive/spike-01/rive.yaml as the normalized external binding. Then run the Rive Editor preview without editing and observe SYNC -> DELAY -> SHADOW_HOLD -> RESET. Do not publish to web yet."
-last_updated: "2026-10-05"
+exact_next_action: "Open existing Rive Editor spike-01 file 2632594; manually observe SYNC -> DELAY -> SHADOW_HOLD -> RESET in State Machine interactive preview and capture evidence; then verify supported target web runtime with protected publication checkpoint. Do not publish to web yet."
+last_updated: "2026-10-09"
 
 spike_01_result:
   recorded: "2026-10-05"
@@ -163,4 +165,17 @@ spike_01_result:
   blockers:
     - TARGET_RUNTIME_NOT_PROVEN
     - HUMAN_COMPREHENSION_NOT_TESTED
-  note: "SYNC->DELAY->SHADOW_HOLD->RESET observed in Rive CLI 1.3.0 headless frames (evidence/technical-spike/spike-01-local). Target runtime and viewer perception remain UNKNOWN; Concept Lock not claimed."
+  note: "SYNC->DELAY->SHADOW_HOLD->RESET observed in Rive CLI 1.3.0 headless frames; 1.5.1 local verify/inspect and replay runner succeeded via user-provided logs, frames not independently inspected. Target runtime and viewer perception remain UNKNOWN; Concept Lock not claimed."
+  latest_rerun:
+    date: "2026-10-09"
+    source_commit: f9120517785a211be34295e4983ccf8ac2d68ce6
+    cli_version: "1.5.1"
+    verify: ZERO_ERRORS_ZERO_WARNINGS
+    inspect_problems: []
+    inspect_artboard_objects: 237
+    replay: SCRIPT_EXIT_ZERO_FRAME_CONTENT_NOT_INDEPENDENTLY_REVIEWED
+    evidence_class: USER_PROVIDED_LOCAL_LOGS
+    evidence_path: evidence/technical-spike/SPIKE-01-RIVE-1-5-1-LOCAL-RERUN-2026-10-09.md
+    current_rive_auth: NOT_LOGGED_IN
+    editor_behavior: NOT_YET_PROVEN
+    target_web_runtime: NOT_PROVEN
