@@ -92,14 +92,15 @@ registry:
     status: PROVEN
     note: "Post-push verify clean, inspect problems=[], scene.rml semantic diff is ID-only."
   rive_editor_behavior:
-    status: BLOCKED
-    reason: "Fourth user Editor video proves State Machine-driven SYNC, qualitative DELAY, SHADOW_HOLD (1.4-1.6s screen-visible) and catch-up; RESET + subsequent fresh SYNC not observed. Full gate stays BLOCKED, target Web unproven."
+    status: PROVEN
+    reason: "Fourth Editor video shows SYNC, DELAY, HOLD; fifth Editor clip shows reset-to-sync behavior during active State Machine Play. Qualitative Editor scope only; exact 500ms/2s timings and direct moves=0 introspection not proven."
     first_body_interaction: PROVEN_EDITOR
-    sync: PROVEN_EDITOR
+    sync: PROVEN_EDITOR_VISUAL
     delay: PROVEN_EDITOR_QUALITATIVE
     hold: PROVEN_EDITOR_VISUAL_EXACT_TIMING_NOT_CALIBRATED
-    reset_and_fresh_sync: BLOCKED_EDITOR_NOT_OBSERVED
-    evidence: evidence/technical-spike/SPIKE-01-EDITOR-VIDEO-REVIEW-04-2026-10-09.md
+    reset_and_fresh_sync: PROVEN_EDITOR_VISUAL
+    direct_view_model_moves_zero: NOT_DIRECTLY_OBSERVED
+    evidence: evidence/technical-spike/SPIKE-01-EDITOR-VIDEO-REVIEW-05-2026-10-09.md
   rive_cli:
     status: PROVEN
     note: "Rive CLI 1.3.0 historically proved local behavior; user-reported 2026-10-09 rerun on 1.5.1 at f912051: verify 0 errors/0 warnings, inspect problems=[] with 237 objects, replay script exited successfully. Per-frame 1.5.1 visuals NOT independently reviewed. Target browser remains BLOCKED."
@@ -120,10 +121,10 @@ registry:
     note: "Enhancement only; fallback dual-rig architecture must preserve concept."
   real_reset_recovery:
     status: PROVEN
-    note: "Evidence scope LOCAL; reset restores puppetArmUp=false, moves=0, shadow-down, and next interaction returns to SYNC."
+    note: "CLI LOCAL data dump proves moves=0 and reset; user fifth Editor recording visually proves recovery/reset-to-sync while Play remains active; no direct Editor ViewModel property read or target Web reset proof yet."
   target_web_runtime:
     status: BLOCKED
-    reason: "External Rive file 2632594 and Editor structure are proven, but Editor behavior and hosted runtime are not yet proven."
+    reason: "Existing external Rive Editor interactive behavior is now PROVEN at Editor visual scope, but no target hosted Rive Web runtime/public playable URL has been verified."
 
   truth_boundary:
     status: PROVEN
