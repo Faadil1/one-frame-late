@@ -147,7 +147,7 @@ technical_environment:
         - CLAUDE.md
         - .gitignore
 
-exact_next_action: "Rive Editor preview start is observed, but interaction sequence is not: with Playing State Machine 1 banner, click ochre Puppet Body once and observe both arms; if first click fails, diagnose listener/ViewModel before further clicks. Only after success test clicks 1-8 and RESET. Do not publish."
+exact_next_action: "Editor first puppet-body click now OBSERVED and puppet+shadow raise together. Record one uninterrupted 8-click sequence (1-4 SYNC, 5-6 DELAY, 7 raise/8 lower HOLD ~2s), click RESET and confirm fresh SYNC. Then validate target web runtime with protected publication checkpoint."
 last_updated: "2026-10-09"
 
 spike_01_result:
@@ -197,4 +197,13 @@ spike_01_result:
       clear_click_on_puppet_body: NOT_OBSERVED
       first_click_listener_status: UNKNOWN_NOT_DEMONSTRATED
       editor_behavior_gate: BLOCKED
+    third_video:
+      date: "2026-10-09"
+      duration_seconds: 9.0
+      evidence_path: evidence/technical-spike/SPIKE-01-EDITOR-VIDEO-REVIEW-03-2026-10-09.md
+      first_body_click_while_playing: PROVEN_INTERACTIVE
+      puppet_and_shadow_arm_rise_in_sync: PROVEN_PARTIAL
+      both_arms_return_down: OBSERVED
+      full_delay_hold_reset: NOT_YET_PROVEN
+      editor_behavior_gate: BLOCKED_UNTIL_FULL_SEQUENCE
       next_validation: SINGLE_CLICK_ORANGE_PUPPET_TORSO_WHILE_PLAYING
