@@ -188,3 +188,13 @@ spike_01_result:
     puppet_body_click_end_to_end: NOT_YET_OBSERVED
     sync_delay_hold_reset_in_editor: NOT_YET_OBSERVED
     verdict: EDITOR_INTERACTIVE_GATE_BLOCKED
+    follow_up_video:
+      date: "2026-10-09"
+      duration_seconds: 33.633
+      evidence_path: evidence/technical-spike/SPIKE-01-EDITOR-VIDEO-REVIEW-02-2026-10-09.md
+      state_machine_play_active: PROVEN_FROM_VIDEO
+      puppet_and_shadow_pose_change_during_play: NOT_OBSERVED
+      clear_click_on_puppet_body: NOT_OBSERVED
+      first_click_listener_status: UNKNOWN_NOT_DEMONSTRATED
+      editor_behavior_gate: BLOCKED
+      next_validation: SINGLE_CLICK_ORANGE_PUPPET_TORSO_WHILE_PLAYING
