@@ -18,7 +18,7 @@ Outputs under evidence/technical-spike/spike-01-gate-2026-10-09 and rive/spike-0
 
 Open existing Rive file in authenticated Editor: **Faadil / Personal Files → spike-01**, file ID **2632594**. No second file, no upload. Confirm State Machine 1's Puppet Pose and Shadow Relationship layers and ViewModel Spike properties puppetArmUp and moves.
 
-Start the Editor interactive Play/preview. Click the PUPPET BODY (not arm) and observe: clicks 1–4 shadow sync; clicks 5–6 ~500ms deliberate delay; at click 7+ puppet down while shadow holds raised ~2 sec; click square RESET and repeat first click: SYNC again. Record actual playback briefly. Do not claim Editor PASS from hierarchy alone.
+Start the Editor interactive Play/preview. Click the PUPPET BODY (not arm) and observe: clicks 1–4 shadow sync; clicks 5–6 ~500ms deliberate delay; click 7 raises the puppet, and **click 8 lowers it** while the shadow holds raised ~2 sec (HOLD condition is moves>=7 AND puppet down); click square RESET and repeat first click: SYNC again. Record actual playback briefly. Do not claim Editor PASS from hierarchy alone.
 
 ## 3. Target Web runtime (separate human approval checkpoint)
 
