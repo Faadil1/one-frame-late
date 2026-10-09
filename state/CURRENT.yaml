@@ -130,7 +130,7 @@ technical_environment:
           observed: "Rive Editor opened file 2632594 and displayed the expected puppet, shadow, reset button, and hierarchy objects."
         editor_state_machine_validation: PROVEN
         editor_view_model_validation: PROVEN
-        editor_behavior_validation: PARTIAL_SYNC_DELAY_HOLD_PROVEN_RESET_OUTSTANDING
+        editor_behavior_validation: PROVEN_EDITOR_VISUAL_SYNC_DELAY_HOLD_RESET
         post_push_integrity:
           status: PROVEN
           verify: "0 errors, 0 warnings"
@@ -147,7 +147,7 @@ technical_environment:
         - CLAUDE.md
         - .gitignore
 
-exact_next_action: "Fourth Editor video now PROVES SYNC, qualitative DELAY, SHADOW_HOLD and follow-up; no more long eight-click retest. Test one Editor RESET during Playing State Machine 1 followed by one fresh synchronized puppet-body click; then validate supported target Web runtime under human publication checkpoint."
+exact_next_action: "Rive Editor behavioral SYNC/DELAY/HOLD/RESET and fresh sync visually PROVEN in fifth user clip. Next gate is AUTHORIZED TARGET_WEB_RUNTIME, not another Editor video: inspect supported Rive sharing/runtime path and browser behavior, preserve protected public publish approval, then cold viewer comprehension and 2–3 meaningful interaction revision."
 last_updated: "2026-10-09"
 
 spike_01_result:
@@ -224,3 +224,15 @@ spike_01_result:
       full_editor_behavior: BLOCKED_ON_RESET
       target_web_runtime: NOT_PROVEN
       next_validation: EDITOR_RESET_AND_FRESH_SYNC_ONLY
+    fifth_video:
+      date: "2026-10-09"
+      duration_seconds: 36.7
+      source: USER_UPLOADED_EDITOR_VIDEO
+      evidence_path: evidence/technical-spike/SPIKE-01-EDITOR-VIDEO-REVIEW-05-2026-10-09.md
+      state_machine_play_continuous: PROVEN_EDITOR
+      full_sync_delay_hold_reset_fresh_sync: PROVEN_EDITOR_VISUAL
+      reset_view_model_moves_zero_directly_read: NOT_OBSERVED
+      exact_timing_calibration: NOT_PROVEN
+      full_editor_behavior: PROVEN_QUALITATIVE
+      target_web_runtime: NOT_PROVEN
+      next_validation: TARGET_WEB_RUNTIME_WITH_HUMAN_PUBLICATION_CHECKPOINT
