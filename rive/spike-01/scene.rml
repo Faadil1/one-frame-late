@@ -1,0 +1,368 @@
+<Rive version="1" kind="fragment">
+    <!-- ONE FRAME LATE -- Technical Reality Spike 01
+         SYNC -> DELAY -> SHADOW_HOLD -> RESET, driven by view model + state machine only.
+         Click the puppet to toggle its arm. Click the square button to RESET.
+         Progression memory = ViewModel.moves (valid puppet pose changes):
+           moves 1-4  : SYNC         (shadow transitions fire on the same property, same blend)
+           moves 5-6  : DELAY        (shadow waits 500ms in a hold state, then performs the same pose)
+           moves >= 7 : SHADOW_HOLD  (puppet lowers; shadow stays UP for 2s before following)
+         Not authored art. Crude primitives by design. -->
+    <Artboard defaultStateMachineId="0:7" viewModelId="0:60" styleId="0:5" width="500" height="500" name="Artboard" id="0:2">
+        <LayoutComponentStyle name="Artboard Style" id="0:5"/>
+
+        <Fill name="Background" id="0:92">
+            <SolidColor colorValue="FFD8D3C8" name="Color" id="0:93"/>
+        </Fill>
+
+        <Shape x="350" y="205" name="Shadow Head" id="0:94">
+            <Ellipse width="58" height="58" name="Path" id="0:95"/>
+            <Fill name="Fill" id="0:96"><SolidColor colorValue="CC15151D" name="Color" id="0:97"/></Fill>
+        </Shape>
+        <Shape x="324" y="372" name="Shadow Leg L" id="0:98">
+            <Rectangle width="22" height="60" originY="0" name="Path" id="0:99"/>
+            <Fill name="Fill" id="0:100"><SolidColor colorValue="CC15151D" name="Color" id="0:101"/></Fill>
+        </Shape>
+        <Shape x="376" y="372" name="Shadow Leg R" id="0:102">
+            <Rectangle width="22" height="60" originY="0" name="Path" id="0:103"/>
+            <Fill name="Fill" id="0:104"><SolidColor colorValue="CC15151D" name="Color" id="0:105"/></Fill>
+        </Shape>
+        <Shape x="306" y="252" name="Shadow Arm Static" id="0:106">
+            <Rectangle width="16" height="80" originY="0" cornerRadiusTL="8" name="Path" id="0:107"/>
+            <Fill name="Fill" id="0:108"><SolidColor colorValue="CC15151D" name="Color" id="0:109"/></Fill>
+        </Shape>
+        <Shape x="350" y="315" name="Shadow Body" id="0:22">
+            <Rectangle width="70" height="120" cornerRadiusTL="10" name="Path" id="0:110"/>
+            <Fill name="Fill" id="0:111"><SolidColor colorValue="CC15151D" name="Color" id="0:112"/></Fill>
+        </Shape>
+        <Shape x="394" y="252" name="Shadow Arm" id="0:23">
+            <Rectangle width="16" height="80" originY="0" cornerRadiusTL="8" name="Path" id="0:113"/>
+            <Fill name="Fill" id="0:114"><SolidColor colorValue="CC15151D" name="Color" id="0:115"/></Fill>
+        </Shape>
+
+        <Shape x="150" y="205" name="Puppet Head" id="0:116">
+            <Ellipse width="58" height="58" name="Path" id="0:117"/>
+            <Fill name="Fill" id="0:118"><SolidColor colorValue="FFF3E6CC" name="Color" id="0:119"/></Fill>
+        </Shape>
+        <Shape x="124" y="372" name="Puppet Leg L" id="0:120">
+            <Rectangle width="22" height="60" originY="0" name="Path" id="0:121"/>
+            <Fill name="Fill" id="0:122"><SolidColor colorValue="FF8A5A2B" name="Color" id="0:123"/></Fill>
+        </Shape>
+        <Shape x="176" y="372" name="Puppet Leg R" id="0:124">
+            <Rectangle width="22" height="60" originY="0" name="Path" id="0:125"/>
+            <Fill name="Fill" id="0:126"><SolidColor colorValue="FF8A5A2B" name="Color" id="0:127"/></Fill>
+        </Shape>
+        <Shape x="106" y="252" name="Puppet Arm Static" id="0:128">
+            <Rectangle width="16" height="80" originY="0" cornerRadiusTL="8" name="Path" id="0:129"/>
+            <Fill name="Fill" id="0:130"><SolidColor colorValue="FF8A5A2B" name="Color" id="0:131"/></Fill>
+        </Shape>
+        <Shape x="150" y="315" name="Puppet Body" id="0:20">
+            <Rectangle width="70" height="120" cornerRadiusTL="10" name="Path" id="0:132"/>
+            <Fill name="Fill" id="0:133"><SolidColor colorValue="FFE0A13A" name="Color" id="0:134"/></Fill>
+        </Shape>
+        <Shape x="194" y="252" name="Puppet Arm" id="0:21">
+            <Rectangle width="16" height="80" originY="0" cornerRadiusTL="8" name="Path" id="0:135"/>
+            <Fill name="Fill" id="0:136"><SolidColor colorValue="FFC4522B" name="Color" id="0:137"/></Fill>
+        </Shape>
+
+        <Shape x="250" y="455" name="Reset Button" id="0:24">
+            <Rectangle width="56" height="34" cornerRadiusTL="6" name="Path" id="0:138"/>
+            <Fill name="Fill" id="0:139"><SolidColor colorValue="FF4A4A4A" name="Color" id="0:140"/></Fill>
+        </Shape>
+        <Shape x="250" y="455" name="Reset Glyph" id="0:141">
+            <Ellipse width="14" height="14" name="Path" id="0:142"/>
+            <Fill name="Fill" id="0:143"><SolidColor colorValue="FFD8D3C8" name="Color" id="0:144"/></Fill>
+        </Shape>
+
+        <StateMachine name="State Machine 1" id="0:7">
+            <StateMachineListenerSingle targetId="0:20" listenerTypeValue="click" name="Toggle puppet arm" id="0:90">
+                <ListenerViewModelChange fromViewModelProperty="true" fromDataBindId="0:81" id="0:145">
+                    <BindablePropertyBoolean id="0:146">
+                        <DataBindContext sourcePathIds="0:60-0:61" propertyKey="634" id="0:81" converterId="0:70"/>
+                        <DataBindContext sourcePathIds="0:60-0:61" propertyKey="634" direction="true" id="0:147"/>
+                    </BindablePropertyBoolean>
+                </ListenerViewModelChange>
+                <ListenerViewModelChange fromViewModelProperty="true" fromDataBindId="0:82" id="0:148">
+                    <BindablePropertyNumber id="0:149">
+                        <DataBindContext sourcePathIds="0:60-0:62" propertyKey="636" id="0:82" converterId="0:71"/>
+                        <DataBindContext sourcePathIds="0:60-0:62" propertyKey="636" direction="true" id="0:150"/>
+                    </BindablePropertyNumber>
+                </ListenerViewModelChange>
+            </StateMachineListenerSingle>
+
+            <StateMachineListenerSingle targetId="0:24" listenerTypeValue="click" name="RESET" id="0:91">
+                <ListenerViewModelChange id="0:151">
+                    <BindablePropertyBoolean propertyValue="false" id="0:152">
+                        <DataBindContext sourcePathIds="0:60-0:61" propertyKey="634" direction="true" id="0:153"/>
+                    </BindablePropertyBoolean>
+                </ListenerViewModelChange>
+                <ListenerViewModelChange id="0:154">
+                    <BindablePropertyNumber propertyValue="0" id="0:155">
+                        <DataBindContext sourcePathIds="0:60-0:62" propertyKey="636" direction="true" id="0:156"/>
+                    </BindablePropertyNumber>
+                </ListenerViewModelChange>
+            </StateMachineListenerSingle>
+
+            <StateMachineLayer name="Puppet Pose" id="0:8">
+                <AnyState x="200" y="-120" id="0:157">
+                    <StateTransition stateToId="0:40" duration="150" id="0:158">
+                    <TransitionViewModelCondition id="0:159">
+                        <TransitionPropertyViewModelComparator id="0:160">
+                            <BindablePropertyBoolean id="0:161"><DataBindContext sourcePathIds="0:60-0:61" propertyKey="634" id="0:162"/></BindablePropertyBoolean>
+                        </TransitionPropertyViewModelComparator>
+                        <TransitionValueBooleanComparator value="false" id="0:163"/>
+                    </TransitionViewModelCondition>
+                    <TransitionViewModelCondition opValue="equal" id="0:164">
+                        <TransitionPropertyViewModelComparator id="0:165">
+                            <BindablePropertyNumber id="0:166"><DataBindContext sourcePathIds="0:60-0:62" propertyKey="636" id="0:167"/></BindablePropertyNumber>
+                        </TransitionPropertyViewModelComparator>
+                        <TransitionValueNumberComparator value="0" id="0:168"/>
+                    </TransitionViewModelCondition>
+                </StateTransition>
+                </AnyState>
+                <ExitState x="400" y="-120" id="0:169"/>
+                <EntryState id="0:170"><StateTransition stateToId="0:40" id="0:171"/></EntryState>
+                <AnimationState x="200" y="0" animationId="0:30" id="0:40">
+                <StateTransition stateToId="0:41" duration="150" id="0:172">
+                    <TransitionViewModelCondition id="0:173">
+                        <TransitionPropertyViewModelComparator id="0:174">
+                            <BindablePropertyBoolean id="0:175"><DataBindContext sourcePathIds="0:60-0:61" propertyKey="634" id="0:176"/></BindablePropertyBoolean>
+                        </TransitionPropertyViewModelComparator>
+                        <TransitionValueBooleanComparator value="true" id="0:177"/>
+                    </TransitionViewModelCondition>
+                </StateTransition>
+                </AnimationState>
+                <AnimationState x="400" y="0" animationId="0:31" id="0:41">
+                <StateTransition stateToId="0:40" duration="150" id="0:178">
+                    <TransitionViewModelCondition id="0:179">
+                        <TransitionPropertyViewModelComparator id="0:180">
+                            <BindablePropertyBoolean id="0:181"><DataBindContext sourcePathIds="0:60-0:61" propertyKey="634" id="0:182"/></BindablePropertyBoolean>
+                        </TransitionPropertyViewModelComparator>
+                        <TransitionValueBooleanComparator value="false" id="0:183"/>
+                    </TransitionViewModelCondition>
+                </StateTransition>
+                </AnimationState>
+            </StateMachineLayer>
+
+            <StateMachineLayer name="Shadow Relationship" id="0:9">
+                <AnyState x="200" y="-120" id="0:184">
+                <StateTransition stateToId="0:50" duration="150" id="0:185">
+                    <TransitionViewModelCondition id="0:186">
+                        <TransitionPropertyViewModelComparator id="0:187">
+                            <BindablePropertyBoolean id="0:188"><DataBindContext sourcePathIds="0:60-0:61" propertyKey="634" id="0:189"/></BindablePropertyBoolean>
+                        </TransitionPropertyViewModelComparator>
+                        <TransitionValueBooleanComparator value="false" id="0:190"/>
+                    </TransitionViewModelCondition>
+                    <TransitionViewModelCondition opValue="equal" id="0:191">
+                        <TransitionPropertyViewModelComparator id="0:192">
+                            <BindablePropertyNumber id="0:193"><DataBindContext sourcePathIds="0:60-0:62" propertyKey="636" id="0:194"/></BindablePropertyNumber>
+                        </TransitionPropertyViewModelComparator>
+                        <TransitionValueNumberComparator value="0" id="0:195"/>
+                    </TransitionViewModelCondition>
+                </StateTransition>
+                </AnyState>
+                <ExitState x="400" y="-120" id="0:196"/>
+                <EntryState id="0:197"><StateTransition stateToId="0:50" id="0:198"/></EntryState>
+                <!-- SD: shadow arm DOWN (rest) -->
+                <AnimationState x="200" y="200" animationId="0:32" id="0:50">
+
+                <StateTransition stateToId="0:51" duration="150" id="0:199">
+                    <TransitionViewModelCondition id="0:200">
+                        <TransitionPropertyViewModelComparator id="0:201">
+                            <BindablePropertyBoolean id="0:202"><DataBindContext sourcePathIds="0:60-0:61" propertyKey="634" id="0:203"/></BindablePropertyBoolean>
+                        </TransitionPropertyViewModelComparator>
+                        <TransitionValueBooleanComparator value="true" id="0:204"/>
+                    </TransitionViewModelCondition>
+                    <TransitionViewModelCondition opValue="lessThan" id="0:205">
+                        <TransitionPropertyViewModelComparator id="0:206">
+                            <BindablePropertyNumber id="0:207"><DataBindContext sourcePathIds="0:60-0:62" propertyKey="636" id="0:208"/></BindablePropertyNumber>
+                        </TransitionPropertyViewModelComparator>
+                        <TransitionValueNumberComparator value="5" id="0:209"/>
+                    </TransitionViewModelCondition>
+                </StateTransition>
+
+                <StateTransition stateToId="0:52" duration="0" id="0:210">
+                    <TransitionViewModelCondition id="0:211">
+                        <TransitionPropertyViewModelComparator id="0:212">
+                            <BindablePropertyBoolean id="0:213"><DataBindContext sourcePathIds="0:60-0:61" propertyKey="634" id="0:214"/></BindablePropertyBoolean>
+                        </TransitionPropertyViewModelComparator>
+                        <TransitionValueBooleanComparator value="true" id="0:215"/>
+                    </TransitionViewModelCondition>
+                    <TransitionViewModelCondition opValue="greaterThanOrEqual" id="0:216">
+                        <TransitionPropertyViewModelComparator id="0:217">
+                            <BindablePropertyNumber id="0:218"><DataBindContext sourcePathIds="0:60-0:62" propertyKey="636" id="0:219"/></BindablePropertyNumber>
+                        </TransitionPropertyViewModelComparator>
+                        <TransitionValueNumberComparator value="5" id="0:220"/>
+                    </TransitionViewModelCondition>
+                </StateTransition>
+                </AnimationState>
+                <!-- SU: shadow arm UP -->
+                <AnimationState x="500" y="200" animationId="0:33" id="0:51">
+
+                <StateTransition stateToId="0:50" duration="150" id="0:221">
+                    <TransitionViewModelCondition id="0:222">
+                        <TransitionPropertyViewModelComparator id="0:223">
+                            <BindablePropertyBoolean id="0:224"><DataBindContext sourcePathIds="0:60-0:61" propertyKey="634" id="0:225"/></BindablePropertyBoolean>
+                        </TransitionPropertyViewModelComparator>
+                        <TransitionValueBooleanComparator value="false" id="0:226"/>
+                    </TransitionViewModelCondition>
+                    <TransitionViewModelCondition opValue="lessThan" id="0:227">
+                        <TransitionPropertyViewModelComparator id="0:228">
+                            <BindablePropertyNumber id="0:229"><DataBindContext sourcePathIds="0:60-0:62" propertyKey="636" id="0:230"/></BindablePropertyNumber>
+                        </TransitionPropertyViewModelComparator>
+                        <TransitionValueNumberComparator value="5" id="0:231"/>
+                    </TransitionViewModelCondition>
+                </StateTransition>
+
+                <StateTransition stateToId="0:53" duration="0" id="0:232">
+                    <TransitionViewModelCondition id="0:233">
+                        <TransitionPropertyViewModelComparator id="0:234">
+                            <BindablePropertyBoolean id="0:235"><DataBindContext sourcePathIds="0:60-0:61" propertyKey="634" id="0:236"/></BindablePropertyBoolean>
+                        </TransitionPropertyViewModelComparator>
+                        <TransitionValueBooleanComparator value="false" id="0:237"/>
+                    </TransitionViewModelCondition>
+                    <TransitionViewModelCondition opValue="greaterThanOrEqual" id="0:238">
+                        <TransitionPropertyViewModelComparator id="0:239">
+                            <BindablePropertyNumber id="0:240"><DataBindContext sourcePathIds="0:60-0:62" propertyKey="636" id="0:241"/></BindablePropertyNumber>
+                        </TransitionPropertyViewModelComparator>
+                        <TransitionValueNumberComparator value="5" id="0:242"/>
+                    </TransitionViewModelCondition>
+                    <TransitionViewModelCondition opValue="lessThan" id="0:243">
+                        <TransitionPropertyViewModelComparator id="0:244">
+                            <BindablePropertyNumber id="0:245"><DataBindContext sourcePathIds="0:60-0:62" propertyKey="636" id="0:246"/></BindablePropertyNumber>
+                        </TransitionPropertyViewModelComparator>
+                        <TransitionValueNumberComparator value="7" id="0:247"/>
+                    </TransitionViewModelCondition>
+                </StateTransition>
+
+                <StateTransition stateToId="0:54" duration="0" id="0:248">
+                    <TransitionViewModelCondition id="0:249">
+                        <TransitionPropertyViewModelComparator id="0:250">
+                            <BindablePropertyBoolean id="0:251"><DataBindContext sourcePathIds="0:60-0:61" propertyKey="634" id="0:252"/></BindablePropertyBoolean>
+                        </TransitionPropertyViewModelComparator>
+                        <TransitionValueBooleanComparator value="false" id="0:253"/>
+                    </TransitionViewModelCondition>
+                    <TransitionViewModelCondition opValue="greaterThanOrEqual" id="0:254">
+                        <TransitionPropertyViewModelComparator id="0:255">
+                            <BindablePropertyNumber id="0:256"><DataBindContext sourcePathIds="0:60-0:62" propertyKey="636" id="0:257"/></BindablePropertyNumber>
+                        </TransitionPropertyViewModelComparator>
+                        <TransitionValueNumberComparator value="7" id="0:258"/>
+                    </TransitionViewModelCondition>
+                </StateTransition>
+                </AnimationState>
+                <!-- WU: DELAY before rising (shadow still DOWN, 30 frames = 500ms) -->
+                <AnimationState x="200" y="400" animationId="0:34" id="0:52">
+
+                <StateTransition stateToId="0:50" duration="0" id="0:259">
+                    <TransitionViewModelCondition id="0:260">
+                        <TransitionPropertyViewModelComparator id="0:261">
+                            <BindablePropertyBoolean id="0:262"><DataBindContext sourcePathIds="0:60-0:61" propertyKey="634" id="0:263"/></BindablePropertyBoolean>
+                        </TransitionPropertyViewModelComparator>
+                        <TransitionValueBooleanComparator value="false" id="0:264"/>
+                    </TransitionViewModelCondition>
+                </StateTransition>
+
+                <StateTransition stateToId="0:51" duration="150" enableExitTime="true" exitTimeIsPercetange="true" exitTime="100" id="0:265">
+                </StateTransition>
+                </AnimationState>
+                <!-- WD: DELAY before lowering (shadow still UP, 30 frames = 500ms) -->
+                <AnimationState x="500" y="400" animationId="0:35" id="0:53">
+
+                <StateTransition stateToId="0:51" duration="0" id="0:266">
+                    <TransitionViewModelCondition id="0:267">
+                        <TransitionPropertyViewModelComparator id="0:268">
+                            <BindablePropertyBoolean id="0:269"><DataBindContext sourcePathIds="0:60-0:61" propertyKey="634" id="0:270"/></BindablePropertyBoolean>
+                        </TransitionPropertyViewModelComparator>
+                        <TransitionValueBooleanComparator value="true" id="0:271"/>
+                    </TransitionViewModelCondition>
+                </StateTransition>
+
+                <StateTransition stateToId="0:50" duration="150" enableExitTime="true" exitTimeIsPercetange="true" exitTime="100" id="0:272">
+                </StateTransition>
+                </AnimationState>
+                <!-- HU: SHADOW_HOLD (shadow stays UP while puppet is DOWN, 120 frames = 2s) -->
+                <AnimationState x="800" y="300" animationId="0:36" id="0:54">
+
+                <StateTransition stateToId="0:51" duration="0" id="0:273">
+                    <TransitionViewModelCondition id="0:274">
+                        <TransitionPropertyViewModelComparator id="0:275">
+                            <BindablePropertyBoolean id="0:276"><DataBindContext sourcePathIds="0:60-0:61" propertyKey="634" id="0:277"/></BindablePropertyBoolean>
+                        </TransitionPropertyViewModelComparator>
+                        <TransitionValueBooleanComparator value="true" id="0:278"/>
+                    </TransitionViewModelCondition>
+                </StateTransition>
+
+                <StateTransition stateToId="0:50" duration="150" enableExitTime="true" exitTimeIsPercetange="true" exitTime="100" id="0:279">
+                </StateTransition>
+                </AnimationState>
+            </StateMachineLayer>
+        </StateMachine>
+
+        <LinearAnimation duration="9" name="Puppet Arm Down" id="0:30">
+            <KeyedObject objectId="0:21" id="0:280">
+                <KeyedProperty propertyKey="15" id="0:281">
+                    <KeyFrameDouble value="0" interpolationType="hold" id="0:282"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
+
+        <LinearAnimation duration="9" name="Puppet Arm Up" id="0:31">
+            <KeyedObject objectId="0:21" id="0:283">
+                <KeyedProperty propertyKey="15" id="0:284">
+                    <KeyFrameDouble value="-2.8" interpolationType="hold" id="0:285"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
+
+        <LinearAnimation duration="9" name="Shadow Arm Down" id="0:32">
+            <KeyedObject objectId="0:23" id="0:286">
+                <KeyedProperty propertyKey="15" id="0:287">
+                    <KeyFrameDouble value="0" interpolationType="hold" id="0:288"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
+
+        <LinearAnimation duration="9" name="Shadow Arm Up" id="0:33">
+            <KeyedObject objectId="0:23" id="0:289">
+                <KeyedProperty propertyKey="15" id="0:290">
+                    <KeyFrameDouble value="-2.8" interpolationType="hold" id="0:291"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
+
+        <LinearAnimation duration="30" name="Shadow Delay Before Rise (arm down)" id="0:34">
+            <KeyedObject objectId="0:23" id="0:292">
+                <KeyedProperty propertyKey="15" id="0:293">
+                    <KeyFrameDouble value="0" interpolationType="hold" id="0:294"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
+
+        <LinearAnimation duration="30" name="Shadow Delay Before Lower (arm up)" id="0:35">
+            <KeyedObject objectId="0:23" id="0:295">
+                <KeyedProperty propertyKey="15" id="0:296">
+                    <KeyFrameDouble value="-2.8" interpolationType="hold" id="0:297"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
+
+        <LinearAnimation duration="120" name="Shadow Hold (arm up)" id="0:36">
+            <KeyedObject objectId="0:23" id="0:298">
+                <KeyedProperty propertyKey="15" id="0:299">
+                    <KeyFrameDouble value="-2.8" interpolationType="hold" id="0:300"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
+    </Artboard>
+
+    <DataConverterBooleanNegate name="Not" id="0:70"/>
+    <DataConverterOperationValue operationType="0" operationValue="1" name="Plus one" id="0:71"/>
+
+    <ViewModel defaultInstanceId="0:64" name="Spike" id="0:60">
+        <ViewModelPropertyBoolean name="puppetArmUp" id="0:61"/>
+        <ViewModelPropertyNumber name="moves" id="0:62"/>
+        <ViewModelInstance exports="true" name="Default" id="0:64">
+            <ViewModelInstanceBoolean propertyValue="false" viewModelPropertyId="0:61" id="0:301"/>
+            <ViewModelInstanceNumber propertyValue="0" viewModelPropertyId="0:62" id="0:302"/>
+        </ViewModelInstance>
+    </ViewModel>
+</Rive>

@@ -1,0 +1,78 @@
+handover:
+  project: ONE_FRAME_LATE
+  date: "2026-10-09"
+  repository: Faadil1/one-frame-late
+  branch: feat/technical-reality-spike-01
+  state: PRE_CONCEPT_LOCK
+
+completed:
+  - "Claude Code 2.1.289 installed successfully in the Codespace; claude doctor reports no installation issues."
+  - "Claude Code authentication proven via claude.ai Pro account; interactive Claude session launched successfully with Sonnet."
+  - "Observed expected remote-auth limitation: browser callback to localhost resolves on the Windows host, not inside the Codespace, producing ERR_CONNECTION_REFUSED."
+  - "Codespace checkout of feat/technical-reality-spike-01 succeeded."
+  - "Installed Rive CLI 1.3.0 successfully in the Codespace."
+  - "Resolved all Rive CLI Linux shared-library dependencies; ldd reports no missing libraries."
+  - "Verified Rive CLI 1.3.0 and successful rive doctor with only expected auth warning."
+  - "Scaffolded rive/spike-01 with official Rive CLI 1.3.0 project files and project-local AGENTS guidance."
+  - "Authenticated Rive CLI successfully as faadilb using a forwarded Codespace OAuth callback."
+  - "Confirmed current personal workspace 1544935 and writable projects 1882813 (Faadil / Personal Files) and 1882812 (Faadil / Shared Project)."
+  - "Controlled rive push executed to Faadil / Personal Files project 1882813."
+  - "Created Rive file 2632594 (spike-01), revision 48006216, with 247 objects pushed."
+  - "rive push wrote persistent IDs into scene.rml and added push.projectId/fileId to rive.yaml; these local changes are not committed yet."
+  - "Opened external Rive file 2632594 successfully in the Rive Editor; expected puppet/shadow/reset hierarchy is visually present."
+  - "Rive Editor structure validation PROVEN: State Machine 1 contains Puppet Pose and Shadow Relationship; View Model Spike contains puppetArmUp:Boolean and moves:Number; Not and Plus one converters are visible."
+  - "Editor behavior itself is not yet observed; target runtime remains unproven."
+  - "Post-push integrity PROVEN: verify clean, inspect problems=[], and scene.rml changes are ID-only after normalization."
+  - "No web publication has been executed."
+  - "Challenge qualification and rules review."
+  - "Winning Intelligence v2 pre-lock research."
+  - "Five-model canonical review: Perplexity, Kimi, Claude, Gemini, Grok."
+  - "DeepSeek auxiliary review."
+  - "Creative divergence and winner-to-winner collision."
+  - "Contra public-feed watch."
+  - "F12 DOM/network discovery."
+  - "Contra SocialPosts_socialPostsPaginationQuery extraction."
+  - "Raw-string collision scan for shadow/puppet/afterimage/frame-lag concepts."
+  - "Direction selection: ONE FRAME LATE."
+  - "Technical Reality Spike 01 implemented and pushed at cb208442d4d282b1dace5e504ba5a9b350a736a0."
+  - "LOCAL evidence proves Rive-native SYNC -> DELAY -> SHADOW_HOLD -> RESET with clean verify/inspect."
+  - "State Machine, View Model/Data Binding, and deterministic reset are PROVEN at LOCAL scope."
+  - "2026-10-09 user-provided Codespace rerun at f912051: Rive CLI 1.5.1 loaded without missing libraries, verify 0 errors/0 warnings, inspect problems=[] (237 artboard objects), local screenshot capture script exit 0; per-frame images not independently inspected."
+  - "Current Rive CLI 1.5.1 prod session has NO auth; earlier authenticated Rive 1.3.0 session does not carry over automatically."
+  - "Nonpublishing gate runner and Rive Editor/Web validation protocol are committed on feature branch; result recorded in evidence/technical-spike/SPIKE-01-RIVE-1-5-1-LOCAL-RERUN-2026-10-09.md."
+  - "2026-10-09 review of 39.98s user Rive Editor screen recording: State Machine 1 preview starts, shadow UP/DOWN animation assets display, but a clickable Puppet Body driven SYNC/DELAY/HOLD/RESET sequence and RESET are NOT observed. Editor behavioral gate remains BLOCKED. See evidence/technical-spike/SPIKE-01-EDITOR-VIDEO-REVIEW-2026-10-09.md."
+  - "2026-10-09 second Editor clip (33.633s): blue Playing State Machine 1 confirmed, both stage arms remain down and no distinct mouse click on orange Puppet Body is evidenced; do not classify listener as broken yet. See evidence/technical-spike/SPIKE-01-EDITOR-VIDEO-REVIEW-02-2026-10-09.md."
+  - "2026-10-09 third Editor clip (9 s): user pointer on orange Puppet Body while Playing State Machine 1; matching puppet and shadow arm rises visible ~4.0–4.8s and return down ~5.2s. FIRST CLICK INTERACTION PROVEN at Editor/partial scope. Full DELAY, HOLD, RESET and Web runtime unproven. Evidence: evidence/technical-spike/SPIKE-01-EDITOR-VIDEO-REVIEW-03-2026-10-09.md."
+  - "2026-10-09 fourth Editor clip (~66.2s) proves visually SYNC (four changes), qualitative DELAY, sustained SHADOW_HOLD with graph highlighting Shadow Hold arm up, then catch-up. Visible hold lasts about 1.4–1.6s; exact 2s not calibrated; RESET followed by fresh SYNC NOT seen. Evidence: evidence/technical-spike/SPIKE-01-EDITOR-VIDEO-REVIEW-04-2026-10-09.md."
+
+decision:
+  killed:
+    - "NO SUCH STATE as abstract haunted-interface product concept."
+    - "Generic possessed UI / CRT / glitch / fog framing."
+    - "RIGOR MORTIS as primary direction due to deadline/rig complexity risk."
+  retained:
+    - "Visible rule violation."
+    - "State Machine + Data Binding consequences."
+    - "Paper puppet / shadow contract."
+    - "Temporal desynchronization as the core progression."
+  leading_direction: ONE_FRAME_LATE
+
+material_unknowns:
+  - "Does the LOCAL-proven behavior preserve correctly through the supported Rive target runtime/publication path?"
+  - "Does an uninstructed viewer perceive DELAY/HOLD as intentional shadow disobedience rather than lag or a bug?"
+  - "Can GPU Canvas later add load-bearing light/paper/persistence without becoming generic post-processing?"
+
+do_not_do_yet:
+  - final_art
+  - final_sound
+  - submission_video
+  - submission_copy
+  - second_character
+  - generic_horror_shader_stack
+  - concept_lock_claim
+  - live_claim
+
+exact_next_gate: TECHNICAL_REALITY_RUNTIME_AND_COMPREHENSION
+exact_next_owner: project_implementation
+exact_next_action: "No need to repeat 8-click sequence: in active Rive Editor State Machine Play, click rectangular RESET then click puppet torso once; prove immediate fresh SYNC. After that test target Web runtime and uninstructed human comprehension; do not publish without human approval."
+promotion_condition: "Only after the LOCAL-proven behavior is confirmed in the supported target runtime and an uninstructed viewer recognizes the shadow disobedience may the project move to CONCEPT_LOCK review."

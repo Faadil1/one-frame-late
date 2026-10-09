@@ -1,0 +1,226 @@
+project:
+  name: ONE_FRAME_LATE
+  repository: Faadil1/one-frame-late
+  project_type: CHALLENGE
+  judged: true
+  source_of_truth: GITHUB
+  default_branch: main
+  work_branch: feat/technical-reality-spike-01
+  external_deadline: "2026-10-12T23:59:00-07:00"
+
+canonical_pin:
+  central_repository: Faadil1/faadil-agent-system
+  version: 0.1.57-submission-execution-assurance-promoted
+  exact_main_sha: a881e0c882e9b2c65e5b4172536fbbe900fa8491
+  product_reality_policy: "1.5.0"
+  previous_project_assumption: 0.1.56-canonical-baseline-drift-tripwire-promoted
+  reconciliation: ADOPT_CURRENT_BASELINE_AT_BOOTSTRAP
+  material_delta:
+    submission_execution_assurance_v1: ACTIVE_AND_MATERIAL
+    reason: "Deadline-bound judged challenge requires protected final submission and public-post truth."
+
+status:
+  current_project_state: PRE_CONCEPT_LOCK
+  direction: ONE_FRAME_LATE
+  direction_lock: PROVEN_CANDIDATE
+  concept_lock: BLOCKED
+  build_candidate_ready: false
+  live: false
+  submission_ready: false
+  submission_state: NOT_STARTED
+
+lifecycle:
+  macro: DESIGN
+  judged_cycle: EXECUTION_ACTIVE__LOCAL_RIVE_BEHAVIOR_PROVEN__RUNTIME_AND_COMPREHENSION_PENDING
+  current_owner: project_implementation
+  current_primary_workstream: TECHNICAL_REALITY_SPIKE_01
+  workstream_drift_status: NO_DRIFT
+
+winning_intelligence:
+  multi_llm_review: PROVEN_5_OF_5
+  auxiliary_review_deepseek: PROVEN_AUXILIARY
+  competitive_novelty: PROVEN_INITIAL
+  contra_public_feed: PROVEN_INITIAL
+  contra_f12_pagination_discovery: PROVEN
+  contra_raw_collision_scan: PROVEN
+  direct_collision_one_frame_late: NOT_OBSERVED
+  continuous_watch: ACTIVE
+  abstract_no_such_state: KILLED
+  retained_primitive: RULE_VIOLATION_THROUGH_VISIBLE_BEHAVIOR
+
+truth_boundary:
+  observed:
+    - "Contra public feed pagination endpoint was discovered and inspected in-browser."
+    - "No direct public-feed collision was observed for puppet/shadow temporal desynchronization in the captured corpus."
+    - "Codespace checkout of feat/technical-reality-spike-01 succeeded."
+    - "Rive CLI 1.3.0 installed successfully to /home/codespace/.rive/bin/rive."
+    - "ldd reports no unresolved shared libraries."
+    - "rive --version returns 1.3.0."
+    - "rive doctor passes version/update/live-link checks with only expected auth warning."
+    - "rive create spike-01 successfully scaffolded rive.yaml, scene.rml, AGENTS.md, CLAUDE.md and .gitignore."
+    - "2026-10-09 user-provided Codespace logs: Rive CLI 1.5.1 and Linux dependencies operational; verify 0 errors/0 warnings; inspect problems=[] with 237 artboard objects; local replay script exited successfully; captures not independently reviewed."
+  inferred:
+    - "The shadow-puppet framing can maximize visible Human Touch."
+    - "ONE FRAME LATE has podium potential if technical reality and authored motion quality are proven."
+  unknown:
+    - "Whether the LOCAL-proven behavior preserves correctly in the target web/runtime publication path."
+    - "Whether an uninstructed viewer reads the 500ms DELAY and 2s SHADOW_HOLD as intentional disobedience rather than lag/bug."
+    - "Whether a literal previous-frame GPU latch is available/robust in the target web runtime."
+    - "Final future competitor field before deadline."
+
+protected_actions:
+  - final_challenge_submission
+  - required_public_social_post
+  - final_external_publication_under_user_identity
+
+exact_next_gate: TECHNICAL_REALITY_RUNTIME_AND_COMPREHENSION
+technical_environment:
+  claude_code:
+    status: PROVEN_INSTALLED
+    version: "2.1.289"
+    node_version: "v24.21.0"
+    npm_version: "11.19.0"
+    doctor_status: PASS
+    auth_status: PROVEN
+    note: "Claude Code installation and claude.ai Pro authentication are both proven in the Codespace."
+  rive_cli:
+    status: PROVEN
+    installed_version: "1.5.1"
+    prior_verified_version: "1.3.0"
+    install_path: "/home/codespace/.rive/bin/rive"
+    shared_library_resolution: PROVEN
+    doctor_status: PASS_WITH_AUTH_WARNING
+    auth_note: "Earlier 1.3.0 Codespace session authenticated as faadilb; fresh 1.5.1 doctor on 2026-10-09 reports NOT LOGGED IN (prod). Do not assume current push/publish authorization."
+    rive_account:
+      status: PROVEN
+      username: faadilb
+      email: bfaadil@gmail.com
+      current_workspace:
+        id: 1544935
+        name: faadilb
+        type: personal
+      available_workspaces:
+        - id: 1544935
+          name: faadilb
+          type: personal
+        - id: 1544936
+          name: Faadil
+      writable_projects:
+        - id: 1882813
+          name: "Faadil / Personal Files"
+          selected_candidate: true
+        - id: 1882812
+          name: "Faadil / Shared Project"
+          selected_candidate: false
+      first_external_write: PROVEN
+      external_rive_file:
+        project_id: 1882813
+        file_id: 2632594
+        revision_id: 48006216
+        name: "spike-01"
+        push_label: "spike-01 cb20844"
+        created_objects: 247
+        updated_objects: 0
+        deleted_objects: 0
+        unchanged_objects: 0
+        status: CREATED_AND_PUSHED
+        public: UNKNOWN_NOT_CLAIMED
+        editor_open:
+          status: PROVEN
+          observed: "Rive Editor opened file 2632594 and displayed the expected puppet, shadow, reset button, and hierarchy objects."
+        editor_state_machine_validation: PROVEN
+        editor_view_model_validation: PROVEN
+        editor_behavior_validation: PARTIAL_SYNC_DELAY_HOLD_PROVEN_RESET_OUTSTANDING
+        post_push_integrity:
+          status: PROVEN
+          verify: "0 errors, 0 warnings"
+          inspect_problems: []
+          scene_rml_diff: ID_ONLY
+          note: "Rive push added persistent IDs without semantic scene changes."
+    scaffold:
+      status: PROVEN
+      path: rive/spike-01
+      files:
+        - rive.yaml
+        - scene.rml
+        - AGENTS.md
+        - CLAUDE.md
+        - .gitignore
+
+exact_next_action: "Fourth Editor video now PROVES SYNC, qualitative DELAY, SHADOW_HOLD and follow-up; no more long eight-click retest. Test one Editor RESET during Playing State Machine 1 followed by one fresh synchronized puppet-body click; then validate supported target Web runtime under human publication checkpoint."
+last_updated: "2026-10-09"
+
+spike_01_result:
+  recorded: "2026-10-05"
+  candidate_commit: cb208442d4d282b1dace5e504ba5a9b350a736a0
+  local_verdict: LOCAL_PASS_CANDIDATE
+  evidence_class: LOCAL
+  web_runtime: NOT_PROVEN
+  human_comprehension: NOT_TESTED
+  rive_native_state_machine: PROVEN
+  rive_native_data_binding: PROVEN
+  deterministic_reset: PROVEN
+  evidence_scope: LOCAL_HEADLESS_CLI
+  concept_lock: BLOCKED
+  blockers:
+    - TARGET_RUNTIME_NOT_PROVEN
+    - HUMAN_COMPREHENSION_NOT_TESTED
+  note: "SYNC->DELAY->SHADOW_HOLD->RESET observed in Rive CLI 1.3.0 headless frames; 1.5.1 local verify/inspect and replay runner succeeded via user-provided logs, frames not independently inspected. Target runtime and viewer perception remain UNKNOWN; Concept Lock not claimed."
+  latest_rerun:
+    date: "2026-10-09"
+    source_commit: f9120517785a211be34295e4983ccf8ac2d68ce6
+    cli_version: "1.5.1"
+    verify: ZERO_ERRORS_ZERO_WARNINGS
+    inspect_problems: []
+    inspect_artboard_objects: 237
+    replay: SCRIPT_EXIT_ZERO_FRAME_CONTENT_NOT_INDEPENDENTLY_REVIEWED
+    evidence_class: USER_PROVIDED_LOCAL_LOGS
+    evidence_path: evidence/technical-spike/SPIKE-01-RIVE-1-5-1-LOCAL-RERUN-2026-10-09.md
+    current_rive_auth: NOT_LOGGED_IN
+    editor_behavior: NOT_YET_PROVEN
+    target_web_runtime: NOT_PROVEN
+  editor_video_review:
+    date: "2026-10-09"
+    evidence_path: evidence/technical-spike/SPIKE-01-EDITOR-VIDEO-REVIEW-2026-10-09.md
+    footage_length_seconds: 39.98
+    state_machine_play_started: PROVEN_FROM_USER_VIDEO
+    animated_shadow_arm_assets: OBSERVED
+    puppet_body_click_end_to_end: NOT_YET_OBSERVED
+    sync_delay_hold_reset_in_editor: NOT_YET_OBSERVED
+    verdict: EDITOR_INTERACTIVE_GATE_BLOCKED
+    follow_up_video:
+      date: "2026-10-09"
+      duration_seconds: 33.633
+      evidence_path: evidence/technical-spike/SPIKE-01-EDITOR-VIDEO-REVIEW-02-2026-10-09.md
+      state_machine_play_active: PROVEN_FROM_VIDEO
+      puppet_and_shadow_pose_change_during_play: NOT_OBSERVED
+      clear_click_on_puppet_body: NOT_OBSERVED
+      first_click_listener_status: UNKNOWN_NOT_DEMONSTRATED
+      editor_behavior_gate: BLOCKED
+    third_video:
+      date: "2026-10-09"
+      duration_seconds: 9.0
+      evidence_path: evidence/technical-spike/SPIKE-01-EDITOR-VIDEO-REVIEW-03-2026-10-09.md
+      first_body_click_while_playing: PROVEN_INTERACTIVE
+      puppet_and_shadow_arm_rise_in_sync: PROVEN_PARTIAL
+      both_arms_return_down: OBSERVED
+      full_delay_hold_reset: NOT_YET_PROVEN
+      editor_behavior_gate: BLOCKED_UNTIL_FULL_SEQUENCE
+      next_validation: SINGLE_CLICK_ORANGE_PUPPET_TORSO_WHILE_PLAYING
+    fourth_video:
+      date: "2026-10-09"
+      duration_seconds: 66.219
+      source: USER_UPLOADED_EDITOR_VIDEO
+      evidence_path: evidence/technical-spike/SPIKE-01-EDITOR-VIDEO-REVIEW-04-2026-10-09.md
+      puppet_body_listener: PROVEN_EDITOR
+      sync: PROVEN_EDITOR_VISUAL
+      delay: PROVEN_EDITOR_VISUAL_QUALITATIVE
+      brief_visible_desync_seconds_approx: "0.3-0.4"
+      hold: PROVEN_EDITOR_VISUAL
+      visible_hold_seconds_approx: "1.4-1.6"
+      exact_500ms_delay_and_2000ms_hold: NOT_CALIBRATED
+      highlighted_shadow_hold_node: OBSERVED_AROUND_SECOND_47
+      reset_followed_by_fresh_sync: NOT_OBSERVED
+      full_editor_behavior: BLOCKED_ON_RESET
+      target_web_runtime: NOT_PROVEN
+      next_validation: EDITOR_RESET_AND_FRESH_SYNC_ONLY
