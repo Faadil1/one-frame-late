@@ -130,7 +130,7 @@ technical_environment:
           observed: "Rive Editor opened file 2632594 and displayed the expected puppet, shadow, reset button, and hierarchy objects."
         editor_state_machine_validation: PROVEN
         editor_view_model_validation: PROVEN
-        editor_behavior_validation: PARTIAL_PREVIEW_STARTED_NOT_INTERACTIVE_SEQUENCE_PROVEN
+        editor_behavior_validation: PARTIAL_SYNC_DELAY_HOLD_PROVEN_RESET_OUTSTANDING
         post_push_integrity:
           status: PROVEN
           verify: "0 errors, 0 warnings"
@@ -147,7 +147,7 @@ technical_environment:
         - CLAUDE.md
         - .gitignore
 
-exact_next_action: "Editor first puppet-body click now OBSERVED and puppet+shadow raise together. Record one uninterrupted 8-click sequence (1-4 SYNC, 5-6 DELAY, 7 raise/8 lower HOLD ~2s), click RESET and confirm fresh SYNC. Then validate target web runtime with protected publication checkpoint."
+exact_next_action: "Fourth Editor video now PROVES SYNC, qualitative DELAY, SHADOW_HOLD and follow-up; no more long eight-click retest. Test one Editor RESET during Playing State Machine 1 followed by one fresh synchronized puppet-body click; then validate supported target Web runtime under human publication checkpoint."
 last_updated: "2026-10-09"
 
 spike_01_result:
@@ -207,3 +207,20 @@ spike_01_result:
       full_delay_hold_reset: NOT_YET_PROVEN
       editor_behavior_gate: BLOCKED_UNTIL_FULL_SEQUENCE
       next_validation: SINGLE_CLICK_ORANGE_PUPPET_TORSO_WHILE_PLAYING
+    fourth_video:
+      date: "2026-10-09"
+      duration_seconds: 66.219
+      source: USER_UPLOADED_EDITOR_VIDEO
+      evidence_path: evidence/technical-spike/SPIKE-01-EDITOR-VIDEO-REVIEW-04-2026-10-09.md
+      puppet_body_listener: PROVEN_EDITOR
+      sync: PROVEN_EDITOR_VISUAL
+      delay: PROVEN_EDITOR_VISUAL_QUALITATIVE
+      brief_visible_desync_seconds_approx: "0.3-0.4"
+      hold: PROVEN_EDITOR_VISUAL
+      visible_hold_seconds_approx: "1.4-1.6"
+      exact_500ms_delay_and_2000ms_hold: NOT_CALIBRATED
+      highlighted_shadow_hold_node: OBSERVED_AROUND_SECOND_47
+      reset_followed_by_fresh_sync: NOT_OBSERVED
+      full_editor_behavior: BLOCKED_ON_RESET
+      target_web_runtime: NOT_PROVEN
+      next_validation: EDITOR_RESET_AND_FRESH_SYNC_ONLY
