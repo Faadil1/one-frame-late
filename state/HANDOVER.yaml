@@ -43,6 +43,7 @@ completed:
   - "2026-10-09 review of 39.98s user Rive Editor screen recording: State Machine 1 preview starts, shadow UP/DOWN animation assets display, but a clickable Puppet Body driven SYNC/DELAY/HOLD/RESET sequence and RESET are NOT observed. Editor behavioral gate remains BLOCKED. See evidence/technical-spike/SPIKE-01-EDITOR-VIDEO-REVIEW-2026-10-09.md."
   - "2026-10-09 second Editor clip (33.633s): blue Playing State Machine 1 confirmed, both stage arms remain down and no distinct mouse click on orange Puppet Body is evidenced; do not classify listener as broken yet. See evidence/technical-spike/SPIKE-01-EDITOR-VIDEO-REVIEW-02-2026-10-09.md."
   - "2026-10-09 third Editor clip (9 s): user pointer on orange Puppet Body while Playing State Machine 1; matching puppet and shadow arm rises visible ~4.0–4.8s and return down ~5.2s. FIRST CLICK INTERACTION PROVEN at Editor/partial scope. Full DELAY, HOLD, RESET and Web runtime unproven. Evidence: evidence/technical-spike/SPIKE-01-EDITOR-VIDEO-REVIEW-03-2026-10-09.md."
+  - "2026-10-09 fourth Editor clip (~66.2s) proves visually SYNC (four changes), qualitative DELAY, sustained SHADOW_HOLD with graph highlighting Shadow Hold arm up, then catch-up. Visible hold lasts about 1.4–1.6s; exact 2s not calibrated; RESET followed by fresh SYNC NOT seen. Evidence: evidence/technical-spike/SPIKE-01-EDITOR-VIDEO-REVIEW-04-2026-10-09.md."
 
 decision:
   killed:
@@ -73,5 +74,5 @@ do_not_do_yet:
 
 exact_next_gate: TECHNICAL_REALITY_RUNTIME_AND_COMPREHENSION
 exact_next_owner: project_implementation
-exact_next_action: "First editor body click succeeded: capture an uninterrupted run of eight torso clicks with SYNC (1–4), DELAY (5–6), SHADOW_HOLD on eighth lowering (~2s), then RESET and one fresh SYNC. Keep Web-runtime and Concept Lock blocked until observed."
+exact_next_action: "No need to repeat 8-click sequence: in active Rive Editor State Machine Play, click rectangular RESET then click puppet torso once; prove immediate fresh SYNC. After that test target Web runtime and uninstructed human comprehension; do not publish without human approval."
 promotion_condition: "Only after the LOCAL-proven behavior is confirmed in the supported target runtime and an uninstructed viewer recognizes the shadow disobedience may the project move to CONCEPT_LOCK review."
