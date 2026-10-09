@@ -49,3 +49,20 @@ Uninstructed viewer asks: what happened? Record exact response; classify intenti
 Revise first meaningful refusal to 2–3 clear actions, keep deterministic reset and regression. Add truly load-bearing shadow-driven puppet action if technically possible; otherwise retain refusal/persistence truthfully. Build authentic paper theatre, Rive Editor authoring and purposeful GPU illumination. Only when first build has a verified operational path, timebox THE NINTH FOLD 90–180 min on isolated project files; do not overwrite existing Rive file 2632594. The vertical slice is a beginning, not Definition of Done.
 
 All original registry gates remain registered; changes require observed evidence, canonical state update and PR review. Protected social and final Contra submission remain human actions.
+
+## 7. Observed Editor gate result — 2026-10-09
+
+**PASSED at EDITOR visual scope**, based on fourth and fifth user-provided recordings (no public file generated).
+- SYNC, qualitative DELAY, repeated SHADOW_HOLD: observed in fourth clip.
+- RESET followed by renewed SYNC, then delay/hold on accumulated interactions: observed in fifth clip.
+- Evidence: `evidence/technical-spike/SPIKE-01-EDITOR-VIDEO-REVIEW-04-2026-10-09.md` and `SPIKE-01-EDITOR-VIDEO-REVIEW-05-2026-10-09.md`.
+- Exact timings not calibrated; View Model `moves=0` not directly inspected in Editor; earlier LOCAL CLI dump exists separately.
+- `rive_editor_behavior=PROVEN`; `target_web_runtime=BLOCKED`, `live_core_loop=BLOCKED`, `concept_lock=BLOCKED`. No need to repeat eight-click Editor test without a code regression.
+
+## 8. Next: browser/runtime gate and human publication boundary
+
+The Editor preview is NOT a judge-playable web runtime. The authenticated Editor's **Share / Export / Share Links** route can create a hosted snapshot of interactive artwork. This is externally accessible, **not private by default**. Ask the user to explicitly authorize a publicly accessible share before creating or releasing a link. Background: https://rive.app/features and https://framer.rive.app/blog/share-links .
+
+If the supported route cannot run the required scripted or GPU Canvas features, verify with an appropriate signed target Web export instead; do not claim browser proof from a non-working embed. The Codespace Rive CLI 1.5.1 `rive doctor` previously showed **Not logged in (prod)**; reauthentication is needed before future authenticated CLI publish/push. Test the exact hosted artifact, pointer and touch where relevant, reset, device/browser and revision, with recording and a few unfamiliar viewers. Do not treat the crude primitive as final art or as a submitted challenge entry.
+
+Protected public Rive publication, required social posting and Contra submission remain human checkpoints. Once web is proven, pursue the intended 2–3 meaningful interaction progression, real shadow-to-puppet causality, human-authored paper theatre and purposeful GPU visuals, rerunning behavior tests after changes.
