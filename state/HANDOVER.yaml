@@ -1,6 +1,6 @@
 handover:
   project: ONE_FRAME_LATE
-  date: "2026-10-05"
+  date: "2026-10-09"
   repository: Faadil1/one-frame-late
   branch: feat/technical-reality-spike-01
   state: PRE_CONCEPT_LOCK
@@ -37,6 +37,9 @@ completed:
   - "Technical Reality Spike 01 implemented and pushed at cb208442d4d282b1dace5e504ba5a9b350a736a0."
   - "LOCAL evidence proves Rive-native SYNC -> DELAY -> SHADOW_HOLD -> RESET with clean verify/inspect."
   - "State Machine, View Model/Data Binding, and deterministic reset are PROVEN at LOCAL scope."
+  - "2026-10-09 user-provided Codespace rerun at f912051: Rive CLI 1.5.1 loaded without missing libraries, verify 0 errors/0 warnings, inspect problems=[] (237 artboard objects), local screenshot capture script exit 0; per-frame images not independently inspected."
+  - "Current Rive CLI 1.5.1 prod session has NO auth; earlier authenticated Rive 1.3.0 session does not carry over automatically."
+  - "Nonpublishing gate runner and Rive Editor/Web validation protocol are committed on feature branch; result recorded in evidence/technical-spike/SPIKE-01-RIVE-1-5-1-LOCAL-RERUN-2026-10-09.md."
 
 decision:
   killed:
@@ -67,5 +70,5 @@ do_not_do_yet:
 
 exact_next_gate: TECHNICAL_REALITY_RUNTIME_AND_COMPREHENSION
 exact_next_owner: project_implementation
-exact_next_action: "Commit/push only the Rive-generated scene.rml persistent IDs and rive.yaml push binding, then manually observe SYNC -> DELAY -> SHADOW_HOLD -> RESET in Editor preview. Do not run --publish=web."
+exact_next_action: "In existing Rive Editor spike-01 file 2632594, Play State Machine 1 and capture interactive SYNC -> DELAY -> SHADOW_HOLD -> RESET; do not push or publish; then evaluate target web runtime with explicit human authorization for any public share."
 promotion_condition: "Only after the LOCAL-proven behavior is confirmed in the supported target runtime and an uninstructed viewer recognizes the shadow disobedience may the project move to CONCEPT_LOCK review."
