@@ -93,9 +93,13 @@ registry:
     note: "Post-push verify clean, inspect problems=[], scene.rml semantic diff is ID-only."
   rive_editor_behavior:
     status: BLOCKED
-    reason: "2026-10-09 third user Editor clip proves first puppet-body interaction raises both puppet and shadow arms in sync. DELAY/HOLD/RESET full connected sequence still NOT PROVEN; retain overall BLOCKED."
-    first_body_interaction: PROVEN_PARTIAL_EDITOR_SCOPE
-    evidence: evidence/technical-spike/SPIKE-01-EDITOR-VIDEO-REVIEW-03-2026-10-09.md
+    reason: "Fourth user Editor video proves State Machine-driven SYNC, qualitative DELAY, SHADOW_HOLD (1.4-1.6s screen-visible) and catch-up; RESET + subsequent fresh SYNC not observed. Full gate stays BLOCKED, target Web unproven."
+    first_body_interaction: PROVEN_EDITOR
+    sync: PROVEN_EDITOR
+    delay: PROVEN_EDITOR_QUALITATIVE
+    hold: PROVEN_EDITOR_VISUAL_EXACT_TIMING_NOT_CALIBRATED
+    reset_and_fresh_sync: BLOCKED_EDITOR_NOT_OBSERVED
+    evidence: evidence/technical-spike/SPIKE-01-EDITOR-VIDEO-REVIEW-04-2026-10-09.md
   rive_cli:
     status: PROVEN
     note: "Rive CLI 1.3.0 historically proved local behavior; user-reported 2026-10-09 rerun on 1.5.1 at f912051: verify 0 errors/0 warnings, inspect problems=[] with 237 objects, replay script exited successfully. Per-frame 1.5.1 visuals NOT independently reviewed. Target browser remains BLOCKED."
