@@ -33,7 +33,7 @@ lifecycle:
   macro: DESIGN
   judged_cycle: EXECUTION_ACTIVE__LOCAL_RIVE_BEHAVIOR_PROVEN__RUNTIME_AND_COMPREHENSION_PENDING
   current_owner: project_implementation
-  current_primary_workstream: STAGE_V1_LOCAL_PROOF__UPDATED_EDITOR_AND_WEB_PENDING
+  current_primary_workstream: PRIVATE_STAGE_WORKCOPY_PREPARED__ACCOUNT_CREATE_PENDING
   workstream_drift_status: NO_DRIFT
 
 winning_intelligence:
@@ -147,7 +147,7 @@ technical_environment:
         - CLAUDE.md
         - .gitignore
 
-exact_next_action: "Rive LOCAL stage V1 four-action shadow takeover and RESET passed real 1.5.1 CI + pixel review; next gate controlled Stage V1 Editor and browser proof, while adding visible shadow rope/marionette acting, goal/ending choice and hand-made theatre. No LIVE or submission claim."
+exact_next_action: "Isolated Stage V1 Rive project compiled successfully in GitHub Actions (run 38091840329), projectId 1882813 and NO fileId. User authorized non-public separate Editor copy only; run safe script from authenticated Codespace ONCE, record NEW fileId != 2632594, then validate Editor State Machine. Do not publish or overwrite original."
 last_updated: "2026-10-10"
 
 full_experience_depth_reopen:
@@ -162,6 +162,22 @@ full_experience_depth_reopen:
   consequential_two_endings: NOT_IMPLEMENTED
   full_product_depth: BLOCKED
   creative_concept_lock: BLOCKED
+
+rive_private_workcopy:
+  user_authorized: PRIVATE_EDITOR_COPY_ONLY
+  authorization_date: "2026-10-10"
+  remote_creation_status: NOT_EXECUTED_REQUIRES_CODESPACE_RIVE_LOGIN
+  source: rive/last-performance-stage-v1/scene.rml
+  local_validation: PROVEN_GITHUB_ACTIONS
+  workflow_run_id: 38091840329
+  expected_remote_project_id: 1882813
+  remote_file_id: NOT_ASSIGNED
+  protected_original_file_id: 2632594
+  expected_name: one-frame-late-stage-v1-workcopy
+  safe_one_time_command: "bash scripts/create-private-stage-copy.sh --confirm-private-copy"
+  docs: docs/PRIVATE-RIVE-WORKCOPY-CREATION-2026-10-10.md
+  public_share_or_publish: NOT_AUTHORIZED
+  web_runtime: NOT_PROVEN
 
 stage_v1_local_result:
   date: "2026-10-10"
