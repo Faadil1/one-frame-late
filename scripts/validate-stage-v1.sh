@@ -36,6 +36,20 @@ rive . --screenshot=build/stage-v1/00-house.png --quiet --advance=1
 rive . --screenshot=build/stage-v1/01-puppet-input.png --quiet --advance=1 --pointer=click@150,315 --pointer=move@20,20 --advance=300ms
 rive . --screenshot=build/stage-v1/02-cue-bell-input.png --quiet --advance=1 --pointer=click@452,418 --pointer=move@20,20 --advance=300ms
 rive . --screenshot=build/stage-v1/03-cue-then-puppet.png --quiet --advance=1 --pointer=click@452,418 --pointer=move@20,20 --advance=700ms --pointer=click@150,315 --pointer=move@20,20 --advance=300ms
+# Act III: eight body cues, then independent puppet rise (no extra click).
+sequence=(--advance=1)
+for i in 1 2 3 4 5 6 7; do
+  sequence+=(--pointer=click@150,315 --pointer=move@20,20 --advance=700ms)
+done
+sequence+=(--pointer=click@150,315 --pointer=move@20,20)
+rive . --screenshot=build/stage-v1/04-reversal-resistance-300ms.png --quiet "${sequence[@]}" --advance=300ms
+rive . --screenshot=build/stage-v1/05-reversal-puppet-rises-1400ms.png --quiet "${sequence[@]}" --advance=1400ms
+rive . --screenshot=build/stage-v1/06-reversal-shadow-follows-2600ms.png --quiet "${sequence[@]}" --advance=2600ms
+if cmp -s build/stage-v1/04-reversal-resistance-300ms.png build/stage-v1/05-reversal-puppet-rises-1400ms.png; then
+  echo "REVERSAL_BLOCKED: no difference after autonomous no-click shadow command" >&2
+  exit 3
+fi
+
 # Protect against RML render layers accidentally covering all puppets.
 # A clean compiler does not imply the stage remains visible or responds to input.
 if cmp -s build/stage-v1/00-house.png build/stage-v1/01-puppet-input.png; then
