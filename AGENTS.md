@@ -17,9 +17,9 @@ Before any material code, design, demo, documentation, packaging, or submission 
 
 ## Current authorized workstream
 
-`TECHNICAL_REALITY_SPIKE_01` only.
+`STAGE_V1_EDITOR_PRIVATE_WORKCOPY` plus ongoing truthful full-experience work. Earlier core behavior proved locally and in the original primitive Editor file; modified stage and reversal prove LOCAL only.
 
-Do not add final art, submission media, extra characters, fog, CRT, generic glitch effects, or packaging until the spike proves the behavioral core.
+The core mechanism has cleared technical local proof. Next: controlled private new Rive Editor file and original stage artistry/agency; do not mistake visual proof for full finished product. Do not publish or submit without explicit human approval. Original remote file ID 2632594 is protected; project-local workcopy is under rive/last-performance-stage-v1/ with NO push.fileId until its one-time private creation.
 
 When Rive CLI creates project-local agent guidance under `rive/spike-01/`, read and follow it. Do not guess RML types or properties; use the installed Rive CLI documentation/schema commands.
 

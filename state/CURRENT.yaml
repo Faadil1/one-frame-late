@@ -33,7 +33,7 @@ lifecycle:
   macro: DESIGN
   judged_cycle: EXECUTION_ACTIVE__LOCAL_RIVE_BEHAVIOR_PROVEN__RUNTIME_AND_COMPREHENSION_PENDING
   current_owner: project_implementation
-  current_primary_workstream: TARGET_WEB_RUNTIME_AND_FULL_EXPERIENCE_REOPEN
+  current_primary_workstream: PRIVATE_STAGE_WORKCOPY_PREPARED__ACCOUNT_CREATE_PENDING
   workstream_drift_status: NO_DRIFT
 
 winning_intelligence:
@@ -147,7 +147,7 @@ technical_environment:
         - CLAUDE.md
         - .gitignore
 
-exact_next_action: "Editor SYNC/DELAY/HOLD/RESET is qualitatively proven but is only a mechanism. Continue authorized target Web test and start full authored theatre/world/character/agency/secondary prop/two-endings depth from product/FULL-EXPERIENCE-DEPTH-REOPEN-2026-10-10.md. Do not claim Concept Lock, build ready or submitted."
+exact_next_action: "Isolated Stage V1 Rive project compiled successfully in GitHub Actions (run 38091840329), projectId 1882813 and NO fileId. User authorized non-public separate Editor copy only; run safe script from authenticated Codespace ONCE, record NEW fileId != 2632594, then validate Editor State Machine. Do not publish or overwrite original."
 last_updated: "2026-10-10"
 
 full_experience_depth_reopen:
@@ -162,6 +162,56 @@ full_experience_depth_reopen:
   consequential_two_endings: NOT_IMPLEMENTED
   full_product_depth: BLOCKED
   creative_concept_lock: BLOCKED
+
+rive_private_workcopy:
+  user_authorized: PRIVATE_EDITOR_COPY_ONLY
+  authorization_date: "2026-10-10"
+  remote_creation_status: NOT_EXECUTED_REQUIRES_CODESPACE_RIVE_LOGIN
+  source: rive/last-performance-stage-v1/scene.rml
+  local_validation: PROVEN_GITHUB_ACTIONS
+  workflow_run_id: 38091840329
+  expected_remote_project_id: 1882813
+  remote_file_id: NOT_ASSIGNED
+  protected_original_file_id: 2632594
+  expected_name: one-frame-late-stage-v1-workcopy
+  safe_one_time_command: "bash scripts/create-private-stage-copy.sh --confirm-private-copy"
+  docs: docs/PRIVATE-RIVE-WORKCOPY-CREATION-2026-10-10.md
+  public_share_or_publish: NOT_AUTHORIZED
+  web_runtime: NOT_PROVEN
+
+stage_v1_local_result:
+  date: "2026-10-10"
+  code_branch: feat/paper-theatre-stage-v1
+  draft_pr: "https://github.com/Faadil1/one-frame-late/pull/2"
+  source_commit_tested: 5bff589feff6590b7b68d9562bc4ff2298fc32fd
+  workflow_run_id: 38090136053
+  rive_cli: "1.5.1"
+  verify: ZERO_ERRORS_ZERO_WARNINGS
+  inspect_problems: []
+  scene_shapes: 100
+  state_machine_listeners: 3
+  stage_visible: PROVEN_LOCAL_PNG
+  puppet_body_and_bell_pose_changes: PROVEN_LOCAL_PNG
+  direct_moves_numeric_read: NOT_PROVEN
+  initial_black_cover_regression: FIXED
+  updated_rive_editor: NOT_TESTED
+  updated_web_runtime: NOT_PROVEN
+  full_art_role_inversion_two_endings: NOT_IMPLEMENTED
+  evidence: evidence/stage-v1/LOCAL-REVIEW-2026-10-10.md
+  autonomous_reversal:
+    date: "2026-10-10"
+    tested_commit: 04eb03f553b26f9c6f32ba5542fea0e4bd119d6a
+    workflow_run_id: 38090704716
+    editor_retested: false
+    target_web_tested: false
+    story_arc: FOUR_CLICKS_SYNC_DELAY_DELAY_HOLD_REVERSE
+    wait_before_puppet_moves_without_click_frames: 48
+    puppet_down_shadow_up_300ms: PROVEN_LOCAL_PNG
+    puppet_up_shadow_up_1400ms_without_click: PROVEN_LOCAL_PNG
+    puppet_up_shadow_down_2600ms: PROVEN_LOCAL_PNG
+    recovery_reset_pixel_identical_initial: PROVEN_LOCAL_CI
+    post_reset_first_click_identical_initial_sync: PROVEN_LOCAL_CI
+    evidence: evidence/stage-v1/FOUR-ACT-REVERSAL-LOCAL-2026-10-10.md
 
 spike_01_result:
   recorded: "2026-10-05"

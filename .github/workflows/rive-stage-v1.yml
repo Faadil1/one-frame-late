@@ -1,0 +1,56 @@
+name: Rive Stage V1 Local Assurance
+on:
+  workflow_dispatch:
+  push:
+    branches: [feat/paper-theatre-stage-v1]
+    paths:
+      - 'rive/spike-01/**'
+      - 'rive/last-performance-stage-v1/**'
+      - 'scripts/verify-private-stage-copy-local.sh'
+      - 'scripts/create-private-stage-copy.sh'
+      - 'scripts/validate-stage-v1.sh'
+      - '.github/workflows/rive-stage-v1.yml'
+  pull_request:
+    paths:
+      - 'rive/spike-01/**'
+      - 'rive/last-performance-stage-v1/**'
+      - 'scripts/verify-private-stage-copy-local.sh'
+      - 'scripts/create-private-stage-copy.sh'
+      - 'scripts/validate-stage-v1.sh'
+      - '.github/workflows/rive-stage-v1.yml'
+permissions:
+  contents: read
+jobs:
+  rive-stage-local:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install graphics shared libs
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y libegl1 libgles2 libx11-6 libwayland-egl1 libxkbcommon0
+      - name: Install official Rive CLI
+        run: |
+          curl -fsSL https://releases.rive.app/cli/install.sh | bash
+          echo "$HOME/.rive/bin" >> "$GITHUB_PATH"
+      - name: Verify scene and capture local stage frames
+        run: |
+          export PATH="$HOME/.rive/bin:$PATH"
+          bash scripts/validate-stage-v1.sh
+      - name: Verify independent Rive workcopy without remote write
+        run: |
+          export PATH="$HOME/.rive/bin:$PATH"
+          bash -n scripts/create-private-stage-copy.sh
+          bash scripts/verify-private-stage-copy-local.sh
+      - name: Save local-only screenshots (not hosted runtime)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: rive-stage-v1-local
+          path: |
+            rive/spike-01/build/stage-v1/*.png
+            rive/last-performance-stage-v1/build/copy-verify/*.png
+            rive/spike-01/build/problems.log
+            rive/spike-01/build/rive.log
+          if-no-files-found: warn

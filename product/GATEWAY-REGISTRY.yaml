@@ -217,14 +217,14 @@ registry:
     status: BLOCKED
 
   full_experience_world_stage:
-    status: BLOCKED
-    note: "Crafted authored theatre, playbill, audience and stage atmosphere not implemented. See product/FULL-EXPERIENCE-DEPTH-REOPEN-2026-10-10.md."
+    status: ACTIVE
+    note: "Stage V1 physical frame, curtains, scrim, lamp and ropes rendered in Rive CLI; playbill, audience, artistic rig and full world not yet finished. LOCAL evidence only."
   expressive_puppet_character:
     status: BLOCKED
     note: "Main puppet Marlow expressive rig and acting is proposed but not implemented; current spike is primitive."
   reversed_shadow_to_puppet_control:
-    status: BLOCKED
-    note: "Actual shadow-initiated puppet rig action beyond refusal not implemented, must be Rive-native."
+    status: ACTIVE
+    note: "Native LOCAL Rive 1.5.1 scene: fourth click puppet down/shadow holds up; automatic Puppet Pose rises ~48 frames later without click. Code and PNGs proven in CI 38090704716, but new Rive Editor/Web and visible physical rope causality NOT PROVEN. Full experience not promoted."
   consequential_stage_prop:
     status: BLOCKED
     note: "Secondary prop/lever must affect show state, not decorative input; currently not implemented."
@@ -240,3 +240,36 @@ registry:
   mechanic_not_definition_of_done:
     status: ACTIVE
     note: "Hard prohibition: Editor SYNC/DELAY/HOLD/RESET proof does not authorize final product depth or submission readiness."
+
+  stage_v1_local_render:
+    status: PROVEN
+    note: "Native CLI 1.5.1 run 38090136053: 0 errors/0 warnings, problems=[], 100 shapes, actual Rive PNGs reviewed after z-order repair."
+  stage_v1_cue_bell:
+    status: PROVEN
+    note: "A new native StateMachineListenerSingle on the bell uses puppetArmUp and moves binding; local screenshots show puppet and shadow react. Editor event and direct numerical counter still NOT independently inspected."
+  stage_v1_editor_regression:
+    status: BLOCKED
+    note: "Previous SPIKE scene Editor input proven; this modified stage and bell NOT yet verified in Editor. No Rive push."
+  stage_v1_web_regression:
+    status: BLOCKED
+    note: "No hosted/published browser artifact for new stage, no touch or external viewer proof."
+
+  stage_v1_four_act_reversal:
+    status: PROVEN
+    note: "LOCAL Rive CLI 1.5.1; synthetic pointer inputs first sync, delay 2-3, fourth shadow hold, puppet forced up without click. 3 timed rendered PNGs inspected. CI 38090704716."
+  stage_v1_autonomous_reset:
+    status: PROVEN
+    note: "LOCAL pixel-perfect screenshot comparison: reset from takeover equals initial, next click equals initial SYNC. CI 38090704716."
+  stage_v1_controller_legibility:
+    status: BLOCKED
+    note: "Visible rope from shadow to puppet and meaningful operator consequence not yet authored; cold player comprehension untested."
+
+  isolated_rive_private_workcopy:
+    status: PROVEN
+    note: "New independent rive/last-performance-stage-v1 source + rive.yaml only projectId 1882813 (Personal Files), NO fileId. Rive CLI 1.5.1 GitHub Actions run 38091840329 verified local scene and interactive frames. Copy exists in GitHub only."
+  remote_private_editor_file_creation:
+    status: BLOCKED
+    note: "User approved only independent private Rive copy. Actual first push not executed: requires Rive login in user's Codespace, then guarded one-time scripts/create-private-stage-copy.sh. Original fileId 2632594 never modified."
+  remote_original_file_protection:
+    status: PROVEN
+    note: "New config has no fileId, guarded script refuses old 2632594 / any already bound file, forces Personal Files projectId=1882813. Earlier original Editor file remains unchanged by these GitHub writes."

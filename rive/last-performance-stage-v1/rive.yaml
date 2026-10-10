@@ -1,0 +1,9 @@
+# ONE FRAME LATE - independent Rive Editor work copy, NOT the old spike-01.
+# This YAML intentionally contains NO fileId.
+# The first authenticated 'rive push' creates a NEW file in Personal Files.
+name: one-frame-late-stage-v1-workcopy
+logs:
+  file: build/rive.log
+  problems: build/problems.log
+push:
+  projectId: 1882813
