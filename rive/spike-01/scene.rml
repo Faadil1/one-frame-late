@@ -3,9 +3,9 @@
          SYNC -> DELAY -> SHADOW_HOLD -> RESET, driven by view model + state machine only.
          Click the puppet to toggle its arm. Click the square button to RESET.
          Progression memory = ViewModel.moves (valid puppet pose changes):
-           moves 1-4  : SYNC         (shadow transitions fire on the same property, same blend)
-           moves 5-6  : DELAY        (shadow waits 500ms in a hold state, then performs the same pose)
-           moves >= 7 : SHADOW_HOLD  (puppet lowers; shadow stays UP for 2s before following)
+           moves 1    : SYNC         (shadow transitions fire on the same property, same blend)
+           moves 2-3  : DELAY        (shadow waits 500ms in a hold state, then performs the same pose)
+           moves >= 4 : SHADOW_HOLD + autonomous puppet reversal  (puppet lowers; shadow stays UP for 2s before following)
          Not authored art. Crude primitives by design. -->
     <Artboard defaultStateMachineId="0:7" viewModelId="0:60" styleId="0:5" width="500" height="500" name="Artboard" id="0:2">
         <LayoutComponentStyle name="Artboard Style" id="0:5"/>
@@ -245,7 +245,7 @@
                 </StateTransition>
                 
                 <!-- This trigger is stage DRAMATURGY, not mere temporal desync:
-                     after the 8th move lowers the puppet, SHADOW commands it to rise independently. -->
+                     after the 4th move lowers the puppet, SHADOW commands it to rise independently. -->
                 <StateTransition stateToId="0:5030" duration="0" id="0:5031">
                     <TransitionViewModelCondition id="0:5032">
                         <TransitionPropertyViewModelComparator id="0:5033">
@@ -261,7 +261,7 @@
                                 <DataBindContext sourcePathIds="0:60-0:62" propertyKey="636" id="0:5040"/>
                             </BindablePropertyNumber>
                         </TransitionPropertyViewModelComparator>
-                        <TransitionValueNumberComparator value="8" id="0:5041"/>
+                        <TransitionValueNumberComparator value="4" id="0:5041"/>
                     </TransitionViewModelCondition>
                 </StateTransition>
 </AnimationState>
@@ -316,7 +316,7 @@
                         <TransitionPropertyViewModelComparator id="0:206">
                             <BindablePropertyNumber id="0:207"><DataBindContext sourcePathIds="0:60-0:62" propertyKey="636" id="0:208"/></BindablePropertyNumber>
                         </TransitionPropertyViewModelComparator>
-                        <TransitionValueNumberComparator value="5" id="0:209"/>
+                        <TransitionValueNumberComparator value="2" id="0:209"/>
                     </TransitionViewModelCondition>
                 </StateTransition>
 
@@ -331,7 +331,7 @@
                         <TransitionPropertyViewModelComparator id="0:217">
                             <BindablePropertyNumber id="0:218"><DataBindContext sourcePathIds="0:60-0:62" propertyKey="636" id="0:219"/></BindablePropertyNumber>
                         </TransitionPropertyViewModelComparator>
-                        <TransitionValueNumberComparator value="5" id="0:220"/>
+                        <TransitionValueNumberComparator value="2" id="0:220"/>
                     </TransitionViewModelCondition>
                 </StateTransition>
                 </AnimationState>
@@ -349,7 +349,7 @@
                         <TransitionPropertyViewModelComparator id="0:228">
                             <BindablePropertyNumber id="0:229"><DataBindContext sourcePathIds="0:60-0:62" propertyKey="636" id="0:230"/></BindablePropertyNumber>
                         </TransitionPropertyViewModelComparator>
-                        <TransitionValueNumberComparator value="5" id="0:231"/>
+                        <TransitionValueNumberComparator value="2" id="0:231"/>
                     </TransitionViewModelCondition>
                 </StateTransition>
 
@@ -364,13 +364,13 @@
                         <TransitionPropertyViewModelComparator id="0:239">
                             <BindablePropertyNumber id="0:240"><DataBindContext sourcePathIds="0:60-0:62" propertyKey="636" id="0:241"/></BindablePropertyNumber>
                         </TransitionPropertyViewModelComparator>
-                        <TransitionValueNumberComparator value="5" id="0:242"/>
+                        <TransitionValueNumberComparator value="2" id="0:242"/>
                     </TransitionViewModelCondition>
                     <TransitionViewModelCondition opValue="lessThan" id="0:243">
                         <TransitionPropertyViewModelComparator id="0:244">
                             <BindablePropertyNumber id="0:245"><DataBindContext sourcePathIds="0:60-0:62" propertyKey="636" id="0:246"/></BindablePropertyNumber>
                         </TransitionPropertyViewModelComparator>
-                        <TransitionValueNumberComparator value="7" id="0:247"/>
+                        <TransitionValueNumberComparator value="4" id="0:247"/>
                     </TransitionViewModelCondition>
                 </StateTransition>
 
@@ -385,7 +385,7 @@
                         <TransitionPropertyViewModelComparator id="0:255">
                             <BindablePropertyNumber id="0:256"><DataBindContext sourcePathIds="0:60-0:62" propertyKey="636" id="0:257"/></BindablePropertyNumber>
                         </TransitionPropertyViewModelComparator>
-                        <TransitionValueNumberComparator value="7" id="0:258"/>
+                        <TransitionValueNumberComparator value="4" id="0:258"/>
                     </TransitionViewModelCondition>
                 </StateTransition>
                 </AnimationState>
