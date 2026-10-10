@@ -147,7 +147,7 @@ technical_environment:
         - CLAUDE.md
         - .gitignore
 
-exact_next_action: "Stage V1 physical scenery and native cue bell input passed Rive 1.5.1 local CI and image review. Next verify new stage in Rive Editor on controlled file; then real reversed control, authored endings, Web runtime, cold viewers. Do not publish/submit without approval."
+exact_next_action: "Rive LOCAL stage V1 four-action shadow takeover and RESET passed real 1.5.1 CI + pixel review; next gate controlled Stage V1 Editor and browser proof, while adding visible shadow rope/marionette acting, goal/ending choice and hand-made theatre. No LIVE or submission claim."
 last_updated: "2026-10-10"
 
 full_experience_depth_reopen:
@@ -182,6 +182,20 @@ stage_v1_local_result:
   updated_web_runtime: NOT_PROVEN
   full_art_role_inversion_two_endings: NOT_IMPLEMENTED
   evidence: evidence/stage-v1/LOCAL-REVIEW-2026-10-10.md
+  autonomous_reversal:
+    date: "2026-10-10"
+    tested_commit: 04eb03f553b26f9c6f32ba5542fea0e4bd119d6a
+    workflow_run_id: 38090704716
+    editor_retested: false
+    target_web_tested: false
+    story_arc: FOUR_CLICKS_SYNC_DELAY_DELAY_HOLD_REVERSE
+    wait_before_puppet_moves_without_click_frames: 48
+    puppet_down_shadow_up_300ms: PROVEN_LOCAL_PNG
+    puppet_up_shadow_up_1400ms_without_click: PROVEN_LOCAL_PNG
+    puppet_up_shadow_down_2600ms: PROVEN_LOCAL_PNG
+    recovery_reset_pixel_identical_initial: PROVEN_LOCAL_CI
+    post_reset_first_click_identical_initial_sync: PROVEN_LOCAL_CI
+    evidence: evidence/stage-v1/FOUR-ACT-REVERSAL-LOCAL-2026-10-10.md
 
 spike_01_result:
   recorded: "2026-10-05"
