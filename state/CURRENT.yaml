@@ -33,7 +33,7 @@ lifecycle:
   macro: DESIGN
   judged_cycle: EXECUTION_ACTIVE__LOCAL_RIVE_BEHAVIOR_PROVEN__RUNTIME_AND_COMPREHENSION_PENDING
   current_owner: project_implementation
-  current_primary_workstream: TARGET_WEB_RUNTIME_AND_FULL_EXPERIENCE_REOPEN
+  current_primary_workstream: STAGE_V1_LOCAL_PROOF__UPDATED_EDITOR_AND_WEB_PENDING
   workstream_drift_status: NO_DRIFT
 
 winning_intelligence:
@@ -147,7 +147,7 @@ technical_environment:
         - CLAUDE.md
         - .gitignore
 
-exact_next_action: "Editor SYNC/DELAY/HOLD/RESET is qualitatively proven but is only a mechanism. Continue authorized target Web test and start full authored theatre/world/character/agency/secondary prop/two-endings depth from product/FULL-EXPERIENCE-DEPTH-REOPEN-2026-10-10.md. Do not claim Concept Lock, build ready or submitted."
+exact_next_action: "Stage V1 physical scenery and native cue bell input passed Rive 1.5.1 local CI and image review. Next verify new stage in Rive Editor on controlled file; then real reversed control, authored endings, Web runtime, cold viewers. Do not publish/submit without approval."
 last_updated: "2026-10-10"
 
 full_experience_depth_reopen:
@@ -162,6 +162,26 @@ full_experience_depth_reopen:
   consequential_two_endings: NOT_IMPLEMENTED
   full_product_depth: BLOCKED
   creative_concept_lock: BLOCKED
+
+stage_v1_local_result:
+  date: "2026-10-10"
+  code_branch: feat/paper-theatre-stage-v1
+  draft_pr: "https://github.com/Faadil1/one-frame-late/pull/2"
+  source_commit_tested: 5bff589feff6590b7b68d9562bc4ff2298fc32fd
+  workflow_run_id: 38090136053
+  rive_cli: "1.5.1"
+  verify: ZERO_ERRORS_ZERO_WARNINGS
+  inspect_problems: []
+  scene_shapes: 100
+  state_machine_listeners: 3
+  stage_visible: PROVEN_LOCAL_PNG
+  puppet_body_and_bell_pose_changes: PROVEN_LOCAL_PNG
+  direct_moves_numeric_read: NOT_PROVEN
+  initial_black_cover_regression: FIXED
+  updated_rive_editor: NOT_TESTED
+  updated_web_runtime: NOT_PROVEN
+  full_art_role_inversion_two_endings: NOT_IMPLEMENTED
+  evidence: evidence/stage-v1/LOCAL-REVIEW-2026-10-10.md
 
 spike_01_result:
   recorded: "2026-10-05"
