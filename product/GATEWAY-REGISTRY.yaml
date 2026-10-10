@@ -223,8 +223,8 @@ registry:
     status: BLOCKED
     note: "Main puppet Marlow expressive rig and acting is proposed but not implemented; current spike is primitive."
   reversed_shadow_to_puppet_control:
-    status: BLOCKED
-    note: "Actual shadow-initiated puppet rig action beyond refusal not implemented, must be Rive-native."
+    status: ACTIVE
+    note: "Native LOCAL Rive 1.5.1 scene: fourth click puppet down/shadow holds up; automatic Puppet Pose rises ~48 frames later without click. Code and PNGs proven in CI 38090704716, but new Rive Editor/Web and visible physical rope causality NOT PROVEN. Full experience not promoted."
   consequential_stage_prop:
     status: BLOCKED
     note: "Secondary prop/lever must affect show state, not decorative input; currently not implemented."
@@ -253,3 +253,13 @@ registry:
   stage_v1_web_regression:
     status: BLOCKED
     note: "No hosted/published browser artifact for new stage, no touch or external viewer proof."
+
+  stage_v1_four_act_reversal:
+    status: PROVEN
+    note: "LOCAL Rive CLI 1.5.1; synthetic pointer inputs first sync, delay 2-3, fourth shadow hold, puppet forced up without click. 3 timed rendered PNGs inspected. CI 38090704716."
+  stage_v1_autonomous_reset:
+    status: PROVEN
+    note: "LOCAL pixel-perfect screenshot comparison: reset from takeover equals initial, next click equals initial SYNC. CI 38090704716."
+  stage_v1_controller_legibility:
+    status: BLOCKED
+    note: "Visible rope from shadow to puppet and meaningful operator consequence not yet authored; cold player comprehension untested."
