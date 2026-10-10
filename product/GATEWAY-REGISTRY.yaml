@@ -215,3 +215,28 @@ registry:
     status: PROVEN
   post_mortem:
     status: BLOCKED
+
+  full_experience_world_stage:
+    status: BLOCKED
+    note: "Crafted authored theatre, playbill, audience and stage atmosphere not implemented. See product/FULL-EXPERIENCE-DEPTH-REOPEN-2026-10-10.md."
+  expressive_puppet_character:
+    status: BLOCKED
+    note: "Main puppet Marlow expressive rig and acting is proposed but not implemented; current spike is primitive."
+  reversed_shadow_to_puppet_control:
+    status: BLOCKED
+    note: "Actual shadow-initiated puppet rig action beyond refusal not implemented, must be Rive-native."
+  consequential_stage_prop:
+    status: BLOCKED
+    note: "Secondary prop/lever must affect show state, not decorative input; currently not implemented."
+  user_goal_and_show_progression:
+    status: ACTIVE
+    note: "Proposed final performance objective and tension dramaturgy under artistic review."
+  two_authored_endings_replay:
+    status: BLOCKED
+    note: "Cut strings vs extinguish lamp endings, character outcome and replay not implemented."
+  human_touch_full_art:
+    status: BLOCKED
+    note: "Final hand-authored stage, character expressions and detailed Rive animation not done."
+  mechanic_not_definition_of_done:
+    status: ACTIVE
+    note: "Hard prohibition: Editor SYNC/DELAY/HOLD/RESET proof does not authorize final product depth or submission readiness."
