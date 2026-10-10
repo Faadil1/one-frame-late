@@ -5,11 +5,17 @@ on:
     branches: [feat/paper-theatre-stage-v1]
     paths:
       - 'rive/spike-01/**'
+      - 'rive/last-performance-stage-v1/**'
+      - 'scripts/verify-private-stage-copy-local.sh'
+      - 'scripts/create-private-stage-copy.sh'
       - 'scripts/validate-stage-v1.sh'
       - '.github/workflows/rive-stage-v1.yml'
   pull_request:
     paths:
       - 'rive/spike-01/**'
+      - 'rive/last-performance-stage-v1/**'
+      - 'scripts/verify-private-stage-copy-local.sh'
+      - 'scripts/create-private-stage-copy.sh'
       - 'scripts/validate-stage-v1.sh'
       - '.github/workflows/rive-stage-v1.yml'
 permissions:
@@ -32,6 +38,11 @@ jobs:
         run: |
           export PATH="$HOME/.rive/bin:$PATH"
           bash scripts/validate-stage-v1.sh
+      - name: Verify independent Rive workcopy without remote write
+        run: |
+          export PATH="$HOME/.rive/bin:$PATH"
+          bash -n scripts/create-private-stage-copy.sh
+          bash scripts/verify-private-stage-copy-local.sh
       - name: Save local-only screenshots (not hosted runtime)
         if: always()
         uses: actions/upload-artifact@v4
@@ -39,6 +50,7 @@ jobs:
           name: rive-stage-v1-local
           path: |
             rive/spike-01/build/stage-v1/*.png
+            rive/last-performance-stage-v1/build/copy-verify/*.png
             rive/spike-01/build/problems.log
             rive/spike-01/build/rive.log
           if-no-files-found: warn
