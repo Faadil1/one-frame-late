@@ -6,6 +6,7 @@ handover:
   state: PRE_CONCEPT_LOCK
 
 completed:
+  - "2026-10-10 four-action native Rive progression implemented in scene.rml: SYNC(1), DELAY(2-3), refusal(4), puppet autonomously rises after 48 frames, shadow drops after original 2-second hold; RESET and fresh SYNC pixel-identical to initial. Rive CLI 1.5.1 CI 38090704716 PASS at tested commit 04eb03f; evidence/stage-v1/FOUR-ACT-REVERSAL-LOCAL-2026-10-10.md. Stage V1 Editor and Web remain untested."
   - "2026-10-10 Stage V1 code on feat/paper-theatre-stage-v1: 100 native Rive Shapes, decorated theater, puppet and shadow face details, lamp, rope and native interactive cue bell. CI Rive CLI 1.5.1 run 38090136053 PASSED; input PNG visuals reviewed. Initial all-dark overlay failure corrected by reversing draw order and locked into image-difference regression guard; proof evidence/stage-v1/LOCAL-REVIEW-2026-10-10.md. This is LOCAL ONLY; modified Rive Editor/Web and full art, reversed control, endings are not done."
   - "2026-10-10 user creative-depth correction: interactive SYNC/DELAY/HOLD/RESET proof is insufficient for challenge-ready entry. Reopened The Last Performance as rich puppet theatre in product/FULL-EXPERIENCE-DEPTH-REOPEN-2026-10-10.md; no final stage/art/reversed control/two endings implemented."
   - "Claude Code 2.1.289 installed successfully in the Codespace; claude doctor reports no installation issues."
@@ -77,5 +78,5 @@ do_not_do_yet:
 
 exact_next_gate: TECHNICAL_REALITY_RUNTIME_AND_COMPREHENSION
 exact_next_owner: project_implementation
-exact_next_action: "PR #2 Stage V1 CI local gate and visual review passed. Verify updated stage/bell in Rive Editor through controlled file/version; build real shadow-command control plus two outcomes and original hand-rigged art; test target browser and cold viewer before any publication readiness."
+exact_next_action: "PR #2 stage + cue + 4-click Rive native reversal + RESET verified LOCAL. Use controlled Rive Editor version for new scene then browser link and viewer test; add visible rope from shadow and authored performance/choices/endings. NO publish or final submit yet."
 promotion_condition: "Only after the LOCAL-proven behavior is confirmed in the supported target runtime and an uninstructed viewer recognizes the shadow disobedience may the project move to CONCEPT_LOCK review."
