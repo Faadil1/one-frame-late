@@ -45,6 +45,18 @@ sequence+=(--pointer=click@150,315 --pointer=move@20,20)
 rive . --screenshot=build/stage-v1/04-reversal-resistance-300ms.png --quiet "${sequence[@]}" --advance=300ms
 rive . --screenshot=build/stage-v1/05-reversal-puppet-rises-1400ms.png --quiet "${sequence[@]}" --advance=1400ms
 rive . --screenshot=build/stage-v1/06-reversal-shadow-follows-2600ms.png --quiet "${sequence[@]}" --advance=2600ms
+# Recovery gate: RESET from autonomous puppet takeover must clear previous behavior.
+rive . --screenshot=build/stage-v1/07-reset-from-takeover.png --quiet "${sequence[@]}" --advance=1600ms --pointer=click@250,455 --pointer=move@20,20 --advance=700ms
+rive . --screenshot=build/stage-v1/08-replay-after-reset.png --quiet "${sequence[@]}" --advance=1600ms --pointer=click@250,455 --pointer=move@20,20 --advance=700ms --pointer=click@150,315 --pointer=move@20,20 --advance=300ms
+if ! cmp -s build/stage-v1/00-house.png build/stage-v1/07-reset-from-takeover.png; then
+  echo 'RECOVERY_BLOCKED: reset from autonomous takeover does not return to exact initial frame' >&2
+  exit 4
+fi
+if ! cmp -s build/stage-v1/01-puppet-input.png build/stage-v1/08-replay-after-reset.png; then
+  echo 'RECOVERY_BLOCKED: first post-reset puppet click differs from initial SYNC' >&2
+  exit 4
+fi
+
 if cmp -s build/stage-v1/04-reversal-resistance-300ms.png build/stage-v1/05-reversal-puppet-rises-1400ms.png; then
   echo "REVERSAL_BLOCKED: no difference after autonomous no-click shadow command" >&2
   exit 3
