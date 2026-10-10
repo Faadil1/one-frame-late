@@ -1,5 +1,5 @@
 <Rive version="1" kind="fragment">
-    <!-- ONE FRAME LATE -- Technical Reality Spike 01
+    <!-- ONE FRAME LATE -- Technical Reality Spike 01 + THE LAST PERFORMANCE Stage V1
          SYNC -> DELAY -> SHADOW_HOLD -> RESET, driven by view model + state machine only.
          Click the puppet to toggle its arm. Click the square button to RESET.
          Progression memory = ViewModel.moves (valid puppet pose changes):
@@ -11,13 +11,94 @@
         <LayoutComponentStyle name="Artboard Style" id="0:5"/>
 
         <Fill name="Background" id="0:92">
-            <SolidColor colorValue="FFD8D3C8" name="Color" id="0:93"/>
+            <SolidColor colorValue="FF17111C" name="Color" id="0:93"/>
         </Fill>
+
+
+        <!-- THE LAST PERFORMANCE - STAGE PASS V1: actual authored scenery, non-interactive except Cue Bell. -->
+        <Shape x="250" y="251" name="Stage Outer Shadow" id="0:2000"><Rectangle width="496" height="494" cornerRadiusTL="14" name="Path" id="0:2001"/><Fill name="Fill" id="0:2002"><SolidColor colorValue="FF120F19" name="Color" id="0:2003"/></Fill></Shape>
+        <Shape x="250" y="249" name="Carved Wood Inner Frame" id="0:2004"><Rectangle width="456" height="465" cornerRadiusTL="8" name="Path" id="0:2005"/><Fill name="Fill" id="0:2006"><SolidColor colorValue="FF553229" name="Color" id="0:2007"/></Fill></Shape>
+        <Shape x="250" y="247" name="Stage Paper Scrim Border" id="0:2008"><Rectangle width="406" height="378" cornerRadiusTL="7" name="Path" id="0:2009"/><Fill name="Fill" id="0:2010"><SolidColor colorValue="FF9E654C" name="Color" id="0:2011"/></Fill></Shape>
+        <Shape x="250" y="248" name="Vellum Scrim" id="0:2012"><Rectangle width="388" height="362" cornerRadiusTL="4" name="Path" id="0:2013"/><Fill name="Fill" id="0:2014"><SolidColor colorValue="FFF1DFBB" name="Color" id="0:2015"/></Fill></Shape>
+        <Shape x="250" y="200" name="Lantern Halo" id="0:2016"><Ellipse width="347" height="310" name="Path" id="0:2017"/><Fill name="Fill" id="0:2018"><SolidColor colorValue="22FFF6D9" name="Color" id="0:2019"/></Fill></Shape>
+        <Shape x="340" y="257" name="Shadow Scrim Section" id="0:2020"><Rectangle width="180" height="312" name="Path" id="0:2021"/><Fill name="Fill" id="0:2022"><SolidColor colorValue="FFE7CFB0" name="Color" id="0:2023"/></Fill></Shape>
+        <Shape x="251" y="251" name="Scrim Seam" id="0:2024"><Rectangle width="2" height="336" name="Path" id="0:2025"/><Fill name="Fill" id="0:2026"><SolidColor colorValue="44A7866F" name="Color" id="0:2027"/></Fill></Shape>
+        <Shape x="250" y="401" name="Scenic Horizon" id="0:2028"><Rectangle width="382" height="3" name="Path" id="0:2029"/><Fill name="Fill" id="0:2030"><SolidColor colorValue="FFB59170" name="Color" id="0:2031"/></Fill></Shape>
+        <Shape x="35" y="240" name="Proscenium Left Pilaster" id="0:2032"><Rectangle width="55" height="390" cornerRadiusTL="5" name="Path" id="0:2033"/><Fill name="Fill" id="0:2034"><SolidColor colorValue="FF623629" name="Color" id="0:2035"/></Fill></Shape>
+        <Shape x="62" y="241" name="Left Carved Trim" id="0:2036"><Rectangle width="7" height="371" name="Path" id="0:2037"/><Fill name="Fill" id="0:2038"><SolidColor colorValue="FFB88253" name="Color" id="0:2039"/></Fill></Shape>
+        <Shape x="465" y="240" name="Proscenium Right Pilaster" id="0:2040"><Rectangle width="55" height="390" cornerRadiusTL="5" name="Path" id="0:2041"/><Fill name="Fill" id="0:2042"><SolidColor colorValue="FF623629" name="Color" id="0:2043"/></Fill></Shape>
+        <Shape x="438" y="241" name="Right Carved Trim" id="0:2044"><Rectangle width="7" height="371" name="Path" id="0:2045"/><Fill name="Fill" id="0:2046"><SolidColor colorValue="FFB88253" name="Color" id="0:2047"/></Fill></Shape>
+        <Shape x="250" y="48" name="Top Stage Crown" id="0:2048"><Rectangle width="497" height="96" cornerRadiusTL="10" name="Path" id="0:2049"/><Fill name="Fill" id="0:2050"><SolidColor colorValue="FF3D2530" name="Color" id="0:2051"/></Fill></Shape>
+        <Shape x="250" y="77" name="Stage Crown Inlay" id="0:2052"><Rectangle width="445" height="6" name="Path" id="0:2053"/><Fill name="Fill" id="0:2054"><SolidColor colorValue="FFD3A36E" name="Color" id="0:2055"/></Fill></Shape>
+        <Shape x="250" y="95" name="Upper Red Valance" id="0:2056"><Rectangle width="430" height="52" cornerRadiusTL="8" name="Path" id="0:2057"/><Fill name="Fill" id="0:2058"><SolidColor colorValue="FF8F3039" name="Color" id="0:2059"/></Fill></Shape>
+        <Shape x="70" y="115" name="Curtain Hand Pleat 1" id="0:2060"><Ellipse width="53" height="43" name="Path" id="0:2061"/><Fill name="Fill" id="0:2062"><SolidColor colorValue="FF8D323B" name="Color" id="0:2063"/></Fill></Shape>
+        <Shape x="115" y="115" name="Curtain Hand Pleat 2" id="0:2064"><Ellipse width="53" height="43" name="Path" id="0:2065"/><Fill name="Fill" id="0:2066"><SolidColor colorValue="FFA7494A" name="Color" id="0:2067"/></Fill></Shape>
+        <Shape x="160" y="115" name="Curtain Hand Pleat 3" id="0:2068"><Ellipse width="53" height="43" name="Path" id="0:2069"/><Fill name="Fill" id="0:2070"><SolidColor colorValue="FF8D323B" name="Color" id="0:2071"/></Fill></Shape>
+        <Shape x="205" y="115" name="Curtain Hand Pleat 4" id="0:2072"><Ellipse width="53" height="43" name="Path" id="0:2073"/><Fill name="Fill" id="0:2074"><SolidColor colorValue="FFA7494A" name="Color" id="0:2075"/></Fill></Shape>
+        <Shape x="250" y="115" name="Curtain Hand Pleat 5" id="0:2076"><Ellipse width="53" height="43" name="Path" id="0:2077"/><Fill name="Fill" id="0:2078"><SolidColor colorValue="FF8D323B" name="Color" id="0:2079"/></Fill></Shape>
+        <Shape x="295" y="115" name="Curtain Hand Pleat 6" id="0:2080"><Ellipse width="53" height="43" name="Path" id="0:2081"/><Fill name="Fill" id="0:2082"><SolidColor colorValue="FFA7494A" name="Color" id="0:2083"/></Fill></Shape>
+        <Shape x="340" y="115" name="Curtain Hand Pleat 7" id="0:2084"><Ellipse width="53" height="43" name="Path" id="0:2085"/><Fill name="Fill" id="0:2086"><SolidColor colorValue="FF8D323B" name="Color" id="0:2087"/></Fill></Shape>
+        <Shape x="385" y="115" name="Curtain Hand Pleat 8" id="0:2088"><Ellipse width="53" height="43" name="Path" id="0:2089"/><Fill name="Fill" id="0:2090"><SolidColor colorValue="FFA7494A" name="Color" id="0:2091"/></Fill></Shape>
+        <Shape x="430" y="115" name="Curtain Hand Pleat 9" id="0:2092"><Ellipse width="53" height="43" name="Path" id="0:2093"/><Fill name="Fill" id="0:2094"><SolidColor colorValue="FF8D323B" name="Color" id="0:2095"/></Fill></Shape>
+        <Shape x="250" y="123" name="Top Brass Bar" id="0:2096"><Rectangle width="398" height="4" name="Path" id="0:2097"/><Fill name="Fill" id="0:2098"><SolidColor colorValue="FFB47B4F" name="Color" id="0:2099"/></Fill></Shape>
+        <Shape x="85" y="273" name="Curtain Left Fold" id="0:2100"><Rectangle width="51" height="300" cornerRadiusTL="8" name="Path" id="0:2101"/><Fill name="Fill" id="0:2102"><SolidColor colorValue="FF922E3B" name="Color" id="0:2103"/></Fill></Shape>
+        <Shape x="99" y="278" name="Curtain Left Edge" id="0:2104"><Rectangle width="10" height="285" name="Path" id="0:2105"/><Fill name="Fill" id="0:2106"><SolidColor colorValue="FFB84B4F" name="Color" id="0:2107"/></Fill></Shape>
+        <Shape x="415" y="273" name="Curtain Right Fold" id="0:2108"><Rectangle width="51" height="300" cornerRadiusTL="8" name="Path" id="0:2109"/><Fill name="Fill" id="0:2110"><SolidColor colorValue="FF922E3B" name="Color" id="0:2111"/></Fill></Shape>
+        <Shape x="401" y="278" name="Curtain Right Edge" id="0:2112"><Rectangle width="10" height="285" name="Path" id="0:2113"/><Fill name="Fill" id="0:2114"><SolidColor colorValue="FFB84B4F" name="Color" id="0:2115"/></Fill></Shape>
+        <Shape x="250" y="419" name="Stage Deck Shadow" id="0:2116"><Rectangle width="410" height="26" name="Path" id="0:2117"/><Fill name="Fill" id="0:2118"><SolidColor colorValue="FF40242D" name="Color" id="0:2119"/></Fill></Shape>
+        <Shape x="250" y="438" name="Footlight Apron" id="0:2120"><Rectangle width="482" height="25" cornerRadiusTL="4" name="Path" id="0:2121"/><Fill name="Fill" id="0:2122"><SolidColor colorValue="FF744536" name="Color" id="0:2123"/></Fill></Shape>
+        <Shape x="250" y="448" name="Front Stage Gold Trim" id="0:2124"><Rectangle width="476" height="4" name="Path" id="0:2125"/><Fill name="Fill" id="0:2126"><SolidColor colorValue="FFD4A36A" name="Color" id="0:2127"/></Fill></Shape>
+        <Shape x="250" y="477" name="Lower Stage Plank" id="0:2128"><Rectangle width="497" height="43" cornerRadiusTL="4" name="Path" id="0:2129"/><Fill name="Fill" id="0:2130"><SolidColor colorValue="FF402731" name="Color" id="0:2131"/></Fill></Shape>
+        <Shape x="57" y="488" name="Lower Wood Grain 1" id="0:2132"><Rectangle width="39" height="1" name="Path" id="0:2133"/><Fill name="Fill" id="0:2134"><SolidColor colorValue="AAAC7756" name="Color" id="0:2135"/></Fill></Shape>
+        <Shape x="133" y="488" name="Lower Wood Grain 2" id="0:2136"><Rectangle width="39" height="1" name="Path" id="0:2137"/><Fill name="Fill" id="0:2138"><SolidColor colorValue="AAAC7756" name="Color" id="0:2139"/></Fill></Shape>
+        <Shape x="209" y="488" name="Lower Wood Grain 3" id="0:2140"><Rectangle width="39" height="1" name="Path" id="0:2141"/><Fill name="Fill" id="0:2142"><SolidColor colorValue="AAAC7756" name="Color" id="0:2143"/></Fill></Shape>
+        <Shape x="285" y="488" name="Lower Wood Grain 4" id="0:2144"><Rectangle width="39" height="1" name="Path" id="0:2145"/><Fill name="Fill" id="0:2146"><SolidColor colorValue="AAAC7756" name="Color" id="0:2147"/></Fill></Shape>
+        <Shape x="361" y="488" name="Lower Wood Grain 5" id="0:2148"><Rectangle width="39" height="1" name="Path" id="0:2149"/><Fill name="Fill" id="0:2150"><SolidColor colorValue="AAAC7756" name="Color" id="0:2151"/></Fill></Shape>
+        <Shape x="437" y="488" name="Lower Wood Grain 6" id="0:2152"><Rectangle width="39" height="1" name="Path" id="0:2153"/><Fill name="Fill" id="0:2154"><SolidColor colorValue="AAAC7756" name="Color" id="0:2155"/></Fill></Shape>
+        <Shape x="91" y="419" name="Footlight Brass Base 1" id="0:2156"><Rectangle width="16" height="8" cornerRadiusTL="2" name="Path" id="0:2157"/><Fill name="Fill" id="0:2158"><SolidColor colorValue="FFAA7248" name="Color" id="0:2159"/></Fill></Shape>
+        <Shape x="91" y="411" name="Footlight Wick 1" id="0:2160"><Ellipse width="10" height="15" name="Path" id="0:2161"/><Fill name="Fill" id="0:2162"><SolidColor colorValue="FFF1C98A" name="Color" id="0:2163"/></Fill></Shape>
+        <Shape x="154" y="419" name="Footlight Brass Base 2" id="0:2164"><Rectangle width="16" height="8" cornerRadiusTL="2" name="Path" id="0:2165"/><Fill name="Fill" id="0:2166"><SolidColor colorValue="FFAA7248" name="Color" id="0:2167"/></Fill></Shape>
+        <Shape x="154" y="411" name="Footlight Wick 2" id="0:2168"><Ellipse width="10" height="15" name="Path" id="0:2169"/><Fill name="Fill" id="0:2170"><SolidColor colorValue="FFF1C98A" name="Color" id="0:2171"/></Fill></Shape>
+        <Shape x="217" y="419" name="Footlight Brass Base 3" id="0:2172"><Rectangle width="16" height="8" cornerRadiusTL="2" name="Path" id="0:2173"/><Fill name="Fill" id="0:2174"><SolidColor colorValue="FFAA7248" name="Color" id="0:2175"/></Fill></Shape>
+        <Shape x="217" y="411" name="Footlight Wick 3" id="0:2176"><Ellipse width="10" height="15" name="Path" id="0:2177"/><Fill name="Fill" id="0:2178"><SolidColor colorValue="FFF1C98A" name="Color" id="0:2179"/></Fill></Shape>
+        <Shape x="280" y="419" name="Footlight Brass Base 4" id="0:2180"><Rectangle width="16" height="8" cornerRadiusTL="2" name="Path" id="0:2181"/><Fill name="Fill" id="0:2182"><SolidColor colorValue="FFAA7248" name="Color" id="0:2183"/></Fill></Shape>
+        <Shape x="280" y="411" name="Footlight Wick 4" id="0:2184"><Ellipse width="10" height="15" name="Path" id="0:2185"/><Fill name="Fill" id="0:2186"><SolidColor colorValue="FFF1C98A" name="Color" id="0:2187"/></Fill></Shape>
+        <Shape x="343" y="419" name="Footlight Brass Base 5" id="0:2188"><Rectangle width="16" height="8" cornerRadiusTL="2" name="Path" id="0:2189"/><Fill name="Fill" id="0:2190"><SolidColor colorValue="FFAA7248" name="Color" id="0:2191"/></Fill></Shape>
+        <Shape x="343" y="411" name="Footlight Wick 5" id="0:2192"><Ellipse width="10" height="15" name="Path" id="0:2193"/><Fill name="Fill" id="0:2194"><SolidColor colorValue="FFF1C98A" name="Color" id="0:2195"/></Fill></Shape>
+        <Shape x="406" y="419" name="Footlight Brass Base 6" id="0:2196"><Rectangle width="16" height="8" cornerRadiusTL="2" name="Path" id="0:2197"/><Fill name="Fill" id="0:2198"><SolidColor colorValue="FFAA7248" name="Color" id="0:2199"/></Fill></Shape>
+        <Shape x="406" y="411" name="Footlight Wick 6" id="0:2200"><Ellipse width="10" height="15" name="Path" id="0:2201"/><Fill name="Fill" id="0:2202"><SolidColor colorValue="FFF1C98A" name="Color" id="0:2203"/></Fill></Shape>
+        <Shape x="250" y="143" name="Stage Spot Lantern Cord" id="0:2204"><Rectangle width="2" height="36" name="Path" id="0:2205"/><Fill name="Fill" id="0:2206"><SolidColor colorValue="FF6A423A" name="Color" id="0:2207"/></Fill></Shape>
+        <Shape x="250" y="163" name="Stage Lamp Housing" id="0:2208"><Ellipse width="53" height="30" name="Path" id="0:2209"/><Fill name="Fill" id="0:2210"><SolidColor colorValue="FF8B573E" name="Color" id="0:2211"/></Fill></Shape>
+        <Shape x="250" y="168" name="Stage Lamp Flame" id="0:2212"><Ellipse width="18" height="18" name="Path" id="0:2213"/><Fill name="Fill" id="0:2214"><SolidColor colorValue="FFF3CA83" name="Color" id="0:2215"/></Fill></Shape>
+        <Shape x="250" y="151" name="Stage Lamp Bracket" id="0:2216"><Rectangle width="24" height="7" name="Path" id="0:2217"/><Fill name="Fill" id="0:2218"><SolidColor colorValue="FFB78654" name="Color" id="0:2219"/></Fill></Shape>
+        <Shape x="150" y="168" name="Puppet Cord Center" id="0:2220"><Rectangle width="2" height="81" name="Path" id="0:2221"/><Fill name="Fill" id="0:2222"><SolidColor colorValue="779A795D" name="Color" id="0:2223"/></Fill></Shape>
+        <Shape x="106" y="177" name="Puppet Cord Left Wrist" id="0:2224"><Rectangle width="2" height="146" name="Path" id="0:2225"/><Fill name="Fill" id="0:2226"><SolidColor colorValue="779A795D" name="Color" id="0:2227"/></Fill></Shape>
+        <Shape x="194" y="176" name="Puppet Cord Right Wrist" id="0:2228"><Rectangle width="2" height="146" name="Path" id="0:2229"/><Fill name="Fill" id="0:2230"><SolidColor colorValue="779A795D" name="Color" id="0:2231"/></Fill></Shape>
+        <Shape x="76" y="81" name="Carved Stage Pin 1" id="0:2232"><Ellipse width="5" height="5" name="Path" id="0:2233"/><Fill name="Fill" id="0:2234"><SolidColor colorValue="FFE4BB7F" name="Color" id="0:2235"/></Fill></Shape>
+        <Shape x="126" y="81" name="Carved Stage Pin 2" id="0:2236"><Ellipse width="5" height="5" name="Path" id="0:2237"/><Fill name="Fill" id="0:2238"><SolidColor colorValue="FFE4BB7F" name="Color" id="0:2239"/></Fill></Shape>
+        <Shape x="176" y="81" name="Carved Stage Pin 3" id="0:2240"><Ellipse width="5" height="5" name="Path" id="0:2241"/><Fill name="Fill" id="0:2242"><SolidColor colorValue="FFE4BB7F" name="Color" id="0:2243"/></Fill></Shape>
+        <Shape x="226" y="81" name="Carved Stage Pin 4" id="0:2244"><Ellipse width="5" height="5" name="Path" id="0:2245"/><Fill name="Fill" id="0:2246"><SolidColor colorValue="FFE4BB7F" name="Color" id="0:2247"/></Fill></Shape>
+        <Shape x="276" y="81" name="Carved Stage Pin 5" id="0:2248"><Ellipse width="5" height="5" name="Path" id="0:2249"/><Fill name="Fill" id="0:2250"><SolidColor colorValue="FFE4BB7F" name="Color" id="0:2251"/></Fill></Shape>
+        <Shape x="326" y="81" name="Carved Stage Pin 6" id="0:2252"><Ellipse width="5" height="5" name="Path" id="0:2253"/><Fill name="Fill" id="0:2254"><SolidColor colorValue="FFE4BB7F" name="Color" id="0:2255"/></Fill></Shape>
+        <Shape x="376" y="81" name="Carved Stage Pin 7" id="0:2256"><Ellipse width="5" height="5" name="Path" id="0:2257"/><Fill name="Fill" id="0:2258"><SolidColor colorValue="FFE4BB7F" name="Color" id="0:2259"/></Fill></Shape>
+        <Shape x="426" y="81" name="Carved Stage Pin 8" id="0:2260"><Ellipse width="5" height="5" name="Path" id="0:2261"/><Fill name="Fill" id="0:2262"><SolidColor colorValue="FFE4BB7F" name="Color" id="0:2263"/></Fill></Shape>
+        <Shape x="117" y="140" name="Ink Pinhole 1" id="0:2264"><Ellipse width="3" height="3" name="Path" id="0:2265"/><Fill name="Fill" id="0:2266"><SolidColor colorValue="99805656" name="Color" id="0:2267"/></Fill></Shape>
+        <Shape x="136" y="160" name="Ink Pinhole 2" id="0:2268"><Ellipse width="4" height="4" name="Path" id="0:2269"/><Fill name="Fill" id="0:2270"><SolidColor colorValue="99805656" name="Color" id="0:2271"/></Fill></Shape>
+        <Shape x="364" y="148" name="Ink Pinhole 3" id="0:2272"><Ellipse width="3" height="3" name="Path" id="0:2273"/><Fill name="Fill" id="0:2274"><SolidColor colorValue="99805656" name="Color" id="0:2275"/></Fill></Shape>
+        <Shape x="387" y="183" name="Ink Pinhole 4" id="0:2276"><Ellipse width="4" height="4" name="Path" id="0:2277"/><Fill name="Fill" id="0:2278"><SolidColor colorValue="99805656" name="Color" id="0:2279"/></Fill></Shape>
+        <Shape x="255" y="110" name="Ink Pinhole 5" id="0:2280"><Ellipse width="3" height="3" name="Path" id="0:2281"/><Fill name="Fill" id="0:2282"><SolidColor colorValue="99805656" name="Color" id="0:2283"/></Fill></Shape>
+        <Shape x="294" y="143" name="Ink Pinhole 6" id="0:2284"><Ellipse width="4" height="4" name="Path" id="0:2285"/><Fill name="Fill" id="0:2286"><SolidColor colorValue="99805656" name="Color" id="0:2287"/></Fill></Shape>
+        <Shape x="191" y="132" name="Ink Pinhole 7" id="0:2288"><Ellipse width="3" height="3" name="Path" id="0:2289"/><Fill name="Fill" id="0:2290"><SolidColor colorValue="99805656" name="Color" id="0:2291"/></Fill></Shape>
 
         <Shape x="350" y="205" name="Shadow Head" id="0:94">
             <Ellipse width="58" height="58" name="Path" id="0:95"/>
             <Fill name="Fill" id="0:96"><SolidColor colorValue="CC15151D" name="Color" id="0:97"/></Fill>
         </Shape>
+
+        <!-- Stage V1: puppet/shadow faces retain craft above torso listener hit regions. -->
+        <Shape x="340" y="200" name="Shadow Left Eye Glint" id="0:2292"><Ellipse width="5" height="7" name="Path" id="0:2293"/><Fill name="Fill" id="0:2294"><SolidColor colorValue="FFFFD69E" name="Color" id="0:2295"/></Fill></Shape>
+        <Shape x="362" y="200" name="Shadow Right Eye Glint" id="0:2296"><Ellipse width="5" height="7" name="Path" id="0:2297"/><Fill name="Fill" id="0:2298"><SolidColor colorValue="FFFFD69E" name="Color" id="0:2299"/></Fill></Shape>
+        <Shape x="351" y="218" name="Shadow Mouth Notch" id="0:2300"><Rectangle width="12" height="2" name="Path" id="0:2301"/><Fill name="Fill" id="0:2302"><SolidColor colorValue="88FFF0C5" name="Color" id="0:2303"/></Fill></Shape>
         <Shape x="324" y="372" name="Shadow Leg L" id="0:98">
             <Rectangle width="22" height="60" originY="0" name="Path" id="0:99"/>
             <Fill name="Fill" id="0:100"><SolidColor colorValue="CC15151D" name="Color" id="0:101"/></Fill>
@@ -43,6 +124,13 @@
             <Ellipse width="58" height="58" name="Path" id="0:117"/>
             <Fill name="Fill" id="0:118"><SolidColor colorValue="FFF3E6CC" name="Color" id="0:119"/></Fill>
         </Shape>
+
+        <!-- Stage V1: puppet/shadow faces retain craft above torso listener hit regions. -->
+        <Shape x="138" y="199" name="Marlow Left Ink Eye" id="0:2304"><Ellipse width="5" height="8" name="Path" id="0:2305"/><Fill name="Fill" id="0:2306"><SolidColor colorValue="FF342530" name="Color" id="0:2307"/></Fill></Shape>
+        <Shape x="162" y="199" name="Marlow Right Ink Eye" id="0:2308"><Ellipse width="5" height="8" name="Path" id="0:2309"/><Fill name="Fill" id="0:2310"><SolidColor colorValue="FF342530" name="Color" id="0:2311"/></Fill></Shape>
+        <Shape x="150" y="219" name="Marlow Pencil Mouth" id="0:2312"><Rectangle width="13" height="2" name="Path" id="0:2313"/><Fill name="Fill" id="0:2314"><SolidColor colorValue="FF85584A" name="Color" id="0:2315"/></Fill></Shape>
+        <Shape x="129" y="211" name="Marlow Cheek Stain" id="0:2316"><Ellipse width="7" height="5" name="Path" id="0:2317"/><Fill name="Fill" id="0:2318"><SolidColor colorValue="77B4494F" name="Color" id="0:2319"/></Fill></Shape>
+        <Shape x="171" y="211" name="Marlow Cheek Stain Right" id="0:2320"><Ellipse width="7" height="5" name="Path" id="0:2321"/><Fill name="Fill" id="0:2322"><SolidColor colorValue="77B4494F" name="Color" id="0:2323"/></Fill></Shape>
         <Shape x="124" y="372" name="Puppet Leg L" id="0:120">
             <Rectangle width="22" height="60" originY="0" name="Path" id="0:121"/>
             <Fill name="Fill" id="0:122"><SolidColor colorValue="FF8A5A2B" name="Color" id="0:123"/></Fill>
@@ -73,6 +161,14 @@
             <Fill name="Fill" id="0:143"><SolidColor colorValue="FFD8D3C8" name="Color" id="0:144"/></Fill>
         </Shape>
 
+
+        <!-- Stage V1: playable BELL cue, a diegetic second control for the SAME real puppet state. -->
+        <Shape x="452" y="437" name="Cue Bell Wooden Stand" id="0:2324"><Rectangle width="48" height="13" cornerRadiusTL="4" name="Path" id="0:2325"/><Fill name="Fill" id="0:2326"><SolidColor colorValue="FF61352D" name="Color" id="0:2327"/></Fill></Shape>
+        <Shape x="451" y="422" name="Cue Bell Stem" id="0:2328"><Rectangle width="5" height="26" name="Path" id="0:2329"/><Fill name="Fill" id="0:2330"><SolidColor colorValue="FFB78859" name="Color" id="0:2331"/></Fill></Shape>
+        <Shape x="450" y="398" name="Cue Bell Knob" id="0:2332"><Ellipse width="13" height="9" name="Path" id="0:2333"/><Fill name="Fill" id="0:2334"><SolidColor colorValue="FFECC68B" name="Color" id="0:2335"/></Fill></Shape>
+        <Shape x="452" y="418" name="Stage Cue Bell" id="0:2336"><Ellipse width="43" height="34" name="Path" id="0:2337"/><Fill name="Fill" id="0:2338"><SolidColor colorValue="FFD5AA62" name="Color" id="0:2339"/></Fill></Shape>
+        <Shape x="452" y="434" name="Bell Rim Engraving" id="0:2340"><Rectangle width="28" height="3" name="Path" id="0:2341"/><Fill name="Fill" id="0:2342"><SolidColor colorValue="FFF2D9A0" name="Color" id="0:2343"/></Fill></Shape>
+
         <StateMachine name="State Machine 1" id="0:7">
             <StateMachineListenerSingle targetId="0:20" listenerTypeValue="click" name="Toggle puppet arm" id="0:90">
                 <ListenerViewModelChange fromViewModelProperty="true" fromDataBindId="0:81" id="0:145">
@@ -98,6 +194,23 @@
                 <ListenerViewModelChange id="0:154">
                     <BindablePropertyNumber propertyValue="0" id="0:155">
                         <DataBindContext sourcePathIds="0:60-0:62" propertyKey="636" direction="true" id="0:156"/>
+                    </BindablePropertyNumber>
+                </ListenerViewModelChange>
+            </StateMachineListenerSingle>
+
+
+            <!-- The on-stage cue bell reuses puppet ViewModel toggle+counter rather than a second fake animation. -->
+            <StateMachineListenerSingle targetId="0:2336" listenerTypeValue="click" name="Ring stage cue bell" id="0:4000">
+                <ListenerViewModelChange fromViewModelProperty="true" fromDataBindId="0:4010" id="0:4001">
+                    <BindablePropertyBoolean id="0:4002">
+                        <DataBindContext sourcePathIds="0:60-0:61" propertyKey="634" id="0:4010" converterId="0:70"/>
+                        <DataBindContext sourcePathIds="0:60-0:61" propertyKey="634" direction="true" id="0:4003"/>
+                    </BindablePropertyBoolean>
+                </ListenerViewModelChange>
+                <ListenerViewModelChange fromViewModelProperty="true" fromDataBindId="0:4011" id="0:4004">
+                    <BindablePropertyNumber id="0:4005">
+                        <DataBindContext sourcePathIds="0:60-0:62" propertyKey="636" id="0:4011" converterId="0:71"/>
+                        <DataBindContext sourcePathIds="0:60-0:62" propertyKey="636" direction="true" id="0:4006"/>
                     </BindablePropertyNumber>
                 </ListenerViewModelChange>
             </StateMachineListenerSingle>
