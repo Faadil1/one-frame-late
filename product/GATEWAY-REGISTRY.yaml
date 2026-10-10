@@ -263,3 +263,13 @@ registry:
   stage_v1_controller_legibility:
     status: BLOCKED
     note: "Visible rope from shadow to puppet and meaningful operator consequence not yet authored; cold player comprehension untested."
+
+  isolated_rive_private_workcopy:
+    status: PROVEN
+    note: "New independent rive/last-performance-stage-v1 source + rive.yaml only projectId 1882813 (Personal Files), NO fileId. Rive CLI 1.5.1 GitHub Actions run 38091840329 verified local scene and interactive frames. Copy exists in GitHub only."
+  remote_private_editor_file_creation:
+    status: BLOCKED
+    note: "User approved only independent private Rive copy. Actual first push not executed: requires Rive login in user's Codespace, then guarded one-time scripts/create-private-stage-copy.sh. Original fileId 2632594 never modified."
+  remote_original_file_protection:
+    status: PROVEN
+    note: "New config has no fileId, guarded script refuses old 2632594 / any already bound file, forces Personal Files projectId=1882813. Earlier original Editor file remains unchanged by these GitHub writes."
