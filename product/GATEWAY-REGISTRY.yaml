@@ -217,8 +217,8 @@ registry:
     status: BLOCKED
 
   full_experience_world_stage:
-    status: BLOCKED
-    note: "Crafted authored theatre, playbill, audience and stage atmosphere not implemented. See product/FULL-EXPERIENCE-DEPTH-REOPEN-2026-10-10.md."
+    status: ACTIVE
+    note: "Stage V1 physical frame, curtains, scrim, lamp and ropes rendered in Rive CLI; playbill, audience, artistic rig and full world not yet finished. LOCAL evidence only."
   expressive_puppet_character:
     status: BLOCKED
     note: "Main puppet Marlow expressive rig and acting is proposed but not implemented; current spike is primitive."
@@ -240,3 +240,16 @@ registry:
   mechanic_not_definition_of_done:
     status: ACTIVE
     note: "Hard prohibition: Editor SYNC/DELAY/HOLD/RESET proof does not authorize final product depth or submission readiness."
+
+  stage_v1_local_render:
+    status: PROVEN
+    note: "Native CLI 1.5.1 run 38090136053: 0 errors/0 warnings, problems=[], 100 shapes, actual Rive PNGs reviewed after z-order repair."
+  stage_v1_cue_bell:
+    status: PROVEN
+    note: "A new native StateMachineListenerSingle on the bell uses puppetArmUp and moves binding; local screenshots show puppet and shadow react. Editor event and direct numerical counter still NOT independently inspected."
+  stage_v1_editor_regression:
+    status: BLOCKED
+    note: "Previous SPIKE scene Editor input proven; this modified stage and bell NOT yet verified in Editor. No Rive push."
+  stage_v1_web_regression:
+    status: BLOCKED
+    note: "No hosted/published browser artifact for new stage, no touch or external viewer proof."
