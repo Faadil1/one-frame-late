@@ -36,4 +36,14 @@ rive . --screenshot=build/stage-v1/00-house.png --quiet --advance=1
 rive . --screenshot=build/stage-v1/01-puppet-input.png --quiet --advance=1 --pointer=click@150,315 --pointer=move@20,20 --advance=300ms
 rive . --screenshot=build/stage-v1/02-cue-bell-input.png --quiet --advance=1 --pointer=click@452,418 --pointer=move@20,20 --advance=300ms
 rive . --screenshot=build/stage-v1/03-cue-then-puppet.png --quiet --advance=1 --pointer=click@452,418 --pointer=move@20,20 --advance=700ms --pointer=click@150,315 --pointer=move@20,20 --advance=300ms
-echo "LOCAL_STAGE_V1_VERIFY_DONE. Inspect PNGs before Editor/Web claims."
+# Protect against RML render layers accidentally covering all puppets.
+# A clean compiler does not imply the stage remains visible or responds to input.
+if cmp -s build/stage-v1/00-house.png build/stage-v1/01-puppet-input.png; then
+  echo "VISUAL_BLOCKED: scene unchanged after puppet click (black overlay / event / staging defect)." >&2
+  exit 3
+fi
+if cmp -s build/stage-v1/00-house.png build/stage-v1/02-cue-bell-input.png; then
+  echo "VISUAL_BLOCKED: scene unchanged after stage cue click (listener or occlusion defect)." >&2
+  exit 3
+fi
+echo "LOCAL_STAGE_V1_VERIFY_DONE. Frame files differ after both actions; inspect images for correctness, then test Editor/Web."
