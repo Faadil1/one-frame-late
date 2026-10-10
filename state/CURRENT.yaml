@@ -33,7 +33,7 @@ lifecycle:
   macro: DESIGN
   judged_cycle: EXECUTION_ACTIVE__LOCAL_RIVE_BEHAVIOR_PROVEN__RUNTIME_AND_COMPREHENSION_PENDING
   current_owner: project_implementation
-  current_primary_workstream: TECHNICAL_REALITY_SPIKE_01
+  current_primary_workstream: TARGET_WEB_RUNTIME_AND_FULL_EXPERIENCE_REOPEN
   workstream_drift_status: NO_DRIFT
 
 winning_intelligence:
@@ -147,8 +147,21 @@ technical_environment:
         - CLAUDE.md
         - .gitignore
 
-exact_next_action: "Rive Editor behavioral SYNC/DELAY/HOLD/RESET and fresh sync visually PROVEN in fifth user clip. Next gate is AUTHORIZED TARGET_WEB_RUNTIME, not another Editor video: inspect supported Rive sharing/runtime path and browser behavior, preserve protected public publish approval, then cold viewer comprehension and 2–3 meaningful interaction revision."
-last_updated: "2026-10-09"
+exact_next_action: "Editor SYNC/DELAY/HOLD/RESET is qualitatively proven but is only a mechanism. Continue authorized target Web test and start full authored theatre/world/character/agency/secondary prop/two-endings depth from product/FULL-EXPERIENCE-DEPTH-REOPEN-2026-10-10.md. Do not claim Concept Lock, build ready or submitted."
+last_updated: "2026-10-10"
+
+full_experience_depth_reopen:
+  date: "2026-10-10"
+  source: USER_FEEDBACK
+  concept_proposal: product/FULL-EXPERIENCE-DEPTH-REOPEN-2026-10-10.md
+  technical_spike_editor_behavior: PROVEN
+  authored_stage_world: NOT_IMPLEMENTED
+  puppet_character_expressivity: NOT_IMPLEMENTED
+  reversed_control: NOT_IMPLEMENTED
+  side_interactions: NOT_IMPLEMENTED
+  consequential_two_endings: NOT_IMPLEMENTED
+  full_product_depth: BLOCKED
+  creative_concept_lock: BLOCKED
 
 spike_01_result:
   recorded: "2026-10-05"
