@@ -1,11 +1,12 @@
 handover:
   project: ONE_FRAME_LATE
-  date: "2026-10-09"
+  date: "2026-10-10"
   repository: Faadil1/one-frame-late
   branch: feat/technical-reality-spike-01
   state: PRE_CONCEPT_LOCK
 
 completed:
+  - "2026-10-10 user creative-depth correction: interactive SYNC/DELAY/HOLD/RESET proof is insufficient for challenge-ready entry. Reopened The Last Performance as rich puppet theatre in product/FULL-EXPERIENCE-DEPTH-REOPEN-2026-10-10.md; no final stage/art/reversed control/two endings implemented."
   - "Claude Code 2.1.289 installed successfully in the Codespace; claude doctor reports no installation issues."
   - "Claude Code authentication proven via claude.ai Pro account; interactive Claude session launched successfully with Sonnet."
   - "Observed expected remote-auth limitation: browser callback to localhost resolves on the Windows host, not inside the Codespace, producing ERR_CONNECTION_REFUSED."
@@ -75,5 +76,5 @@ do_not_do_yet:
 
 exact_next_gate: TECHNICAL_REALITY_RUNTIME_AND_COMPREHENSION
 exact_next_owner: project_implementation
-exact_next_action: "Editor qualitative SYNC/DELAY/HOLD/RESET gate passed. Verify supported target Web runtime path, current Rive prod authorization and actual browser interaction WITHOUT unauthorized public publication; cold comprehension check after web proof. Then simplify 8-toggle onboarding and build original hand-authored art, not just proof."
+exact_next_action: "Target Web check as already authorized for a test link, preserve public protected checkpoint; simultaneously move toward a genuinely authored reactive puppet theatre, expressive cast, goal, real shadow reversal, consequential props, two endings and replay. Do not reduce finished product to 8-toggle proof."
 promotion_condition: "Only after the LOCAL-proven behavior is confirmed in the supported target runtime and an uninstructed viewer recognizes the shadow disobedience may the project move to CONCEPT_LOCK review."
