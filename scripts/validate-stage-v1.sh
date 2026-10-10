@@ -36,9 +36,9 @@ rive . --screenshot=build/stage-v1/00-house.png --quiet --advance=1
 rive . --screenshot=build/stage-v1/01-puppet-input.png --quiet --advance=1 --pointer=click@150,315 --pointer=move@20,20 --advance=300ms
 rive . --screenshot=build/stage-v1/02-cue-bell-input.png --quiet --advance=1 --pointer=click@452,418 --pointer=move@20,20 --advance=300ms
 rive . --screenshot=build/stage-v1/03-cue-then-puppet.png --quiet --advance=1 --pointer=click@452,418 --pointer=move@20,20 --advance=700ms --pointer=click@150,315 --pointer=move@20,20 --advance=300ms
-# Act III: eight body cues, then independent puppet rise (no extra click).
+# Four physical cues: 1 SYNC, 2-3 DELAY, 4 SHADOW HOLD then autonomous puppet rise (no extra click).
 sequence=(--advance=1)
-for i in 1 2 3 4 5 6 7; do
+for i in 1 2 3; do
   sequence+=(--pointer=click@150,315 --pointer=move@20,20 --advance=700ms)
 done
 sequence+=(--pointer=click@150,315 --pointer=move@20,20)
