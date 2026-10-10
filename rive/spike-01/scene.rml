@@ -1,5 +1,5 @@
 <Rive version="1" kind="fragment">
-    <!-- ONE FRAME LATE -- Technical Reality Spike 01 + THE LAST PERFORMANCE Stage V1
+    <!-- ONE FRAME LATE - Technical Reality Spike 01 + THE LAST PERFORMANCE Stage V1
          SYNC -> DELAY -> SHADOW_HOLD -> RESET, driven by view model + state machine only.
          Click the puppet to toggle its arm. Click the square button to RESET.
          Progression memory = ViewModel.moves (valid puppet pose changes):
