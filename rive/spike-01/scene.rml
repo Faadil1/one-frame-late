@@ -243,7 +243,28 @@
                         <TransitionValueBooleanComparator value="true" id="0:177"/>
                     </TransitionViewModelCondition>
                 </StateTransition>
-                </AnimationState>
+                
+                <!-- This trigger is stage DRAMATURGY, not mere temporal desync:
+                     after the 8th move lowers the puppet, SHADOW commands it to rise independently. -->
+                <StateTransition stateToId="0:5030" duration="0" id="0:5031">
+                    <TransitionViewModelCondition id="0:5032">
+                        <TransitionPropertyViewModelComparator id="0:5033">
+                            <BindablePropertyBoolean id="0:5060">
+                                <DataBindContext sourcePathIds="0:60-0:61" propertyKey="634" id="0:5035"/>
+                            </BindablePropertyBoolean>
+                        </TransitionPropertyViewModelComparator>
+                        <TransitionValueBooleanComparator value="false" id="0:5036"/>
+                    </TransitionViewModelCondition>
+                    <TransitionViewModelCondition opValue="greaterThanOrEqual" id="0:5037">
+                        <TransitionPropertyViewModelComparator id="0:5038">
+                            <BindablePropertyNumber id="0:5039">
+                                <DataBindContext sourcePathIds="0:60-0:62" propertyKey="636" id="0:5040"/>
+                            </BindablePropertyNumber>
+                        </TransitionPropertyViewModelComparator>
+                        <TransitionValueNumberComparator value="8" id="0:5041"/>
+                    </TransitionViewModelCondition>
+                </StateTransition>
+</AnimationState>
                 <AnimationState x="400" y="0" animationId="0:31" id="0:41">
                 <StateTransition stateToId="0:40" duration="150" id="0:178">
                     <TransitionViewModelCondition id="0:179">
@@ -254,6 +275,12 @@
                     </TransitionViewModelCondition>
                 </StateTransition>
                 </AnimationState>
+
+                <!-- REVERSE: Shadow holds arm up. Puppet resists for ~0.8s, then Rive automatically raises puppet WITHOUT another click. -->
+                <AnimationState x="100" y="280" animationId="0:5050" id="0:5030">
+                    <StateTransition stateToId="0:5034" duration="150" enableExitTime="true" exitTimeIsPercetange="true" exitTime="100" id="0:5042"/>
+                </AnimationState>
+                <AnimationState x="350" y="280" animationId="0:5051" id="0:5034"/>
             </StateMachineLayer>
 
             <StateMachineLayer name="Shadow Relationship" id="0:9">
@@ -422,6 +449,22 @@
             <KeyedObject objectId="0:21" id="0:283">
                 <KeyedProperty propertyKey="15" id="0:284">
                     <KeyFrameDouble value="-2.8" interpolationType="hold" id="0:285"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
+
+
+        <LinearAnimation duration="48" name="Puppet Resists Shadow Pull" id="0:5050">
+            <KeyedObject objectId="0:21" id="0:5052">
+                <KeyedProperty propertyKey="15" id="0:5053">
+                    <KeyFrameDouble value="0" interpolationType="hold" id="0:5054"/>
+                </KeyedProperty>
+            </KeyedObject>
+        </LinearAnimation>
+        <LinearAnimation duration="9" name="Puppet Reclaimed by Shadow" id="0:5051">
+            <KeyedObject objectId="0:21" id="0:5055">
+                <KeyedProperty propertyKey="15" id="0:5056">
+                    <KeyFrameDouble value="-2.8" interpolationType="hold" id="0:5057"/>
                 </KeyedProperty>
             </KeyedObject>
         </LinearAnimation>
