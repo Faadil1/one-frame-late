@@ -8,7 +8,8 @@ Before any material code, design, demo, documentation, packaging, or submission 
 4. Read `product/PRD.md`.
 5. Read `product/GATEWAY-REGISTRY.yaml`.
 6. Read `product/CONCEPT-DECISION.md`.
-7. Preserve GitHub + CURRENT/HANDOVER as source of truth.
+7. Read `product/FULL-EXPERIENCE-DEPTH-REOPEN-2026-10-10.md` (creative proposal; not Concept Lock).
+8. Preserve GitHub + CURRENT/HANDOVER as source of truth.
 8. Do not infer state from chat, README, an old demo, or intent.
 9. Do not silently omit a registered gate; use ACTIVE, N/A, BLOCKED, or PROVEN.
 10. Preserve Truth Boundary: OBSERVED / INFERRED / UNKNOWN.
@@ -21,6 +22,10 @@ Before any material code, design, demo, documentation, packaging, or submission 
 Do not add final art, submission media, extra characters, fog, CRT, generic glitch effects, or packaging until the spike proves the behavioral core.
 
 When Rive CLI creates project-local agent guidance under `rive/spike-01/`, read and follow it. Do not guess RML types or properties; use the installed Rive CLI documentation/schema commands.
+
+## Whole-product design correction 2026-10-10
+
+Observed SYNC/DELAY/HOLD/RESET in Editor is a **technical sub-result**, not an engaging complete challenge product. User explicitly asks for world/character/story/agency/art beyond a technical demonstration. Proposed show in FULL-EXPERIENCE-DEPTH-REOPEN-2026-10-10.md remains provisional. Full release requires an authored responsive theatre, clear player purpose, true reversed control, secondary consequential interaction, meaningful endings and replay, failure handling, Rive Editor human craft and genuine browser proof. Do not silently claim any feature implemented.
 
 ## Spike pass condition
 
